@@ -1,0 +1,24 @@
+digraph G{
+"Init_81" [label="" style="invis" width="0px" height="0px"];
+"Init_81" [label="" style="invis" width="0px" height="0px"];
+"Final_81" [label="" style="invis" width="0px" height="0px"];
+"Final_81" [label="" style="invis" width="0px" height="0px"];
+"Node_94" [label="PKA(a!PP2A@pSite)"];
+"Node_92" [label="PKA(a!PDE@pSite)"];
+"Node_80" [label="PKA(a!D@s)"];
+"Node_81" [label="PKA(a!free)"];
+"Node_94" -> "Node_81" [label="41"];
+"Node_94" -> "Node_81" [label="40"];
+"Node_81" -> "Node_94" [label="39"];
+"Node_92" -> "Node_81" [label="37"];
+"Node_92" -> "Node_81" [label="36"];
+"Node_81" -> "Node_92" [label="35"];
+"Node_80" -> "Node_81" [label="9"];
+"Node_80" -> "Node_81" [label="8"];
+"Node_80" -> "Node_81" [label="7"];
+"Node_81" -> "Node_80" [label="6"];
+"Init_81" -> "Node_81" [label="119"];
+"Init_81" -> "Node_81" [label="121"];
+"Node_81" -> "Final_81" [label="122"];
+"Node_81" -> "Final_81" [label="120"];
+}

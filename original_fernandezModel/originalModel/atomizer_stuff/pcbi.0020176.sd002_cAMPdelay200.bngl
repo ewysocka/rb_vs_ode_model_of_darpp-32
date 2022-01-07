@@ -1,0 +1,501 @@
+###
+#@creatorName:''
+#@creatorEmail:''
+#@notes:'This is an atomized translation of an SBML model created on 07/09/2017. The original model has 75 molecules and 152 reactions. The translated model has 30 molecules and 152 rules'
+###
+begin model
+begin parameters
+	k57 2.5e-08
+	cAMP_delay 200.0
+	cAMP_Ca_delay 50.0
+	kon_high 6.6e-06
+	spike_duration 2.0
+	spike_interval 2.0
+	kon_low 2.5e-08
+	r1_kon1 5600000.000000
+	r2_koff1 12.000000
+	r3_kcat1 3.000000
+	r4_kon2 4400000.000000
+	r5_koff2 12.000000
+	r6_kcat2 3.000000
+	r7_kon3 5600000.000000
+	r8_koff3 10.800000
+	r9_kcat3 2.700000
+	r10_kon4 5600000.000000
+	r11_kon5 4400000.000000
+	r12_kon6 10000000.000000
+	r13_koff4 12.000000
+	r14_kcat4 3.000000
+	r15_koff5 12.000000
+	r16_kcat5 3.000000
+	r17_kcat6 4.000000
+	r18_koff6 16.000000
+	r19_kon7 4400000.000000
+	r20_kon8 5600000.000000
+	r21_kon9 3800000.000000
+	r22_kon10 17000000.000000
+	r23_koff7 12.000000
+	r24_kcat7 3.000000
+	r25_kcat8 0.000000
+	r26_koff8 10.800000
+	r27_kcat9 10.000000
+	r28_koff9 24.000000
+	r29_kcat10 24.000000
+	r30_koff10 40.000000
+	r31_kon11 5600000.000000
+	r32_kon12 5600000.000000
+	r33_kon13 7500000.000000
+	r34_koff11 12.000000
+	r35_kcat11 3.000000
+	r36_koff12 10.800000
+	r37_kcat12 2.700000
+	r38_kcat13 3.000000
+	r39_koff13 12.000000
+	r40_kon14 4400000.000000
+	r41_kon18 5600000.000000
+	r42_koff18 12.000000
+	r43_koff14 12.000000
+	r44_kcat14 3.000000
+	r45_kcat18 3.000000
+	r46_kon21 5600000.000000
+	r47_kcat21 0.000000
+	r48_koff21 10.800000
+	r49_kon17 10000000.000000
+	r50_koff17 1600.000000
+	r51_kcat17 4.000000
+	r52_kon19 75000.000000
+	r53_kcat19 0.030000
+	r54_koff19 0.120000
+	r55_kon27 75000.000000
+	r56_koff27 120.000000
+	r57_kcat27 0.030000
+	r58_kon15 3800000.000000
+	r59_kcat15 10.000000
+	r60_koff15 24.000000
+	r61_kon22 3800000.000000
+	r62_kcat22 10.000000
+	r63_koff22 24.000000
+	r64_kon25 3800000.000000
+	r65_kcat25 10.000000
+	r66_koff25 24.000000
+	r67_kon16 17000000.000000
+	r68_kcat16 24.000000
+	r69_koff16 40.000000
+	r70_kon23 17000000.000000
+	r71_kcat23 24.000000
+	r72_koff23 40.000000
+	r73_kcat26 24.000000
+	r74_kon26 17000000.000000
+	r75_koff26 40.000000
+	r76_kon20 7500000.000000
+	r77_kcat20 3.000000
+	r78_koff20 12.000000
+	r79_kon24 7500000.000000
+	r80_kcat24 3.000000
+	r81_koff24 12.000000
+	r82_kon28 7500000.000000
+	r83_kcat28 3.000000
+	r84_koff28 12.000000
+	r85_kon29 30000000.000000
+	r86_koff29 24.000000
+	r87_kcat29 6.000000
+	r88_kcat30 1.000000
+	r89_kon31 6000000.000000
+	r90_kcat31 9.000000
+	r91_koff31 36.000000
+	r92_kcat32 0.100000
+	r93_kon33 10000000.000000
+	r94_koff33 16.000000
+	r95_kcat33 4.000000
+	r96_kcat34 5.000000
+	r97_kon35 1000000000000000.000000
+	r98_kon36 3000000000000000.000000
+	r99_koff35 1.000000
+	r100_koff36 1.000000
+	r101_kon37 54000000.000000
+	r102_kon38 54000000.000000
+	r103_kon39 75000000.000000
+	r104_kon40 75000000.000000
+	r105_koff37 33.000000
+	r106_koff38 33.000000
+	r107_koff39 110.000000
+	r108_koff40 32.500000
+	r109_kon41 18000000.000000
+	r110_koff41 60.000000
+	r111_kon42 18000000.000000
+	r112_kon43 60.000000
+	r113_kon44 2520000.000000
+	r114_koff44 40.000000
+	r115_kcat44 10.000000
+	r116_kon45 5040000.000000
+	r117_koff45 80.000000
+	r118_kcat45 20.000000
+	r120_k58 1.700000
+	r121_kon46 3800000.000000
+	r122_kon47 3800000.000000
+	r123_kcat47 10.000000
+	r124_koff47 6.000000
+	r125_kcat46 10.000000
+	r126_koff46 6.000000
+	r127_kon48 3800000.000000
+	r128_kon49 3800000.000000
+	r129_kcat49 10.000000
+	r130_koff49 6.000000
+	r131_kcat48 10.000000
+	r132_koff48 6.000000
+	r133_kon50 17000000.000000
+	r134_kon51 17000000.000000
+	r135_kcat51 24.000000
+	r136_koff51 10.000000
+	r137_kcat50 24.000000
+	r138_koff50 10.000000
+	r139_kon52 17000000.000000
+	r140_kon53 17000000.000000
+	r141_kcat53 24.000000
+	r142_koff53 10.000000
+	r143_kcat52 24.000000
+	r144_koff52 10.000000
+	r145_kon54 200000.000000
+	r146_koff54 1.000000
+	r147_kon55 10000000.000000
+	r148_kcat55 4.000000
+	r149_kon56 200000.000000
+	r150_koff56 1.000000
+	r151_kcat56 5.000000
+	r152_koff55 16.000000
+end parameters
+begin compartments
+	#volume units: L
+	Spine 3 1e-15
+	cell 3 1.0
+end compartments
+begin molecule types
+	PP2(PP2A~PP2A~0,PP2Binactive~PP2Binactive~0,c~C~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P~0,pka)
+	D34_75_PP2A()
+	D75(ck1,pka,pp2)
+	D34_75_PP2AP()
+	D34_75_137_PP2APCa()
+	D34_75()
+	D34_75_137_PP2ACa()
+	PDE(amp,p~P~0,pka)
+	R2C2(amp,amp,amp)
+	D34_75_137_PP2AP()
+	D34_75_137_PP2A()
+	D34_137(cdk5,pp2)
+	D34_75_CK1()
+	D34_75_137()
+	D34_75_137_PP2B()
+	D34_75_PP2APCa()
+	D34_75_137_PP2C()
+	CK1(d,d34,d75,p~P~0,pp2)
+	Ca(Empty~Empty~0,pp2)
+	D34(cdk5,ck1,pp2)
+	D75_137(pka,pp2)
+	cAMP4_R2(pka)
+	D34_75_PP2B()
+	D34_75_PP2ACa()
+	AMP(c~C~0,pde,r2c2)
+	CDK5(d,d137,d34,d34_137)
+	D137(cdk5,pka,pp2)
+	D(cdk5,ck1,pka)
+	cAMP4_R2C2()
+	PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)
+end molecule types
+begin seed species
+	@Spine:D(cdk5,ck1,pka) 2998.956 # 4.98e-06mol/L * 6.022e23/mol *1e-15L #D #D
+	@Spine:CDK5(d,d137,d34,d34_137) 120.44 #original 2e-07mol/L  #CDK5 #CDK5
+	@Spine:CK1(d,d34,d75,p~0,pp2) 99.9652 #original 1.66e-07mol/L  #CK1 #CK1
+	@Spine:PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka) 120.44 #original 2e-07mol/L  #PP2A #PP2A
+	@Spine:PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka) 80.0926 #original 1.33e-07mol/L  #PP2C #PP2C
+	@Spine:PDE(amp,p~0,pka) 1204.4 #original 2e-06mol/L  #PDE #PDE
+	@Spine:PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka) 199.9304 #original 3.32e-07mol/L  #PP2Binactive #PP2Binactive
+	@Spine:R2C2(amp,amp,amp) 3998.608 #original 6.64e-06mol/L  #R2C2 #R2C2
+	@Spine:$Ca(Empty~Empty,pp2) 0 #Empty #Empty
+end seed species
+begin observables
+	Species D_Spine @Spine:D(cdk5,ck1,pka) #D
+	Species CDK5_Spine @Spine:CDK5(d,d137,d34,d34_137) #CDK5
+	Species D_CDK5_Spine @Spine:CDK5(d!2,d137,d34,d34_137).D(cdk5!2,ck1,pka) #D_CDK5
+	Species D75_Spine @Spine:D75(ck1,pka,pp2) #D75
+	Species CK1_Spine @Spine:CK1(d,d34,d75,p~0,pp2) #CK1
+	Species D_CK1_Spine @Spine:CK1(d!1,d34,d75,p~0,pp2).D(cdk5,ck1!1,pka) #D_CK1
+	Species D137_Spine @Spine:D137(cdk5,pka,pp2) #D137
+	Species PKA_Spine @Spine:PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2) #PKA
+	Species D_PKA_Spine @Spine:PKA(camp4_r2,d!0,d137,d75,d75_137,pde,pp2).D(cdk5,ck1,pka!0) #D_PKA
+	Species D34_Spine @Spine:D34(cdk5,ck1,pp2) #D34
+	Species D34_CDK5_Spine @Spine:CDK5(d,d137,d34!7,d34_137).D34(cdk5!7,ck1,pp2) #D34_CDK5
+	Species D34_CK1_Spine @Spine:CK1(d,d34!3,d75,p~0,pp2).D34(cdk5,ck1!3,pp2) #D34_CK1
+	Species PP2B_Spine @Spine:PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka).Ca(Empty~0,pp2!13).Ca(Empty~0,pp2!21).Ca(Empty~0,pp2!23).Ca(Empty~0,pp2!24) #PP2B
+	Species D34_PP2B_Spine @Spine:PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34!26,d34_137,d75,d75_137,p~0,pka).D34(cdk5,ck1,pp2!26).Ca(Empty~0,pp2!13).Ca(Empty~0,pp2!21).Ca(Empty~0,pp2!23).Ca(Empty~0,pp2!24) #D34_PP2B
+	Species D34_75_Spine @Spine:D34_75() #D34:75
+	Species D34_137_Spine @Spine:D34_137(cdk5,pp2) #D34:137
+	Species D75_CK1_Spine @Spine:CK1(d,d34,d75!4,p~0,pp2).D75(ck1!4,pka,pp2) #D75_CK1
+	Species D75_PKA_Spine @Spine:PKA(camp4_r2,d,d137,d75!6,d75_137,pde,pp2).D75(ck1,pka!6,pp2) #D75_PKA
+	Species PP2A_Spine @Spine:PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka) #PP2A
+	Species D75_PP2A_Spine @Spine:PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75!16,d75_137,p~0,pka).D75(ck1,pka,pp2!16) #D75_PP2A
+	Species PP2AP_Spine @Spine:PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka) #PP2AP
+	Species D75_PP2AP_Spine @Spine:PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75!16,d75_137,p~P,pka).D75(ck1,pka,pp2!16) #D75_PP2AP
+	Species D75_137_Spine @Spine:D75_137(pka,pp2) #D75:137
+	Species D137_CDK5_Spine @Spine:CDK5(d,d137!10,d34,d34_137).D137(cdk5!10,pka,pp2) #D137_CDK5
+	Species D137_PKA_Spine @Spine:PKA(camp4_r2,d,d137!8,d75,d75_137,pde,pp2).D137(cdk5,pka!8,pp2) #D137_PKA
+	Species D137_PP2C_Spine @Spine:PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137!17,d34,d34_137,d75,d75_137,p~0,pka).D137(cdk5,pka,pp2!17) #D137_PP2C
+	Species PP2C_Spine @Spine:PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka) #PP2C
+	Species D34_75_CK1_Spine @Spine:D34_75_CK1() #D34:75_CK1
+	Species D34_137_CDK5_Spine @Spine:CDK5(d,d137,d34,d34_137!12).D34_137(cdk5!12,pp2) #D34:137_CDK5
+	Species D34_75_137_Spine @Spine:D34_75_137() #D34:75:137
+	Species D75_137_PKA_Spine @Spine:PKA(camp4_r2,d,d137,d75,d75_137!11,pde,pp2).D75_137(pka!11,pp2) #D75:137_PKA
+	Species D34_75_PP2B_Spine @Spine:D34_75_PP2B() #D34:75_PP2B
+	Species D34_137_PP2B_Spine @Spine:PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137!20,d75,d75_137,p~0,pka).Ca(Empty~0,pp2!13).D34_137(cdk5,pp2!20).Ca(Empty~0,pp2!21).Ca(Empty~0,pp2!23).Ca(Empty~0,pp2!24) #D34:137_PP2B
+	Species D34_75_137_PP2B_Spine @Spine:D34_75_137_PP2B() #D34:75:137_PP2B
+	Species D34_75_PP2A_Spine @Spine:D34_75_PP2A() #D34:75_PP2A
+	Species D75_137_PP2A_Spine @Spine:PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~0,pka).D75_137(pka,pp2!19) #D75:137_PP2A
+	Species D34_75_137_PP2A_Spine @Spine:D34_75_137_PP2A() #D34:75:137_PP2A
+	Species D34_75_PP2AP_Spine @Spine:D34_75_PP2AP() #D34:75_PP2AP
+	Species D75_137_PP2AP_Spine @Spine:PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~P,pka).D75_137(pka,pp2!19) #D75:137_PP2AP
+	Species D34_75_137_PP2AP_Spine @Spine:D34_75_137_PP2AP() #D34:75:137_PP2AP
+	Species D34_137_PP2C_Spine @Spine:PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137!20,d75,d75_137,p~0,pka).D34_137(cdk5,pp2!20) #D34:137_PP2C
+	Species D75_137_PP2C_Spine @Spine:PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~0,pka).D75_137(pka,pp2!19) #D75:137_PP2C
+	Species PDE_Spine @Spine:PDE(amp,p~0,pka) #PDE
+	Species PP2Binactive_Spine @Spine:PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka) #PP2Binactive
+	Species D34_75_137_PP2C_Spine @Spine:D34_75_137_PP2C() #D34:75:137_PP2C
+	Species CK1P_Spine @Spine:CK1(d,d34,d75,p~P,pp2) #CK1P
+	Species CK1P_PP2B_Spine @Spine:PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1!27,d137,d34,d34_137,d75,d75_137,p~0,pka).CK1(d,d34,d75,p~P,pp2!27).Ca(Empty~0,pp2!13).Ca(Empty~0,pp2!21).Ca(Empty~0,pp2!23).Ca(Empty~0,pp2!24) #CK1P_PP2B
+	Species PDE_PKA_Spine @Spine:PKA(camp4_r2,d,d137,d75,d75_137,pde!5,pp2).PDE(amp,p~0,pka!5) #PDE_PKA
+	Species PDEP_Spine @Spine:PDE(amp,p~P,pka) #PDEP
+	Species PP2A_PKA_Spine @Spine:PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka!15).PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2!15) #PP2A_PKA
+	Species Ca_Spine @Spine:Ca(Empty~0,pp2) #Ca
+	Species PP2BinactiveCa2_Spine @Spine:PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka).Ca(Empty~0,pp2!13).Ca(Empty~0,pp2!21) #PP2BinactiveCa2
+	Species R2C2_Spine @Spine:R2C2(amp,amp,amp) #R2C2
+	Species cAMP_Spine @Spine:AMP(c~C,pde,r2c2) #cAMP
+	Species cAMP_R2C2_Spine @Spine:R2C2(amp!18,amp,amp).AMP(c~C,pde,r2c2!18) #cAMP_R2C2
+	Species cAMP2_R2C2_Spine @Spine:AMP(c~C,pde,r2c2!18).R2C2(amp!18,amp!22,amp).AMP(c~C,pde,r2c2!22) #cAMP2_R2C2
+	Species cAMP3_R2C2_Spine @Spine:AMP(c~C,pde,r2c2!18).R2C2(amp!18,amp!22,amp!25).AMP(c~C,pde,r2c2!22).AMP(c~C,pde,r2c2!25) #cAMP3_R2C2
+	Species cAMP4_R2C2_Spine @Spine:cAMP4_R2C2() #cAMP4_R2C2
+	Species cAMP4_R2C_Spine @Spine:PKA(camp4_r2!9,d,d137,d75,d75_137,pde,pp2).cAMP4_R2(pka!9) #cAMP4_R2C
+	Species cAMP4_R2_Spine @Spine:cAMP4_R2(pka) #cAMP4_R2
+	Species cAMP_PDE_Spine @Spine:PDE(amp!14,p~0,pka).AMP(c~C,pde!14,r2c2) #cAMP_PDE
+	Species AMP_Spine @Spine:AMP(c~0,pde,r2c2) #AMP
+	Species cAMP_PDEP_Spine @Spine:AMP(c~C,pde!14,r2c2).PDE(amp!14,p~P,pka) #cAMP_PDEP
+	Species PP2ACa_Spine @Spine:PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka).Ca(Empty~0,pp2!13) #PP2ACa
+	Species D34_75_PP2ACa_Spine @Spine:D34_75_PP2ACa() #D34:75_PP2ACa
+	Species D34_75_137_PP2ACa_Spine @Spine:D34_75_137_PP2ACa() #D34:75:137_PP2ACa
+	Species D75_PP2ACa_Spine @Spine:PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75!16,d75_137,p~0,pka).D75(ck1,pka,pp2!16).Ca(Empty~0,pp2!13) #D75_PP2ACa
+	Species D75_137_PP2ACa_Spine @Spine:PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~0,pka).Ca(Empty~0,pp2!13).D75_137(pka,pp2!19) #D75:137_PP2ACa
+	Species D34_75_PP2APCa_Spine @Spine:D34_75_PP2APCa() #D34:75_PP2APCa
+	Species PP2APCa_Spine @Spine:PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka).Ca(Empty~0,pp2!13) #PP2APCa
+	Species D34_75_137_PP2APCa_Spine @Spine:D34_75_137_PP2APCa() #D34:75:137_PP2APCa
+	Species D75_PP2APCa_Spine @Spine:PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75!16,d75_137,p~P,pka).D75(ck1,pka,pp2!16).Ca(Empty~0,pp2!13) #D75_PP2APCa
+	Species D75_137_PP2APCa_Spine @Spine:PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~P,pka).Ca(Empty~0,pp2!13).D75_137(pka,pp2!19) #D75:137_PP2APCa
+	Species PP2ACa_PKA_Spine @Spine:PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka!15).PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2!15).Ca(Empty~0,pp2!13) #PP2ACa_PKA
+	Species Empty_Spine @Spine:Ca(Empty~Empty,pp2) #Empty
+end observables
+begin functions
+	functionRate0() = (5600000.0) / 6.022e23
+	functionRate3() = (if(CK1_Spine>0, CK1_Spine * 4400000.0/CK1_Spine,0)) / 6.022e23
+	functionRate6() = (if(PKA_Spine>0, PKA_Spine * 5600000.0/PKA_Spine,0)) / 6.022e23
+	functionRate9() = (if(CDK5_Spine>0, CDK5_Spine * 5600000.0/CDK5_Spine,0)) / 6.022e23
+	functionRate10() = (if(CK1_Spine>0, CK1_Spine * 4400000.0/CK1_Spine,0)) / 6.022e23
+	functionRate11() = (if(PP2B_Spine>0, PP2B_Spine * 10000000.0/PP2B_Spine,0)) / 6.022e23
+	functionRate18() = (if(CK1_Spine>0, CK1_Spine * 4400000.0/CK1_Spine,0)) / 6.022e23
+	functionRate19() = (if(PKA_Spine>0, PKA_Spine * 5600000.0/PKA_Spine,0)) / 6.022e23
+	functionRate20() = (if(PP2A_Spine>0, PP2A_Spine * 3800000.0/PP2A_Spine,0)) / 6.022e23
+	functionRate21() = (if(PP2AP_Spine>0, PP2AP_Spine * 17000000.0/PP2AP_Spine,0)) / 6.022e23
+	functionRate30() = (if(CDK5_Spine>0, CDK5_Spine * 5600000.0/CDK5_Spine,0)) / 6.022e23
+	functionRate31() = (if(PKA_Spine>0, PKA_Spine * 5600000.0/PKA_Spine,0)) / 6.022e23
+	functionRate32() = (if(PP2C_Spine>0, PP2C_Spine * 7500000.0/PP2C_Spine,0)) / 6.022e23
+	functionRate39() = (if(CK1_Spine>0, CK1_Spine * 4400000.0/CK1_Spine,0)) / 6.022e23
+	functionRate40() = (if(CDK5_Spine>0, CDK5_Spine * 5600000.0/CDK5_Spine,0)) / 6.022e23
+	functionRate45() = (if(PKA_Spine>0, PKA_Spine * 5600000.0/PKA_Spine,0)) / 6.022e23
+	functionRate48() = (if(PP2B_Spine>0, PP2B_Spine * 10000000.0/PP2B_Spine,0)) / 6.022e23
+	functionRate51() = (if(PP2B_Spine>0, PP2B_Spine * 75000.0/PP2B_Spine,0)) / 6.022e23
+	functionRate54() = (if(PP2B_Spine>0, PP2B_Spine * 75000.0/PP2B_Spine,0)) / 6.022e23
+	functionRate57() = (if(PP2A_Spine>0, PP2A_Spine * 3800000.0/PP2A_Spine,0)) / 6.022e23
+	functionRate60() = (if(PP2A_Spine>0, PP2A_Spine * 3800000.0/PP2A_Spine,0)) / 6.022e23
+	functionRate63() = (if(PP2A_Spine>0, PP2A_Spine * 3800000.0/PP2A_Spine,0)) / 6.022e23
+	functionRate66() = (if(PP2AP_Spine>0, PP2AP_Spine * 17000000.0/PP2AP_Spine,0)) / 6.022e23
+	functionRate69() = (if(PP2AP_Spine>0, PP2AP_Spine * 17000000.0/PP2AP_Spine,0)) / 6.022e23
+	functionRate73() = (if(PP2AP_Spine>0, PP2AP_Spine * 17000000.0/PP2AP_Spine,0)) / 6.022e23
+	functionRate75() = (if(PP2C_Spine>0, PP2C_Spine * 7500000.0/PP2C_Spine,0)) / 6.022e23
+	functionRate78() = (if(PP2C_Spine>0, PP2C_Spine * 7500000.0/PP2C_Spine,0)) / 6.022e23
+	functionRate81() = (if(PP2C_Spine>0, PP2C_Spine * 7500000.0/PP2C_Spine,0)) / 6.022e23
+	functionRate84() = (if(PP2B_Spine>0, PP2B_Spine * 30000000.0/PP2B_Spine,0)) / 6.022e23
+	functionRate88() = (if(PKA_Spine>0, PKA_Spine * 6000000.0/PKA_Spine,0)) / 6.022e23
+	functionRate92() = (if(PKA_Spine>0, PKA_Spine * 10000000.0/PKA_Spine,0)) / 6.022e23
+	functionRate96() = ((if(Ca_Spine>0, Ca_Spine * 1e+15/Ca_Spine,0) * 2) / 6.022e23)/6
+	functionRate97() = (if(Ca_Spine>0, Ca_Spine * 3e+15/Ca_Spine,0) * 2) / 6.022e23
+	functionRate100() = ((if(cAMP_Spine>0, cAMP_Spine * 54000000.0/cAMP_Spine,0)) / 6.022e23)/3
+	functionRate101() = ((if(cAMP_Spine>0, cAMP_Spine * 54000000.0/cAMP_Spine,0)) / 6.022e23)/2
+	functionRate102() = (if(cAMP_Spine>0, cAMP_Spine * 75000000.0/cAMP_Spine,0)) / 6.022e23
+	functionRate103() = (if(cAMP_Spine>0, cAMP_Spine * 75000000.0/cAMP_Spine,0)) / 6.022e23
+	functionRate108() = (if(PKA_Spine>0, PKA_Spine * 18000000.0/PKA_Spine,0)) / 6.022e23
+	functionRate110() = (if(PKA_Spine>0, PKA_Spine * 18000000.0/PKA_Spine,0)) / 6.022e23
+	functionRate112() = (if(PDE_Spine>0, PDE_Spine * 2520000.0/PDE_Spine,0)) / 6.022e23
+	functionRate115() = (if(PDEP_Spine>0, PDEP_Spine * 5040000.0/PDEP_Spine,0)) / 6.022e23
+	functionRate118() = if(Empty_Spine>0, k57/Empty_Spine,0)
+	functionRate120() = (if(PP2ACa_Spine>0, PP2ACa_Spine * 3800000.0/PP2ACa_Spine,0)) / 6.022e23
+	functionRate121() = (if(PP2ACa_Spine>0, PP2ACa_Spine * 3800000.0/PP2ACa_Spine,0)) / 6.022e23
+	functionRate126() = (if(PP2ACa_Spine>0, PP2ACa_Spine * 3800000.0/PP2ACa_Spine,0)) / 6.022e23
+	functionRate127() = (if(PP2ACa_Spine>0, PP2ACa_Spine * 3800000.0/PP2ACa_Spine,0)) / 6.022e23
+	functionRate132() = (if(PP2APCa_Spine>0, PP2APCa_Spine * 17000000.0/PP2APCa_Spine,0)) / 6.022e23
+	functionRate133() = (if(PP2APCa_Spine>0, PP2APCa_Spine * 17000000.0/PP2APCa_Spine,0)) / 6.022e23
+	functionRate138() = (if(PP2APCa_Spine>0, PP2APCa_Spine * 17000000.0/PP2APCa_Spine,0)) / 6.022e23
+	functionRate139() = (if(PP2APCa_Spine>0, PP2APCa_Spine * 17000000.0/PP2APCa_Spine,0)) / 6.022e23
+	functionRate144() = ((if(Ca_Spine>0, Ca_Spine * 200000.0/Ca_Spine,0)) / 6.022e23)/4
+	functionRate146() = (if(PP2ACa_Spine>0, PP2ACa_Spine * 10000000.0/PP2ACa_Spine,0)) / 6.022e23
+	functionRate148() = ((if(Ca_Spine>0, Ca_Spine * 200000.0/Ca_Spine,0)) / 6.022e23)/4
+end functions
+begin reaction rules
+	von1: D(cdk5,ck1,pka)@Spine + CDK5(d,d137,d34,d34_137)@Spine -> CDK5(d!2,d137,d34,d34_137)@Spine.D(cdk5!2,ck1,pka)@Spine functionRate0()
+	voff1: CDK5(d!2,d137,d34,d34_137)@Spine.D(cdk5!2,ck1,pka)@Spine -> D(cdk5,ck1,pka)@Spine + CDK5(d,d137,d34,d34_137)@Spine r2_koff1
+	vcat1: CDK5(d!2,d137,d34,d34_137)@Spine.D(cdk5!2,ck1,pka)@Spine -> D75(ck1,pka,pp2)@Spine + CDK5(d,d137,d34,d34_137)@Spine r3_kcat1
+	von2: D(cdk5,ck1,pka)@Spine + CK1(d,d34,d75,p~0,pp2)@Spine -> CK1(d!1,d34,d75,p~0,pp2)@Spine.D(cdk5,ck1!1,pka)@Spine functionRate3()
+	voff2: CK1(d!1,d34,d75,p~0,pp2)@Spine.D(cdk5,ck1!1,pka)@Spine -> D(cdk5,ck1,pka)@Spine + CK1(d,d34,d75,p~0,pp2)@Spine r5_koff2
+	vcat2: CK1(d!1,d34,d75,p~0,pp2)@Spine.D(cdk5,ck1!1,pka)@Spine -> D137(cdk5,pka,pp2)@Spine + CK1(d,d34,d75,p~0,pp2)@Spine r6_kcat2
+	von3: D(cdk5,ck1,pka)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine -> PKA(camp4_r2,d!0,d137,d75,d75_137,pde,pp2)@Spine.D(cdk5,ck1,pka!0)@Spine functionRate6()
+	voff3: PKA(camp4_r2,d!0,d137,d75,d75_137,pde,pp2)@Spine.D(cdk5,ck1,pka!0)@Spine -> D(cdk5,ck1,pka)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine r8_koff3
+	vcat3: PKA(camp4_r2,d!0,d137,d75,d75_137,pde,pp2)@Spine.D(cdk5,ck1,pka!0)@Spine -> D34(cdk5,ck1,pp2)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine r9_kcat3
+	von4: D34(cdk5,ck1,pp2)@Spine + CDK5(d,d137,d34,d34_137)@Spine -> CDK5(d,d137,d34!7,d34_137)@Spine.D34(cdk5!7,ck1,pp2)@Spine functionRate9()
+	von5: D34(cdk5,ck1,pp2)@Spine + CK1(d,d34,d75,p~0,pp2)@Spine -> CK1(d,d34!3,d75,p~0,pp2)@Spine.D34(cdk5,ck1!3,pp2)@Spine functionRate10()
+	von6: D34(cdk5,ck1,pp2)@Spine + PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine -> PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34!26,d34_137,d75,d75_137,p~0,pka)@Spine.D34(cdk5,ck1,pp2!26)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine functionRate11()
+	voff4: CDK5(d,d137,d34!7,d34_137)@Spine.D34(cdk5!7,ck1,pp2)@Spine -> D34(cdk5,ck1,pp2)@Spine + CDK5(d,d137,d34,d34_137)@Spine r13_koff4
+	vcat4: CDK5(d,d137,d34!7,d34_137)@Spine.D34(cdk5!7,ck1,pp2)@Spine -> D34_75()@Spine + CDK5(d,d137,d34,d34_137)@Spine r14_kcat4
+	voff5: CK1(d,d34!3,d75,p~0,pp2)@Spine.D34(cdk5,ck1!3,pp2)@Spine -> D34(cdk5,ck1,pp2)@Spine + CK1(d,d34,d75,p~0,pp2)@Spine r15_koff5
+	vcat5: CK1(d,d34!3,d75,p~0,pp2)@Spine.D34(cdk5,ck1!3,pp2)@Spine -> D34_137(cdk5,pp2)@Spine + CK1(d,d34,d75,p~0,pp2)@Spine r16_kcat5
+	vcat6: PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34!26,d34_137,d75,d75_137,p~0,pka)@Spine.D34(cdk5,ck1,pp2!26)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine -> D(cdk5,ck1,pka)@Spine + PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine r17_kcat6
+	voff6: PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34!26,d34_137,d75,d75_137,p~0,pka)@Spine.D34(cdk5,ck1,pp2!26)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine -> D34(cdk5,ck1,pp2)@Spine + PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine r18_koff6
+	von7: D75(ck1,pka,pp2)@Spine + CK1(d,d34,d75,p~0,pp2)@Spine -> CK1(d,d34,d75!4,p~0,pp2)@Spine.D75(ck1!4,pka,pp2)@Spine functionRate18()
+	von8: D75(ck1,pka,pp2)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine -> PKA(camp4_r2,d,d137,d75!6,d75_137,pde,pp2)@Spine.D75(ck1,pka!6,pp2)@Spine functionRate19()
+	von9: D75(ck1,pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75!16,d75_137,p~0,pka)@Spine.D75(ck1,pka,pp2!16)@Spine functionRate20()
+	von10: D75(ck1,pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75!16,d75_137,p~P,pka)@Spine.D75(ck1,pka,pp2!16)@Spine functionRate21()
+	voff7: CK1(d,d34,d75!4,p~0,pp2)@Spine.D75(ck1!4,pka,pp2)@Spine -> D75(ck1,pka,pp2)@Spine + CK1(d,d34,d75,p~0,pp2)@Spine r23_koff7
+	vcat7: CK1(d,d34,d75!4,p~0,pp2)@Spine.D75(ck1!4,pka,pp2)@Spine -> CK1(d,d34,d75,p~0,pp2)@Spine + D75_137(pka,pp2)@Spine r24_kcat7
+	vcat8: PKA(camp4_r2,d,d137,d75!6,d75_137,pde,pp2)@Spine.D75(ck1,pka!6,pp2)@Spine -> D34_75()@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine r25_kcat8
+	voff8: PKA(camp4_r2,d,d137,d75!6,d75_137,pde,pp2)@Spine.D75(ck1,pka!6,pp2)@Spine -> D75(ck1,pka,pp2)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine r26_koff8
+	vcat9: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75!16,d75_137,p~0,pka)@Spine.D75(ck1,pka,pp2!16)@Spine -> D(cdk5,ck1,pka)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r27_kcat9
+	voff9: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75!16,d75_137,p~0,pka)@Spine.D75(ck1,pka,pp2!16)@Spine -> D75(ck1,pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r28_koff9
+	vcat10: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75!16,d75_137,p~P,pka)@Spine.D75(ck1,pka,pp2!16)@Spine -> D(cdk5,ck1,pka)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine r29_kcat10
+	voff10: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75!16,d75_137,p~P,pka)@Spine.D75(ck1,pka,pp2!16)@Spine -> D75(ck1,pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine r30_koff10
+	von11: D137(cdk5,pka,pp2)@Spine + CDK5(d,d137,d34,d34_137)@Spine -> CDK5(d,d137!10,d34,d34_137)@Spine.D137(cdk5!10,pka,pp2)@Spine functionRate30()
+	von12: D137(cdk5,pka,pp2)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine -> PKA(camp4_r2,d,d137!8,d75,d75_137,pde,pp2)@Spine.D137(cdk5,pka!8,pp2)@Spine functionRate31()
+	von13: D137(cdk5,pka,pp2)@Spine + PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine -> PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137!17,d34,d34_137,d75,d75_137,p~0,pka)@Spine.D137(cdk5,pka,pp2!17)@Spine functionRate32()
+	voff11: CDK5(d,d137!10,d34,d34_137)@Spine.D137(cdk5!10,pka,pp2)@Spine -> D137(cdk5,pka,pp2)@Spine + CDK5(d,d137,d34,d34_137)@Spine r34_koff11
+	vcat11: CDK5(d,d137!10,d34,d34_137)@Spine.D137(cdk5!10,pka,pp2)@Spine -> D75_137(pka,pp2)@Spine + CDK5(d,d137,d34,d34_137)@Spine r35_kcat11
+	voff12: PKA(camp4_r2,d,d137!8,d75,d75_137,pde,pp2)@Spine.D137(cdk5,pka!8,pp2)@Spine -> D137(cdk5,pka,pp2)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine r36_koff12
+	vcat12: PKA(camp4_r2,d,d137!8,d75,d75_137,pde,pp2)@Spine.D137(cdk5,pka!8,pp2)@Spine -> D34_137(cdk5,pp2)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine r37_kcat12
+	vcat13: PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137!17,d34,d34_137,d75,d75_137,p~0,pka)@Spine.D137(cdk5,pka,pp2!17)@Spine -> D(cdk5,ck1,pka)@Spine + PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r38_kcat13
+	voff13: PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137!17,d34,d34_137,d75,d75_137,p~0,pka)@Spine.D137(cdk5,pka,pp2!17)@Spine -> D137(cdk5,pka,pp2)@Spine + PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r39_koff13
+	von14: D34_75()@Spine + CK1(d,d34,d75,p~0,pp2)@Spine -> D34_75_CK1()@Spine functionRate39()
+	von18: D34_137(cdk5,pp2)@Spine + CDK5(d,d137,d34,d34_137)@Spine -> CDK5(d,d137,d34,d34_137!12)@Spine.D34_137(cdk5!12,pp2)@Spine functionRate40()
+	voff18: CDK5(d,d137,d34,d34_137!12)@Spine.D34_137(cdk5!12,pp2)@Spine -> D34_137(cdk5,pp2)@Spine + CDK5(d,d137,d34,d34_137)@Spine r42_koff18
+	voff14: D34_75_CK1()@Spine -> D34_75()@Spine + CK1(d,d34,d75,p~0,pp2)@Spine r43_koff14
+	vcat14: D34_75_CK1()@Spine -> D34_75_137()@Spine + CK1(d,d34,d75,p~0,pp2)@Spine r44_kcat14
+	vcat18: CDK5(d,d137,d34,d34_137!12)@Spine.D34_137(cdk5!12,pp2)@Spine -> D34_75_137()@Spine + CDK5(d,d137,d34,d34_137)@Spine r45_kcat18
+	von21: D75_137(pka,pp2)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine -> PKA(camp4_r2,d,d137,d75,d75_137!11,pde,pp2)@Spine.D75_137(pka!11,pp2)@Spine functionRate45()
+	vcat21: PKA(camp4_r2,d,d137,d75,d75_137!11,pde,pp2)@Spine.D75_137(pka!11,pp2)@Spine -> D34_75_137()@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine r47_kcat21
+	voff21: PKA(camp4_r2,d,d137,d75,d75_137!11,pde,pp2)@Spine.D75_137(pka!11,pp2)@Spine -> D75_137(pka,pp2)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine r48_koff21
+	von17: D34_75()@Spine + PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine -> D34_75_PP2B()@Spine functionRate48()
+	voff17: D34_75_PP2B()@Spine -> D34_75()@Spine + PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine r50_koff17
+	vcat17: D34_75_PP2B()@Spine -> D75(ck1,pka,pp2)@Spine + PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine r51_kcat17
+	von19: D34_137(cdk5,pp2)@Spine + PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine -> PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137!20,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.D34_137(cdk5,pp2!20)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine functionRate51()
+	vcat19: PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137!20,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.D34_137(cdk5,pp2!20)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine -> D137(cdk5,pka,pp2)@Spine + PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine r53_kcat19
+	voff19: PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137!20,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.D34_137(cdk5,pp2!20)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine -> D34_137(cdk5,pp2)@Spine + PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine r54_koff19
+	von27: D34_75_137()@Spine + PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine -> D34_75_137_PP2B()@Spine functionRate54()
+	voff27: D34_75_137_PP2B()@Spine -> D34_75_137()@Spine + PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine r56_koff27
+	vcat27: D34_75_137_PP2B()@Spine -> D75_137(pka,pp2)@Spine + PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine r57_kcat27
+	von15: D34_75()@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine -> D34_75_PP2A()@Spine functionRate57()
+	vcat15: D34_75_PP2A()@Spine -> D34(cdk5,ck1,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r59_kcat15
+	voff15: D34_75_PP2A()@Spine -> D34_75()@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r60_koff15
+	von22: D75_137(pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~0,pka)@Spine.D75_137(pka,pp2!19)@Spine functionRate60()
+	vcat22: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~0,pka)@Spine.D75_137(pka,pp2!19)@Spine -> D137(cdk5,pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r62_kcat22
+	voff22: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~0,pka)@Spine.D75_137(pka,pp2!19)@Spine -> D75_137(pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r63_koff22
+	von25: D34_75_137()@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine -> D34_75_137_PP2A()@Spine functionRate63()
+	vcat25: D34_75_137_PP2A()@Spine -> D34_137(cdk5,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r65_kcat25
+	voff25: D34_75_137_PP2A()@Spine -> D34_75_137()@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r66_koff25
+	von16: D34_75()@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine -> D34_75_PP2AP()@Spine functionRate66()
+	vcat16: D34_75_PP2AP()@Spine -> D34(cdk5,ck1,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine r68_kcat16
+	voff16: D34_75_PP2AP()@Spine -> D34_75()@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine r69_koff16
+	von23: D75_137(pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~P,pka)@Spine.D75_137(pka,pp2!19)@Spine functionRate69()
+	vcat23: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~P,pka)@Spine.D75_137(pka,pp2!19)@Spine -> D137(cdk5,pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine r71_kcat23
+	voff23: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~P,pka)@Spine.D75_137(pka,pp2!19)@Spine -> D75_137(pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine r72_koff23
+	vcat26: D34_75_137_PP2AP()@Spine -> D34_137(cdk5,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine r73_kcat26
+	von26: D34_75_137()@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine -> D34_75_137_PP2AP()@Spine functionRate73()
+	voff26: D34_75_137_PP2AP()@Spine -> D34_75_137()@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine r75_koff26
+	von20: D34_137(cdk5,pp2)@Spine + PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine -> PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137!20,d75,d75_137,p~0,pka)@Spine.D34_137(cdk5,pp2!20)@Spine functionRate75()
+	vcat20: PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137!20,d75,d75_137,p~0,pka)@Spine.D34_137(cdk5,pp2!20)@Spine -> D34(cdk5,ck1,pp2)@Spine + PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r77_kcat20
+	voff20: PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137!20,d75,d75_137,p~0,pka)@Spine.D34_137(cdk5,pp2!20)@Spine -> D34_137(cdk5,pp2)@Spine + PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r78_koff20
+	von24: D75_137(pka,pp2)@Spine + PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine -> PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~0,pka)@Spine.D75_137(pka,pp2!19)@Spine functionRate78()
+	vcat24: PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~0,pka)@Spine.D75_137(pka,pp2!19)@Spine -> D75(ck1,pka,pp2)@Spine + PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r80_kcat24
+	voff24: PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~0,pka)@Spine.D75_137(pka,pp2!19)@Spine -> D75_137(pka,pp2)@Spine + PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r81_koff24
+	von28: D34_75_137()@Spine + PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine -> D34_75_137_PP2C()@Spine functionRate81()
+	vcat28: D34_75_137_PP2C()@Spine -> D34_75()@Spine + PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r83_kcat28
+	voff28: D34_75_137_PP2C()@Spine -> D34_75_137()@Spine + PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r84_koff28
+	von29: CK1(d,d34,d75,p~P,pp2)@Spine + PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine -> PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1!27,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.CK1(d,d34,d75,p~P,pp2!27)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine functionRate84()
+	voff29: PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1!27,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.CK1(d,d34,d75,p~P,pp2!27)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine -> CK1(d,d34,d75,p~P,pp2)@Spine + PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine r86_koff29
+	vcat29: PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1!27,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.CK1(d,d34,d75,p~P,pp2!27)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine -> CK1(d,d34,d75,p~0,pp2)@Spine + PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine r87_kcat29
+	vcat30: CK1(d,d34,d75,p~0,pp2)@Spine -> CK1(d,d34,d75,p~P,pp2)@Spine r88_kcat30
+	von31: PDE(amp,p~0,pka)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine -> PKA(camp4_r2,d,d137,d75,d75_137,pde!5,pp2)@Spine.PDE(amp,p~0,pka!5)@Spine functionRate88()
+	vcat31: PKA(camp4_r2,d,d137,d75,d75_137,pde!5,pp2)@Spine.PDE(amp,p~0,pka!5)@Spine -> PDE(amp,p~P,pka)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine r90_kcat31
+	voff31: PKA(camp4_r2,d,d137,d75,d75_137,pde!5,pp2)@Spine.PDE(amp,p~0,pka!5)@Spine -> PDE(amp,p~0,pka)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine r91_koff31
+	vcat32: PDE(amp,p~P,pka)@Spine -> PDE(amp,p~0,pka)@Spine r92_kcat32
+	von33: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka!15)@Spine.PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2!15)@Spine functionRate92()
+	voff33: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka!15)@Spine.PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2!15)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine r94_koff33
+	vcat33: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka!15)@Spine.PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2!15)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine r95_kcat33
+	vcat34: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine r96_kcat34
+	von35: PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine + Ca(Empty~0,pp2)@Spine + Ca(Empty~0,pp2)@Spine -> PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine functionRate96()
+	von36: PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine + Ca(Empty~0,pp2)@Spine + Ca(Empty~0,pp2)@Spine -> PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine functionRate97()
+	voff35: PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine -> PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine + Ca(Empty~0,pp2)@Spine + Ca(Empty~0,pp2)@Spine r99_koff35
+	voff36: PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca!23,ca!24,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine.Ca(Empty~0,pp2!23)@Spine.Ca(Empty~0,pp2!24)@Spine -> PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!13,ca!21,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.Ca(Empty~0,pp2!21)@Spine + Ca(Empty~0,pp2)@Spine + Ca(Empty~0,pp2)@Spine (r100_koff36)/6
+	von37: R2C2(amp,amp,amp)@Spine + AMP(c~C,pde,r2c2)@Spine -> R2C2(amp!18,amp,amp)@Spine.AMP(c~C,pde,r2c2!18)@Spine functionRate100()
+	von38: R2C2(amp!18,amp,amp)@Spine.AMP(c~C,pde,r2c2!18)@Spine + AMP(c~C,pde,r2c2)@Spine -> AMP(c~C,pde,r2c2!18)@Spine.R2C2(amp!18,amp!22,amp)@Spine.AMP(c~C,pde,r2c2!22)@Spine functionRate101()
+	von39: AMP(c~C,pde,r2c2!18)@Spine.R2C2(amp!18,amp!22,amp)@Spine.AMP(c~C,pde,r2c2!22)@Spine + AMP(c~C,pde,r2c2)@Spine -> AMP(c~C,pde,r2c2!18)@Spine.R2C2(amp!18,amp!22,amp!25)@Spine.AMP(c~C,pde,r2c2!22)@Spine.AMP(c~C,pde,r2c2!25)@Spine functionRate102()
+	von40: AMP(c~C,pde,r2c2!18)@Spine.R2C2(amp!18,amp!22,amp!25)@Spine.AMP(c~C,pde,r2c2!22)@Spine.AMP(c~C,pde,r2c2!25)@Spine + AMP(c~C,pde,r2c2)@Spine -> cAMP4_R2C2()@Spine functionRate103()
+	voff37: R2C2(amp!18,amp,amp)@Spine.AMP(c~C,pde,r2c2!18)@Spine -> R2C2(amp,amp,amp)@Spine + AMP(c~C,pde,r2c2)@Spine r105_koff37
+	voff38: AMP(c~C,pde,r2c2!18)@Spine.R2C2(amp!18,amp!22,amp)@Spine.AMP(c~C,pde,r2c2!22)@Spine -> R2C2(amp!18,amp,amp)@Spine.AMP(c~C,pde,r2c2!18)@Spine + AMP(c~C,pde,r2c2)@Spine (r106_koff38)/2
+	voff39: AMP(c~C,pde,r2c2!18)@Spine.R2C2(amp!18,amp!22,amp!25)@Spine.AMP(c~C,pde,r2c2!22)@Spine.AMP(c~C,pde,r2c2!25)@Spine -> AMP(c~C,pde,r2c2!18)@Spine.R2C2(amp!18,amp!22,amp)@Spine.AMP(c~C,pde,r2c2!22)@Spine + AMP(c~C,pde,r2c2)@Spine (r107_koff39)/3
+	voff40: cAMP4_R2C2()@Spine -> AMP(c~C,pde,r2c2!18)@Spine.R2C2(amp!18,amp!22,amp!25)@Spine.AMP(c~C,pde,r2c2!22)@Spine.AMP(c~C,pde,r2c2!25)@Spine + AMP(c~C,pde,r2c2)@Spine r108_koff40
+	von41: PKA(camp4_r2!9,d,d137,d75,d75_137,pde,pp2)@Spine.cAMP4_R2(pka!9)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine -> cAMP4_R2C2()@Spine functionRate108()
+	voff41: cAMP4_R2C2()@Spine -> PKA(camp4_r2!9,d,d137,d75,d75_137,pde,pp2)@Spine.cAMP4_R2(pka!9)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine r110_koff41
+	von42: cAMP4_R2(pka)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine -> PKA(camp4_r2!9,d,d137,d75,d75_137,pde,pp2)@Spine.cAMP4_R2(pka!9)@Spine functionRate110()
+	von43: PKA(camp4_r2!9,d,d137,d75,d75_137,pde,pp2)@Spine.cAMP4_R2(pka!9)@Spine -> cAMP4_R2(pka)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine r112_kon43
+	von44: AMP(c~C,pde,r2c2)@Spine + PDE(amp,p~0,pka)@Spine -> PDE(amp!14,p~0,pka)@Spine.AMP(c~C,pde!14,r2c2)@Spine functionRate112()
+	voff44: PDE(amp!14,p~0,pka)@Spine.AMP(c~C,pde!14,r2c2)@Spine -> AMP(c~C,pde,r2c2)@Spine + PDE(amp,p~0,pka)@Spine r114_koff44
+	vcat44: PDE(amp!14,p~0,pka)@Spine.AMP(c~C,pde!14,r2c2)@Spine -> AMP(c~0,pde,r2c2)@Spine + PDE(amp,p~0,pka)@Spine r115_kcat44
+	von45: AMP(c~C,pde,r2c2)@Spine + PDE(amp,p~P,pka)@Spine -> AMP(c~C,pde!14,r2c2)@Spine.PDE(amp!14,p~P,pka)@Spine functionRate115()
+	voff45: AMP(c~C,pde!14,r2c2)@Spine.PDE(amp!14,p~P,pka)@Spine -> AMP(c~C,pde,r2c2)@Spine + PDE(amp,p~P,pka)@Spine r117_koff45
+	vcat45: AMP(c~C,pde!14,r2c2)@Spine.PDE(amp!14,p~P,pka)@Spine -> AMP(c~0,pde,r2c2)@Spine + PDE(amp,p~P,pka)@Spine r118_kcat45
+	v57: Ca(Empty~Empty,pp2)@Spine -> Ca(Empty~0,pp2)@Spine functionRate118()
+	v58: Ca(Empty~0,pp2)@Spine -> Ca(Empty~Empty,pp2)@Spine r120_k58
+	von46: D34_75()@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine -> D34_75_PP2ACa()@Spine functionRate120()
+	von47: D34_75_137()@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine -> D34_75_137_PP2ACa()@Spine functionRate121()
+	vcat47: D34_75_137_PP2ACa()@Spine -> D34_137(cdk5,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine r123_kcat47
+	voff47: D34_75_137_PP2ACa()@Spine -> D34_75_137()@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine r124_koff47
+	vcat46: D34_75_PP2ACa()@Spine -> D34(cdk5,ck1,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine r125_kcat46
+	voff46: D34_75_PP2ACa()@Spine -> D34_75()@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine r126_koff46
+	von48: D75(ck1,pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75!16,d75_137,p~0,pka)@Spine.D75(ck1,pka,pp2!16)@Spine.Ca(Empty~0,pp2!13)@Spine functionRate126()
+	von49: D75_137(pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.D75_137(pka,pp2!19)@Spine functionRate127()
+	vcat49: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.D75_137(pka,pp2!19)@Spine -> D137(cdk5,pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine r129_kcat49
+	voff49: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.D75_137(pka,pp2!19)@Spine -> D75_137(pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine r130_koff49
+	vcat48: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75!16,d75_137,p~0,pka)@Spine.D75(ck1,pka,pp2!16)@Spine.Ca(Empty~0,pp2!13)@Spine -> D(cdk5,ck1,pka)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine r131_kcat48
+	voff48: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75!16,d75_137,p~0,pka)@Spine.D75(ck1,pka,pp2!16)@Spine.Ca(Empty~0,pp2!13)@Spine -> D75(ck1,pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine r132_koff48
+	von50: D34_75()@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine -> D34_75_PP2APCa()@Spine functionRate132()
+	von51: D34_75_137()@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine -> D34_75_137_PP2APCa()@Spine functionRate133()
+	vcat51: D34_75_137_PP2APCa()@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine + D34_137(cdk5,pp2)@Spine r135_kcat51
+	voff51: D34_75_137_PP2APCa()@Spine -> D34_75_137()@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine r136_koff51
+	vcat50: D34_75_PP2APCa()@Spine -> D34(cdk5,ck1,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine r137_kcat50
+	voff50: D34_75_PP2APCa()@Spine -> D34_75()@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine r138_koff50
+	von52: D75(ck1,pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75!16,d75_137,p~P,pka)@Spine.D75(ck1,pka,pp2!16)@Spine.Ca(Empty~0,pp2!13)@Spine functionRate138()
+	von53: D75_137(pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.D75_137(pka,pp2!19)@Spine functionRate139()
+	vcat53: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.D75_137(pka,pp2!19)@Spine -> D137(cdk5,pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine r141_kcat53
+	voff53: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137!19,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine.D75_137(pka,pp2!19)@Spine -> D75_137(pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine r142_koff53
+	vcat52: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75!16,d75_137,p~P,pka)@Spine.D75(ck1,pka,pp2!16)@Spine.Ca(Empty~0,pp2!13)@Spine -> D(cdk5,ck1,pka)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine r143_kcat52
+	voff52: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75!16,d75_137,p~P,pka)@Spine.D75(ck1,pka,pp2!16)@Spine.Ca(Empty~0,pp2!13)@Spine -> D75(ck1,pka,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine r144_koff52
+	von54: Ca(Empty~0,pp2)@Spine + PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine functionRate144()
+	voff54: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine + Ca(Empty~0,pp2)@Spine r146_koff54
+	von55: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka!15)@Spine.PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2!15)@Spine.Ca(Empty~0,pp2!13)@Spine functionRate146()
+	vcat55: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka!15)@Spine.PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2!15)@Spine.Ca(Empty~0,pp2!13)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine r148_kcat55
+	von56: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine + Ca(Empty~0,pp2)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine functionRate148()
+	voff56: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine + Ca(Empty~0,pp2)@Spine r150_koff56
+	vcat56: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~P,pka)@Spine.Ca(Empty~0,pp2!13)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine r151_kcat56
+	voff55: PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka!15)@Spine.PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2!15)@Spine.Ca(Empty~0,pp2!13)@Spine -> PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!13,ca,ca,ca,ck1,d137,d34,d34_137,d75,d75_137,p~0,pka)@Spine.Ca(Empty~0,pp2!13)@Spine + PKA(camp4_r2,d,d137,d75,d75_137,pde,pp2)@Spine r152_koff55
+end reaction rules
+end model

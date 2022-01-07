@@ -1,0 +1,62 @@
+<!---->
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>output/Agent_trace_cAMP.c_.a^</title>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="http://cpettitt.github.io/project/dagre-d3/latest/dagre-d3.min.js" charset="utf-8"></script>
+  <style>
+    dt {float: left; clear: left; width: 20em;}
+    dd {font-weight: bold; margin: 0 0 0 21em;}
+    .node rect {stroke: #333; fill: #fff;}
+    .edgePath path {stroke: #333; fill: #333; stroke-width: 1.5px;}
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1>output/Agent_trace_cAMP.c_.a^</h1>
+  <svg width=960 height=600><g/></svg>
+  <script>
+  // Create a new directed graph
+  var g = new dagreD3.graphlib.Graph().setGraph({});
+  g.setNode(1, { label: "cAMP(c~off,a!free)" });
+  g.setNode(2, { label: "cAMP(c~on,a!PDE@pSite)" });
+  g.setNode(3, { label: "cAMP(c~on,a!R2C2@camp4)" });
+  g.setNode(4, { label: "cAMP(c~on,a!R2C2@camp3)" });
+  g.setNode(5, { label: "cAMP(c~on,a!R2C2@camp2)" });
+  g.setNode(6, { label: "cAMP(c~on,a!R2C2@camp1)" });
+  g.setNode(7, { label: "cAMP(c~on,a!free)" });
+  g.setEdge(6,7,{ label: "115,105,104,103,72,70,68" });
+  g.setEdge(5,7,{ label: "116,108,107,106,78,76,74" });
+  g.setEdge(4,7,{ label: "117,111,110,109,84,82,80" });
+  g.setEdge(3,7,{ label: "118,114,113,112,90,88,86" });
+  g.setEdge(2,7,{ label: "127,124" });
+  g.setEdge(2,1,{ label: "128,125" });
+  g.setEdge(7,6,{ label: "93,92,91,71,69,67" });
+  g.setEdge(7,5,{ label: "96,95,94,77,75,73" });
+  g.setEdge(7,4,{ label: "99,98,97,83,81,79" });
+  g.setEdge(7,3,{ label: "102,101,100,89,87,85" });
+  g.setEdge(7,2,{ label: "126,123" });
+  var svg = d3.select("svg"),inner = svg.select("g");
+  // Set up zoom support
+  var zoom = d3.behavior.zoom().on("zoom", function() {
+  inner.attr("transform", "translate(" + d3.event.translate + ")" +
+  "scale(" + d3.event.scale + ")");
+  });
+  svg.call(zoom);// Create the renderer
+   var render = new dagreD3.render();
+  // Run the renderer. This is what draws the final graph.
+  render(inner, g);
+  // Center the graph
+  var initialScale = 0.75;
+  zoom
+  .translate([(svg.attr("width") - g.graph().width * initialScale) / 2, 20])
+  .scale(initialScale)
+  .event(svg);
+  svg.attr('height', g.graph().height * initialScale + 40);
+  </script>
+  </div>
+</body>
+</html>

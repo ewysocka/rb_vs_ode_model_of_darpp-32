@@ -1,0 +1,80 @@
+# Snapshot [Event: 20080000, Time: 697.985411]
+%init: 4 \
+R2C2(camp1!0,camp2!1,camp3!2,camp4!3,pka1~on,pka2~on),cAMP(a!3,c~on),cAMP(a!0,c~on),cAMP(a!2,c~on),cAMP(a!1,c~on)
+%init: 16 \
+D(s!0,ser137~p,thr34~p,thr75~u),PP2B(ca1!1,ca2!2,ca3!3,ca4!4,state~a!0),Ca2+(a!2),Ca2+(a!4),Ca2+(a!3),Ca2+(a!1)
+%init: 1038 \
+PDE(pSite~u)
+%init: 64 \
+CDK5(a)
+%init: 1 \
+PP2A(ca,pSite~p)
+%init: 10 \
+CK1(pSite~u)
+%init: 22 \
+PP2C(a)
+%init: 3979 \
+cAMP(a,c~off)
+%init: 90 \
+CK1(pSite~p)
+%init: 1 \
+D(s!0,ser137~p,thr34~u,thr75~p),PKA(a!0)
+%init: 1 \
+D(s!0,ser137~p,thr34~u,thr75~p),PP2C(a!0)
+%init: 18 \
+D(s,ser137~p,thr34~u,thr75~p)
+%init: 36 \
+D(s,ser137~p,thr34~u,thr75~u)
+%init: 8 \
+PP2B(ca1!0,ca2!1,ca3!2,ca4!3,state~a),Ca2+(a!2),Ca2+(a!3),Ca2+(a!0),Ca2+(a!1)
+%init: 3994 \
+R2C2(camp1,camp2,camp3,camp4,pka1~off,pka2~off)
+%init: 1 \
+D(s!0,ser137~p,thr34~u,thr75~p),PP2A(ca,pSite~u!0)
+%init: 55 \
+D(s!0,ser137~p,thr34~p,thr75~u),CDK5(a!0)
+%init: 1 \
+PP2A(ca,pSite~u!0),PKA(a!0)
+%init: 39 \
+D(s!0,ser137~p,thr34~p,thr75~u),PP2C(a!0)
+%init: 1 \
+R2C2(camp1!0,camp2,camp3,camp4,pka1~off,pka2~off),cAMP(a!0,c~on)
+%init: 986 \
+D(s,ser137~p,thr34~p,thr75~p)
+%init: 1 \
+R2C2(camp1!0,camp2!1,camp3!2,camp4!3,pka1~on,pka2~off),cAMP(a!3,c~on),cAMP(a!1,c~on),cAMP(a!0,c~on),cAMP(a!2,c~on)
+%init: 77 \
+PP2B(ca1,ca2,ca3,ca4,state~i)
+%init: 1808 \
+D(s,ser137~p,thr34~p,thr75~u)
+%init: 1 \
+PDE(pSite~u!0),PKA(a!0)
+%init: 1 \
+D(s!0,ser137~p,thr34~u,thr75~u),PP2C(a!0)
+%init: 20 \
+D(s!0,ser137~p,thr34~p,thr75~p),PP2A(ca,pSite~u!0)
+%init: 97 \
+PP2A(ca,pSite~u)
+%init: 5 \
+Ca2+(a)
+%init: 18 \
+PP2B(ca1!0,ca2!1,ca3,ca4,state~i),Ca2+(a!1),Ca2+(a!0)
+%init: 17 \
+PP2B(ca1,ca2!0,ca3!1,ca4,state~i),Ca2+(a!0),Ca2+(a!1)
+%init: 23 \
+PP2B(ca1,ca2!0,ca3,ca4!1,state~i),Ca2+(a!0),Ca2+(a!1)
+%init: 14 \
+PP2B(ca1!0,ca2,ca3!1,ca4,state~i),Ca2+(a!0),Ca2+(a!1)
+%init: 15 \
+PP2B(ca1,ca2,ca3!0,ca4!1,state~i),Ca2+(a!0),Ca2+(a!1)
+%init: 12 \
+PP2B(ca1!0,ca2,ca3,ca4!1,state~i),Ca2+(a!0),Ca2+(a!1)
+%init: 6 \
+PKA(a)
+%init: 17 \
+D(s!0,ser137~p,thr34~p,thr75~p),PP2C(a!0)
+%init: 165 \
+PDE(pSite~p)
+%init: 1 \
+D(s!0,ser137~p,thr34~u,thr75~u),CDK5(a!0)
+# End snapshot

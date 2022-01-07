@@ -1,0 +1,18 @@
+# Snapshot [Event: 0, Time: 0.000234]
+%init: 1204 \
+PDE(pSite~u)
+%init: 120 \
+CDK5(a)
+%init: 100 \
+CK1(pSite~u)
+%init: 80 \
+PP2C(a)
+%init: 3000 \
+D(s,ser137~u,thr34~u,thr75~u)
+%init: 120 \
+PP2A(ca,pSite~u)
+%init: 4000 \
+R2C2(camp1,camp2,camp3,camp4,pka1~off,pka2~off)
+%init: 200 \
+PP2B(ca1,ca2,ca3,ca4,state~i)
+# End snapshot

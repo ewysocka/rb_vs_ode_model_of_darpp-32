@@ -1,0 +1,20 @@
+%def: "dumpIfDeadlocked" "yes"
+
+%mod: [T]=200 do $ADD 4000 cAMP(a, c~on)
+%mod: [T]=220 do $ADD 4000 cAMP(a, c~on)
+%mod: [T]=240 do $ADD 4000 cAMP(a, c~on)
+%mod: [T]=260 do $ADD 4000 cAMP(a, c~on)
+%mod: [T]=280 do $ADD 4000 cAMP(a, c~on)
+%mod: [T]=300 do $ADD 4000 cAMP(a, c~on)
+%mod: [T]=320 do $ADD 4000 cAMP(a, c~on)
+%mod: [T]=340 do $ADD 4000 cAMP(a, c~on)
+
+
+%mod: [T]=200 do $ADD 2400 Ca2+(a) 
+%mod: [T]=220 do $ADD 2400 Ca2+(a)
+%mod: [T]=240 do $ADD 2400 Ca2+(a) 
+%mod: [T]=260 do $ADD 2400 Ca2+(a) 
+%mod: [T]=280 do $ADD 2400 Ca2+(a)
+%mod: [T]=300 do $ADD 2400 Ca2+(a) 
+%mod: [T]=320 do $ADD 2400 Ca2+(a) 
+%mod: [T]=340 do $ADD 2400 Ca2+(a)

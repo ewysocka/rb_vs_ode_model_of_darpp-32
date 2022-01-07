@@ -1,0 +1,119 @@
+##............ FIFTH VERSION OF THE MODEL -------------
+## --  DARPP-32 phosphorylation   --
+## DARPP-32 | Thr75 | CDK5 
+D(thr75~u  ),CDK5(a  ) <-> D(thr75~u!1),CDK5(a!1)   @ 'kon1','koff1'
+D(thr75~u!1),CDK5(a!1)  -> D(thr75~p  ),CDK5(a  )   @ 'kcat1'
+## DARPP-32 | Ser137 | CK1
+D(ser137~u  ),CK1(pSite~u  ) <-> D(ser137~u!1),CK1(pSite~u!1)   @ 'kon2','koff2'
+D(ser137~u!1),CK1(pSite~u!1)  -> D(ser137~p  ),CK1(pSite~u  )   @ 'kcat2'
+## DARPP-32 | Thr34 | PKA
+D(thr34~u  ),PKA(a  ) <-> D(thr34~u!1),PKA(a!1)   @ 'kon3','koff3'
+D(thr34~u!1),PKA(a!1)  -> D(thr34~p  ),PKA(a  )   @ 'kcat3'
+## --  DARPP-32 dephosphorylation   --
+## DARPP-32 | Thr34 | PP2B
+D(thr34~p  ,thr75~u  ,ser137~u  ),PP2B(state~a  ) <-> D(thr34~p!1,thr75~u  ,ser137~u  ),PP2B(state~a!1)   @ 'kon6','koff6'
+D(thr34~p  ,thr75~p  ,ser137~u  ),PP2B(state~a  ) <-> D(thr34~p!1,thr75~p  ,ser137~u  ),PP2B(state~a!1)   @ 'kon6','koff17'
+D(thr34~p!1,ser137~u  ),PP2B(state~a!1)  -> D(thr34~u,ser137~u  ),PP2B(state~a  )   @ 'kcat6'
+D(thr34~p  ,thr75~u  ,ser137~p  ),PP2B(state~a  ) <-> D(thr34~p!1,thr75~u  ,ser137~p  ),PP2B(state~a!1)   @ 'kon19','koff19'
+D(thr34~p  ,thr75~p  ,ser137~p  ),PP2B(state~a  ) <-> D(thr34~p!1,thr75~p  ,ser137~p  ),PP2B(state~a!1)   @ 'kon19','koff27'
+D(thr34~p!1,ser137~p  ),PP2B(state~a!1)  -> D(thr34~u  ,ser137~p  ),PP2B(state~a  )   @ 'kcat19'
+## DARPP-32 Ser137
+D(ser137~p  ),PP2C(a  ) <-> D(ser137~p!1),PP2C(a!1)   @ 'kon13','koff13'
+D(ser137~p!1),PP2C(a!1)  -> D(ser137~u  ),PP2C(a  )   @ 'kcat13'
+## DARPP-32 Thr75 PP2A
+D(thr75~p  ),PP2A(pSite~u  ) -> D(thr75~p!1),PP2A(pSite~u!1)   @ 'kon9'
+D(thr75~p!1),PP2A(pSite~u!1,ca) -> D(thr75~p  ),PP2A(pSite~u  ,ca)  @ 'koff9'
+D(thr75~p!1),PP2A(pSite~u!1)  -> D(thr75~u  ),PP2A(pSite~u  )   @ 'kcat9'
+D(thr75~p  ),PP2A(pSite~p  ) -> D(thr75~p!1),PP2A(pSite~p!1)   @ 'kon10'
+D(thr75~p!1),PP2A(pSite~p!1,ca) -> D(thr75~p  ),PP2A(pSite~p  ,ca) @ 'koff10'
+D(thr75~p!1),PP2A(pSite~p!1)  -> D(thr75~u  ),PP2A(pSite~p  )   @ 'kcat10'
+## --  CK1 phosphorylation   --
+CK1(pSite~p  ),PP2B(state~a  ) <-> CK1(pSite~p!1),PP2B(state~a!1)  @ 'kon29','koff29'
+CK1(pSite~p!1),PP2B(state~a!1)  -> CK1(pSite~u  ),PP2B(state~a  )  @ 'kcat29'
+CK1(pSite~u  )                  -> CK1(pSite~p  )                  @ 'kcat30'
+## --  PDE phosphorylation   --
+PDE(pSite~u  ),PKA(a  ) <-> PDE(pSite~u!1),PKA(a!1) @ 'kon31','koff31'
+PDE(pSite~u!1),PKA(a!1)  -> PDE(pSite~p  ),PKA(a  ) @ 'kcat31'
+PDE(pSite~p  )           -> PDE(pSite~u  )          @ 'kcat32'
+## --  PP2A phosphorylation   --
+# rules with and without calcium bound to PP2A
+PP2A(pSite~u  ),PKA(a  ) <-> PP2A(pSite~u!1),PKA(a!1) @ 'kon33','koff33'
+PP2A(pSite~u!1),PKA(a!1)  -> PP2A(pSite~p  ),PKA(a  ) @ 'kcat33'
+PP2A(pSite~p  )           -> PP2A(pSite~u  )          @ 'kcat34'
+## --  PP2B activation   --
+PP2B(ca1  , ca2  , ca3  ,ca4  , state~i),Ca2+(a  ),Ca2+(a  ) <-> PP2B(ca1!1, ca2!2, ca3  ,ca4  , state~i),Ca2+(a!1),Ca2+(a!2) @ 'kon35','koff35'
+PP2B(ca1  , ca2  , ca3  ,ca4  , state~i),Ca2+(a  ),Ca2+(a  ) <-> PP2B(ca1!1, ca2  , ca3!2,ca4  , state~i),Ca2+(a!1),Ca2+(a!2) @ 'kon35','koff35'
+PP2B(ca1  , ca2  , ca3  ,ca4  , state~i),Ca2+(a  ),Ca2+(a  ) <-> PP2B(ca1!1, ca2  , ca3  ,ca4!2, state~i),Ca2+(a!1),Ca2+(a!2) @ 'kon35','koff35'
+PP2B(ca1  , ca2  , ca3  ,ca4  , state~i),Ca2+(a  ),Ca2+(a  ) <-> PP2B(ca1  , ca2!1, ca3!2,ca4  , state~i),Ca2+(a!1),Ca2+(a!2) @ 'kon35','koff35'
+PP2B(ca1  , ca2  , ca3  ,ca4  , state~i),Ca2+(a  ),Ca2+(a  ) <-> PP2B(ca1  , ca2!1, ca3  ,ca4!2, state~i),Ca2+(a!1),Ca2+(a!2) @ 'kon35','koff35'
+PP2B(ca1  , ca2  , ca3  ,ca4  , state~i),Ca2+(a  ),Ca2+(a  ) <-> PP2B(ca1  , ca2  , ca3!1,ca4!2, state~i),Ca2+(a!1),Ca2+(a!2) @ 'kon35','koff35'
+PP2B(ca1!_, ca2!_, ca3  ,ca4  , state~i),Ca2+(a  ),Ca2+(a  ) <-> PP2B(ca1!_, ca2!_, ca3!1,ca4!2, state~a),Ca2+(a!1),Ca2+(a!2) @ 'kon36','koff36'
+PP2B(ca1!_, ca2  , ca3!_,ca4  , state~i),Ca2+(a  ),Ca2+(a  ) <-> PP2B(ca1!_, ca2!1, ca3!_,ca4!2, state~a),Ca2+(a!1),Ca2+(a!2) @ 'kon36','koff36'
+PP2B(ca1!_, ca2  , ca3  ,ca4!_, state~i),Ca2+(a  ),Ca2+(a  ) <-> PP2B(ca1!_, ca2!1, ca3!2,ca4!_, state~a),Ca2+(a!1),Ca2+(a!2) @ 'kon36','koff36'
+PP2B(ca1  , ca2!_, ca3!_,ca4  , state~i),Ca2+(a  ),Ca2+(a  ) <-> PP2B(ca1!1, ca2!_, ca3!_,ca4!2, state~a),Ca2+(a!1),Ca2+(a!2) @ 'kon36','koff36'
+PP2B(ca1  , ca2!_, ca3  ,ca4!_, state~i),Ca2+(a  ),Ca2+(a  ) <-> PP2B(ca1!1, ca2!_, ca3!2,ca4!_, state~a),Ca2+(a!1),Ca2+(a!2) @ 'kon36','koff36'
+PP2B(ca1  , ca2  , ca3!_,ca4!_, state~i),Ca2+(a  ),Ca2+(a  ) <-> PP2B(ca1!1, ca2!2, ca3!_,ca4!_, state~a),Ca2+(a!1),Ca2+(a!2) @ 'kon36','koff36'
+## --  PKA activation   --
+# four bonds
+R2C2(camp1  ,camp2!_,camp3!_,camp4!_,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!1,camp2!_,camp3!_,camp4!_,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon40','koff40'
+R2C2(camp1!_,camp2  ,camp3!_,camp4!_,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!_,camp2!1,camp3!_,camp4!_,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon40','koff40'
+R2C2(camp1!_,camp2!_,camp3  ,camp4!_,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!_,camp2!_,camp3!1,camp4!_,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon40','koff40'
+R2C2(camp1!_,camp2!_,camp3!_,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!_,camp2!_,camp3!_,camp4!1,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon40','koff40'
+# three bonds
+R2C2(camp1  ,camp2!_,camp3!_,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!1,camp2!_,camp3!_,camp4  ,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon39','koff39'
+R2C2(camp1  ,camp2!_,camp3  ,camp4!_,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!1,camp2!_,camp3  ,camp4!_,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon39','koff39'
+R2C2(camp1  ,camp2  ,camp3!_,camp4!_,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!1,camp2  ,camp3!_,camp4!_,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon39','koff39'
+R2C2(camp1!_,camp2  ,camp3!_,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!_,camp2!1,camp3!_,camp4  ,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon39','koff39'
+R2C2(camp1!_,camp2  ,camp3  ,camp4!_,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!_,camp2!1,camp3  ,camp4!_,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon39','koff39'
+R2C2(camp1  ,camp2  ,camp3!_,camp4!_,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1  ,camp2!1,camp3!_,camp4!_,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon39','koff39'
+R2C2(camp1!_,camp2!_,camp3  ,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!_,camp2!_,camp3!1,camp4  ,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon39','koff39'
+R2C2(camp1  ,camp2!_,camp3  ,camp4!_,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1  ,camp2!_,camp3!1,camp4!_,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon39','koff39'
+R2C2(camp1!_,camp2  ,camp3  ,camp4!_,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!_,camp2  ,camp3!1,camp4!_,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon39','koff39'
+R2C2(camp1!_,camp2!_,camp3  ,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!_,camp2!_,camp3  ,camp4!1,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon39','koff39'
+R2C2(camp1  ,camp2!_,camp3!_,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1  ,camp2!_,camp3!_,camp4!1,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon39','koff39'
+R2C2(camp1!_,camp2  ,camp3!_,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!_,camp2  ,camp3!_,camp4!1,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon39','koff39'
+# two bonds
+R2C2(camp1  ,camp2!_,camp3  ,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!1,camp2!_,camp3  ,camp4  ,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon38','koff38'
+R2C2(camp1  ,camp2  ,camp3!_,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!1,camp2  ,camp3!_,camp4  ,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon38','koff38'
+R2C2(camp1  ,camp2  ,camp3  ,camp4!_,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!1,camp2  ,camp3  ,camp4!_,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon38','koff38'
+R2C2(camp1!_,camp2  ,camp3  ,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!_,camp2!1,camp3  ,camp4  ,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon38','koff38'
+R2C2(camp1  ,camp2  ,camp3!_,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1  ,camp2!1,camp3!_,camp4  ,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon38','koff38'
+R2C2(camp1  ,camp2  ,camp3  ,camp4!_,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1  ,camp2!1,camp3  ,camp4!_,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon38','koff38'
+R2C2(camp1!_,camp2  ,camp3  ,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!_,camp2  ,camp3!1,camp4  ,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon38','koff38'
+R2C2(camp1  ,camp2!_,camp3  ,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1  ,camp2!_,camp3!1,camp4  ,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon38','koff38'
+R2C2(camp1  ,camp2  ,camp3  ,camp4!_,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1  ,camp2  ,camp3!1,camp4!_,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon38','koff38'
+R2C2(camp1!_,camp2  ,camp3  ,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!_,camp2  ,camp3  ,camp4!1,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon38','koff38'
+R2C2(camp1  ,camp2!_,camp3  ,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1  ,camp2!_,camp3  ,camp4!1,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon38','koff38'
+R2C2(camp1  ,camp2  ,camp3!_,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1  ,camp2  ,camp3!_,camp4!1,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon38','koff38'
+# singel bond
+R2C2(camp1  ,camp2  ,camp3  ,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1!1,camp2  ,camp3  ,camp4  ,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon37','koff37'
+R2C2(camp1  ,camp2  ,camp3  ,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1  ,camp2!1,camp3  ,camp4  ,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon37','koff37'
+R2C2(camp1  ,camp2  ,camp3  ,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1  ,camp2  ,camp3!1,camp4  ,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon37','koff37'
+R2C2(camp1  ,camp2  ,camp3  ,camp4  ,pka1~off,pka2~off),cAMP(a  ,c~on) <-> R2C2(camp1  ,camp2  ,camp3  ,camp4!1,pka1~off,pka2~off),cAMP(a!1,c~on) @ 'kon37','koff37'
+# PKA appearance
+# R2C2(camp1!_,camp2!_,camp3!_,camp4!_,pka1~on,pka2~off),PKA(a  ) <-> R2C2(camp1!_,camp2!_,camp3!_,camp4!_,pka1~off,pka2~off) @ 'kon41','koff41'
+# R2C2(camp1!_,camp2!_,camp3!_,camp4!_,pka1~off,pka2~on),PKA(a  ) <-> R2C2(camp1!_,camp2!_,camp3!_,camp4!_,pka1~off,pka2~off) @ 'kon41','koff41'
+# R2C2(camp1!_,camp2!_,camp3!_,camp4!_,pka1~on,pka2~on),PKA(a  ) <-> R2C2(camp1!_,camp2!_,camp3!_,camp4!_,pka1~on,pka2~off) @ 'kon41','koff41'
+# R2C2(camp1!_,camp2!_,camp3!_,camp4!_,pka1~on,pka2~on),PKA(a  ) <-> R2C2(camp1!_,camp2!_,camp3!_,camp4!_,pka1~off,pka2~on) @ 'kon41','koff41'
+# would it make change ?!?
+R2C2(camp1!_,camp2!_,camp3!_,camp4!_,pka1~off,pka2~off) <-> R2C2(camp1!_,camp2!_,camp3!_,camp4!_,pka1~on,pka2~off),PKA(a  )  @ 'koff41', 'kon41'
+R2C2(camp1!_,camp2!_,camp3!_,camp4!_,pka1~on ,pka2~off) <-> R2C2(camp1!_,camp2!_,camp3!_,camp4!_,pka1~on,pka2~on ),PKA(a  )  @ 'koff41', 'kon41'
+R2C2(camp1!_,camp2!_,camp3!_,camp4!_,pka2~off,pka1~off) <-> R2C2(camp1!_,camp2!_,camp3!_,camp4!_,pka2~on,pka1~off),PKA(a  )  @ 'koff41', 'kon41'
+R2C2(camp1!_,camp2!_,camp3!_,camp4!_,pka2~on ,pka1~off) <-> R2C2(camp1!_,camp2!_,camp3!_,camp4!_,pka2~on,pka1~on ),PKA(a  )  @ 'koff41', 'kon41'
+
+## --  cAMP degradation   --
+cAMP(a  ,c~on),PDE(pSite~u  ) <-> cAMP(a!1,c~on),PDE(pSite~u!1) @ 'kon44','koff44'
+cAMP(a!1,c~on),PDE(pSite~u!1)  -> cAMP(a  ,c~off),PDE(pSite~u  ) @ 'kcat44' 
+cAMP(a  ,c~on),PDE(pSite~p  ) <-> cAMP(a!1,c~on),PDE(pSite~p!1) @ 'kon45','koff45'
+cAMP(a!1,c~on),PDE(pSite~p!1)  -> cAMP(a  ,c~off),PDE(pSite~p  ) @ 'kcat45' 
+## Calcium in and out
+   	<-> Ca2+(a)  @ 'k57','k58'
+## --  PP2A activation  by Ca2+  --  B MODEL  --
+## DARPP-32 | Thr75 | PP2A.Ca2+ & PP2Ap.Ca2+
+D(thr75~p!1),PP2A(pSite~u!1,ca!_) -> D(thr75~p  ),PP2A(pSite~u  ,ca!_) @ 'koff46'
+D(thr75~p!1),PP2A(pSite~u!1,ca!_) -> D(thr75~p  ),PP2A(pSite~p  ,ca!_) @ 'koff50'
+## PP2A to Ca2+
+PP2A(ca  ),Ca2+(a  ) <-> PP2A(ca!1),Ca2+(a!1) @ 'kon54','koff54'
+PP2A(ca  ),Ca2+(a  ) <-> PP2A(ca!1),Ca2+(a!1) @ 'kon54','koff54'
+
+### 111 - 24 = 87 

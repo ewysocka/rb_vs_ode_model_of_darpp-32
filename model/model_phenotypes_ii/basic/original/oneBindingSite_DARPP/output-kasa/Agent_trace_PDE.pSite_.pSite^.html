@@ -1,0 +1,59 @@
+<!---->
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>output/Agent_trace_PDE.pSite_.pSite^</title>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="http://cpettitt.github.io/project/dagre-d3/latest/dagre-d3.min.js" charset="utf-8"></script>
+  <style>
+    dt {float: left; clear: left; width: 20em;}
+    dd {font-weight: bold; margin: 0 0 0 21em;}
+    .node rect {stroke: #333; fill: #fff;}
+    .edgePath path {stroke: #333; fill: #333; stroke-width: 1.5px;}
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1>output/Agent_trace_PDE.pSite_.pSite^</h1>
+  <svg width=960 height=600><g/></svg>
+  <script>
+  // Create a new directed graph
+  var g = new dagreD3.graphlib.Graph().setGraph({});
+  g.setNode(1, { label: "", style: "visibility:hidden", width: "0", height: "0" });
+  g.setNode(2, { label: "PDE(pSite~p,pSite!cAMP@a)" });
+  g.setNode(3, { label: "PDE(pSite~u,pSite!cAMP@a)" });
+  g.setNode(4, { label: "PDE(pSite~p,pSite!free)" });
+  g.setNode(5, { label: "PDE(pSite~u,pSite!PKA@a)" });
+  g.setNode(6, { label: "PDE(pSite~u,pSite!free)" });
+  g.setEdge(1,6,{ label: "" });
+  g.setEdge(5,6,{ label: "36" });
+  g.setEdge(5,4,{ label: "37" });
+  g.setEdge(2,4,{ label: "128,127" });
+  g.setEdge(3,6,{ label: "125,124" });
+  g.setEdge(6,5,{ label: "35" });
+  g.setEdge(6,3,{ label: "123" });
+  g.setEdge(4,2,{ label: "126" });
+  g.setEdge(4,6,{ label: "38" });
+  var svg = d3.select("svg"),inner = svg.select("g");
+  // Set up zoom support
+  var zoom = d3.behavior.zoom().on("zoom", function() {
+  inner.attr("transform", "translate(" + d3.event.translate + ")" +
+  "scale(" + d3.event.scale + ")");
+  });
+  svg.call(zoom);// Create the renderer
+   var render = new dagreD3.render();
+  // Run the renderer. This is what draws the final graph.
+  render(inner, g);
+  // Center the graph
+  var initialScale = 0.75;
+  zoom
+  .translate([(svg.attr("width") - g.graph().width * initialScale) / 2, 20])
+  .scale(initialScale)
+  .event(svg);
+  svg.attr('height', g.graph().height * initialScale + 40);
+  </script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+INFO:LAE004:D34:D34_75:added induced naming convention
+INFO:LAE004:D34:D34_137:added induced naming convention
+INFO:LAE004:CK1:CK1P:added induced naming convention
+INFO:LAE004:AMP:cAMP:added induced naming convention
+INFO:LAE004:D75:D34_75:added induced naming convention
+INFO:LAE004:D137:D75_137:added induced naming convention
+WARNING:ATO114:Definition conflict between binding information [['cAMP4_R2', 'PKA']] and lexical analyis cAMP4_R2 for molecule cAMP4_R2C,    choosing binding
+INFO:LAE006:PP2A:PP2C:can be mapped together through new common molecule PP2 by existing naming conventions
+INFO:LAE006:PP2Binactive:PP2C:can be mapped together through new common molecule PP2 by existing naming conventions
+ERROR:SCT211:D34_75:[['D34'], ['D75']]:[['D34'], ['D75']]:Cannot converge to solution, conflicting definitions 
+ERROR:SCT211:D75_137:[['D137'], ['D75']]:[['D137'], ['D75']]:Cannot converge to solution, conflicting definitions
+ERROR:SCT211:D34_137:[['D34'], ['D137']]:[['D34'], ['D137']]:Cannot converge to solution, conflicting definitions
+INFO:SCT001:D_PKA:Using lexical analysis since stoichiometry gives non-consistent information naming(['D', 'PKA'])!=stoichiometry([['D', 'PKA'], ['D34', 'PKA']])
+INFO:SCT001:D_CK1:Using lexical analysis since stoichiometry gives non-consistent information naming(['CK1', 'D'])!=stoichiometry([['CK1', 'D'], ['CK1', 'D137']])
+INFO:SCT001:D_CDK5:Using lexical analysis since stoichiometry gives non-consistent information naming(['CDK5', 'D'])!=stoichiometry([['CDK5', 'D'], ['CDK5', 'D75']])
+ERROR:SCT211:D34_75_PP2A:[['D34_75', 'PP2A'], ['D34', 'PP2A']]:[['D34_75', 'PP2'], ['D34', 'PP2']]:Cannot converge to solution, conflicting definitions
+INFO:SCT001:D75_PP2A:Using lexical analysis since stoichiometry gives non-consistent information naming(['D75', 'PP2A'])!=stoichiometry([['D75', 'PP2A'], ['D', 'PP2A']])
+INFO:SCT001:D137_PP2C:Using lexical analysis since stoichiometry gives non-consistent information naming(['D137', 'PP2C'])!=stoichiometry([['D137', 'PP2C'], ['D', 'PP2C']])
+INFO:SCT001:D34_CK1:Using lexical analysis since stoichiometry gives non-consistent information naming(['CK1', 'D34'])!=stoichiometry([['CK1', 'D34'], ['CK1', 'D34_137']])
+INFO:SCT001:D75_CK1:Using lexical analysis since stoichiometry gives non-consistent information naming(['CK1', 'D75'])!=stoichiometry([['CK1', 'D75'], ['CK1', 'D75_137']])
+INFO:SCT001:D75_PKA:Using lexical analysis since stoichiometry gives non-consistent information naming(['D75', 'PKA'])!=stoichiometry([['D75', 'PKA'], ['D34_75', 'PKA']])
+INFO:SCT001:D34_CDK5:Using lexical analysis since stoichiometry gives non-consistent information naming(['CDK5', 'D34'])!=stoichiometry([['CDK5', 'D34'], ['CDK5', 'D34_75']])
+INFO:SCT001:D137_PKA:Using lexical analysis since stoichiometry gives non-consistent information naming(['D137', 'PKA'])!=stoichiometry([['D137', 'PKA'], ['D34_137', 'PKA']])
+INFO:SCT001:D137_CDK5:Using lexical analysis since stoichiometry gives non-consistent information naming(['CDK5', 'D137'])!=stoichiometry([['CDK5', 'D137'], ['CDK5', 'D75_137']])
+WARNING:SCT113:PP2APCa:candidates:[['Ca', 'PP2AP'], ['Ca', 'PP2A']]:agree on the basic components but naming conventions cannot determine  specific modifications. Selecting:['Ca', 'PP2AP']:based on longest partial match
+ERROR:SCT211:D34_75_137:[['D34_137'], ['D34_75'], ['D75_137']]:[['D34_137'], ['D34_75'], ['D75_137']]:Cannot converge to solution, conflicting definitions
+INFO:SCT001:D75_137_PP2C:Using lexical analysis since stoichiometry gives non-consistent information naming(['D75_137', 'PP2C'])!=stoichiometry([['D75_137', 'PP2C'], ['D75', 'PP2C']])
+INFO:SCT001:D34_137_PP2C:Using lexical analysis since stoichiometry gives non-consistent information naming(['D34_137', 'PP2C'])!=stoichiometry([['D34_137', 'PP2C'], ['D34', 'PP2C']])
+ERROR:SCT211:cAMP4_R2C2:[['cAMP', 'cAMP', 'cAMP', 'cAMP', 'R2C2'], ['PKA', 'PKA', 'cAMP4_R2']]:[['AMP', 'AMP', 'AMP', 'AMP', 'R2C2'], ['PKA', 'PKA', 'cAMP4_R2']]:Cannot converge to solution, conflicting definitions
+ERROR:SCT211:D34_75_PP2ACa:[['Ca', 'D34_75', 'PP2A'], ['Ca', 'D34', 'PP2A']]:[['Ca', 'D34_75', 'PP2'], ['Ca', 'D34', 'PP2']]:Cannot converge to solution, conflicting definitions
+ERROR:SCT211:D34_75_CK1:[['CK1', 'D34_75'], ['CK1', 'D34_75_137']]:[['CK1', 'D34_75'], ['CK1', 'D34_75_137']]:Cannot converge to solution, conflicting definitions
+ERROR:SCT211:D34_75_PP2AP:[['D34_75', 'PP2AP'], ['D34', 'PP2AP'], ['D34_75_PP2A']]:[['D34_75', 'PP2'], ['D34', 'PP2'], ['D34_75_PP2A']]:Cannot converge to solution, conflicting definitions
+ERROR:SCT211:D34_75_137_PP2A:[['D34_75_137', 'PP2A'], ['D34_137', 'PP2A']]:[['D34_75_137', 'PP2'], ['D34_137', 'PP2']]:Cannot converge to solution, conflicting definitions
+INFO:SCT001:D75_PP2AP:Using lexical analysis since stoichiometry gives non-consistent information naming(['D75', 'PP2AP'])!=stoichiometry([['D75', 'PP2AP'], ['D', 'PP2AP'], ['D75', 'PP2A']])
+INFO:SCT001:D75_PP2ACa:Using lexical analysis since stoichiometry gives non-consistent information naming(['D75', 'PP2ACa'])!=stoichiometry([['Ca', 'D75', 'PP2A'], ['Ca', 'D', 'PP2A']])
+INFO:SCT001:D34_PP2B:Using lexical analysis since stoichiometry gives non-consistent information naming(['D34', 'PP2B'])!=stoichiometry([['Ca', 'Ca', 'Ca', 'Ca', 'D34', 'PP2Binactive'], ['Ca', 'Ca', 'Ca', 'Ca', 'D', 'PP2Binactive']])
+INFO:SCT001:D75_137_PKA:Using lexical analysis since stoichiometry gives non-consistent information naming(['D75_137', 'PKA'])!=stoichiometry([['D75_137', 'PKA'], ['D34_75_137', 'PKA']])
+INFO:SCT001:D75_137_PP2A:Using lexical analysis since stoichiometry gives non-consistent information naming(['D75_137', 'PP2A'])!=stoichiometry([['D75_137', 'PP2A'], ['D137', 'PP2A'], ['D75', 'PP2A']])
+ERROR:SCT211:D34_75_137_PP2ACa:[['Ca', 'D34_75_137', 'PP2A'], ['Ca', 'D34_137', 'PP2A']]:[['Ca', 'D34_75_137', 'PP2'], ['Ca', 'D34_137', 'PP2']]:Cannot converge to solution, conflicting definitions
+INFO:SCT001:D34_137_CDK5:Using lexical analysis since stoichiometry gives non-consistent information naming(['CDK5', 'D34_137'])!=stoichiometry([['CDK5', 'D34_137'], ['CDK5', 'D34_75_137'], ['CDK5', 'D34']])
+ERROR:SCT211:D34_75_137_PP2C:[['D34_75_137', 'PP2C'], ['D34_75', 'PP2C'], ['D34_137', 'PP2C']]:[['D34_75_137', 'PP2'], ['D34_75', 'PP2'], ['D34_137', 'PP2']]:Cannot converge to solution, conflicting definitions
+ERROR:SCT211:D34_75_137_PP2AP:[['D34_137', 'PP2AP'], ['D34_75_137', 'PP2AP'], ['D34_75_137_PP2A']]:[['D34_137', 'PP2'], ['D34_75_137', 'PP2'], ['D34_75_137_PP2A']]:Cannot converge to solution, conflicting definitions
+ERROR:SCT211:D34_75_PP2B:[['Ca', 'Ca', 'Ca', 'Ca', 'D34_75', 'PP2Binactive'], ['Ca', 'Ca', 'Ca', 'Ca', 'D75', 'PP2Binactive'], ['Ca', 'Ca', 'Ca', 'Ca', 'D34', 'PP2Binactive']]:[['Ca', 'Ca', 'Ca', 'Ca', 'D34_75', 'PP2'], ['Ca', 'Ca', 'Ca', 'Ca', 'D75', 'PP2'], ['Ca', 'Ca', 'Ca', 'Ca', 'D34', 'PP2']]:Cannot converge to solution, conflicting definitions
+ERROR:SCT211:D34_75_PP2APCa:[['Ca', 'D34_75', 'PP2AP'], ['Ca', 'D34', 'PP2AP'], ['D34_75_PP2ACa']]:[['Ca', 'D34_75', 'PP2'], ['Ca', 'D34', 'PP2'], ['D34_75_PP2ACa']]:Cannot converge to solution, conflicting definitions
+INFO:SCT001:D75_137_PP2ACa:Using lexical analysis since stoichiometry gives non-consistent information naming(['D75_137', 'PP2ACa'])!=stoichiometry([['Ca', 'D75_137', 'PP2A'], ['Ca', 'D137', 'PP2A'], ['Ca', 'D75', 'PP2A']])
+INFO:SCT001:D34_137_PP2B:Using lexical analysis since stoichiometry gives non-consistent information naming(['D34_137', 'PP2B'])!=stoichiometry([['Ca', 'Ca', 'Ca', 'Ca', 'D34_137', 'PP2Binactive'], ['Ca', 'Ca', 'Ca', 'Ca', 'D137', 'PP2Binactive'], ['Ca', 'Ca', 'Ca', 'Ca', 'D34', 'PP2Binactive']])
+INFO:SCT001:D75_PP2APCa:Using lexical analysis since stoichiometry gives non-consistent information naming(['D75', 'PP2APCa'])!=stoichiometry([['Ca', 'D75', 'PP2AP'], ['Ca', 'D', 'PP2AP'], ['Ca', 'D75', 'PP2A']])
+INFO:SCT001:D75_137_PP2AP:Using lexical analysis since stoichiometry gives non-consistent information naming(['D75_137', 'PP2AP'])!=stoichiometry([['D75_137', 'PP2AP'], ['D137', 'PP2AP'], ['D75_137', 'PP2A'], ['D75', 'PP2AP']])
+ERROR:SCT211:D34_75_137_PP2B:[['Ca', 'Ca', 'Ca', 'Ca', 'D34_75_137', 'PP2Binactive'], ['Ca', 'Ca', 'Ca', 'Ca', 'D75_137', 'PP2Binactive'], ['Ca', 'Ca', 'Ca', 'Ca', 'D34_137', 'PP2Binactive']]:[['Ca', 'Ca', 'Ca', 'Ca', 'D34_75_137', 'PP2'], ['Ca', 'Ca', 'Ca', 'Ca', 'D75_137', 'PP2'], ['Ca', 'Ca', 'Ca', 'Ca', 'D34_137', 'PP2']]:Cannot converge to solution, conflicting definitions
+ERROR:SCT211:D34_75_137_PP2APCa:[['Ca', 'D34_75_137', 'PP2AP'], ['Ca', 'D34_137', 'PP2AP'], ['D34_75_137_PP2ACa'], ['D34_75_PP2APCa']]:[['Ca', 'D34_75_137', 'PP2'], ['Ca', 'D34_137', 'PP2'], ['D34_75_137_PP2ACa'], ['D34_75_PP2APCa']]:Cannot converge to solution, conflicting definitions
+INFO:SCT001:D75_137_PP2APCa:Using lexical analysis since stoichiometry gives non-consistent information naming(['D75_137', 'PP2APCa'])!=stoichiometry([['Ca', 'D75_137', 'PP2AP'], ['Ca', 'D137', 'PP2AP'], ['Ca', 'D75_137', 'PP2A'], ['Ca', 'D75', 'PP2AP']])
+WARNING:LAE002:adding forced transformation: PP2:PP2:PP2A
+WARNING:LAE002:adding forced transformation: Ca:Ca:Empty
+WARNING:LAE002:adding forced transformation: PP2:PP2:PP2Binactive
+WARNING:LAE002:adding forced transformation: PP2:PP2A:PP2AP
+DEBUG:ATO003:We don't know how ['Ca', 'PP2']-['D34'] binds together in complex D34_PP2B. Not atomizing
+DEBUG:ATO003:We don't know how ['Ca', 'PP2']-['CK1'] binds together in complex CK1P_PP2B. Not atomizing
+ERROR:ATO202:['D34_PP2B']:(('Ca', 'D34'), ('D34', 'PP2')):We need information to resolve the bond structure of these complexes . Please choose among the possible binding candidates that had the most observed frequency in the reaction network or provide a new one
+ERROR:ATO202:['CK1P_PP2B']:(('CK1', 'Ca'), ('CK1', 'PP2')):We need information to resolve the bond structure of these complexes . Please choose among the possible binding candidates that had the most observed frequency in the reaction network or provide a new one
+INFO:SUM001:File contains 32 molecules out of 75 original SBML species

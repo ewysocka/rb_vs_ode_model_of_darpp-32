@@ -1,0 +1,2842 @@
+<?xml version="1.0"?>
+<Model>
+  <Description>model_0000001</Description>
+  <NumberOfReactions>152</NumberOfReactions>
+  <NumberOfSpecies>75</NumberOfSpecies>
+  <ParametersList>
+    <Parameter>
+      <Id>Spine</Id>
+      <Expression>1e-15</Expression>
+      <Units>Unknown</Units>
+    </Parameter>
+    <Parameter>
+      <Id>k57</Id>
+      <Expression>2.5e-08</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>cAMP_delay</Id>
+      <Expression>200</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>cAMP_Ca_delay</Id>
+      <Expression>50</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>kon_high</Id>
+      <Expression>6.6e-06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>spike_duration</Id>
+      <Expression>2</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>spike_interval</Id>
+      <Expression>2</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>kon_low</Id>
+      <Expression>2.5e-08</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>5.6e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>12</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>4.4e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>12</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>5.6e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10.8</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>2.7</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>5.6e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>4.4e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>12</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>12</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>4</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>16</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>4.4e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>5.6e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3.8e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1.7e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>12</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>0</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10.8</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>24</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>24</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>40</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>5.6e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>5.6e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>7.5e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>12</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10.8</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>2.7</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>12</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>4.4e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>5.6e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>12</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>12</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>5.6e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>0</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10.8</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1600</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>4</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>75000</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>0.03</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>0.12</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>75000</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>120</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>0.03</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3.8e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>24</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3.8e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>24</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3.8e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>24</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1.7e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>24</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>40</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1.7e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>24</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>40</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>24</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1.7e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>40</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>7.5e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>12</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>7.5e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>12</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>7.5e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>12</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>24</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>6</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>6e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>9</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>36</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>0.1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>16</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>4</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>5</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1e+15</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3e+15</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>5.4e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>5.4e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>7.5e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>7.5e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>33</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>33</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>110</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>32.5</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1.8e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>60</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1.8e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>60</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>2.52e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>40</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>5.04e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>80</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>20</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1.7</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3.8e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3.8e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>6</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>6</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3.8e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>3.8e+06</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>6</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>6</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1.7e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1.7e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>24</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>24</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1.7e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1.7e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>24</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>24</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>10</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>200000</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1e+07</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>4</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>200000</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>5</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>16</Expression>
+    </Parameter>
+  </ParametersList>
+  <ReactionsList>
+    <Reaction>
+      <Id>von1</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D" stoichiometry="1"/>
+        <SpeciesReference id="CDK5" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D_CDK5" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff1</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D_CDK5" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D" stoichiometry="1"/>
+        <SpeciesReference id="CDK5" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat1</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D_CDK5" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75" stoichiometry="1"/>
+        <SpeciesReference id="CDK5" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von2</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D" stoichiometry="1"/>
+        <SpeciesReference id="CK1" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D_CK1" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff2</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D_CK1" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D" stoichiometry="1"/>
+        <SpeciesReference id="CK1" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat2</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D_CK1" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D137" stoichiometry="1"/>
+        <SpeciesReference id="CK1" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von3</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D_PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff3</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D_PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat3</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D_PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von4</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34" stoichiometry="1"/>
+        <SpeciesReference id="CDK5" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_CDK5" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von5</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34" stoichiometry="1"/>
+        <SpeciesReference id="CK1" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_CK1" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von6</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34" stoichiometry="1"/>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_PP2B" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff4</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_CDK5" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34" stoichiometry="1"/>
+        <SpeciesReference id="CDK5" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat4</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_CDK5" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75" stoichiometry="1"/>
+        <SpeciesReference id="CDK5" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff5</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_CK1" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34" stoichiometry="1"/>
+        <SpeciesReference id="CK1" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat5</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_CK1" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_137" stoichiometry="1"/>
+        <SpeciesReference id="CK1" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat6</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_PP2B" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D" stoichiometry="1"/>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff6</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_PP2B" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34" stoichiometry="1"/>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von7</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75" stoichiometry="1"/>
+        <SpeciesReference id="CK1" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75CK1" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von8</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von9</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75" stoichiometry="1"/>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_PP2A" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von10</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75" stoichiometry="1"/>
+        <SpeciesReference id="PP2AP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_PP2AP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff7</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75CK1" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75" stoichiometry="1"/>
+        <SpeciesReference id="CK1" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat7</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75CK1" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="CK1" stoichiometry="1"/>
+        <SpeciesReference id="D75_137" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat8</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff8</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat9</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_PP2A" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D" stoichiometry="1"/>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff9</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_PP2A" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75" stoichiometry="1"/>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat10</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_PP2AP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D" stoichiometry="1"/>
+        <SpeciesReference id="PP2AP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff10</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_PP2AP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75" stoichiometry="1"/>
+        <SpeciesReference id="PP2AP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von11</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D137" stoichiometry="1"/>
+        <SpeciesReference id="CDK5" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D137_CDK5" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von12</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D137" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D137_PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von13</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D137" stoichiometry="1"/>
+        <SpeciesReference id="PP2C" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D137_PP2C" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff11</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D137_CDK5" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D137" stoichiometry="1"/>
+        <SpeciesReference id="CDK5" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat11</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D137_CDK5" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_137" stoichiometry="1"/>
+        <SpeciesReference id="CDK5" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff12</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D137_PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D137" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat12</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D137_PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_137" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat13</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D137_PP2C" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D" stoichiometry="1"/>
+        <SpeciesReference id="PP2C" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff13</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D137_PP2C" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D137" stoichiometry="1"/>
+        <SpeciesReference id="PP2C" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von14</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75" stoichiometry="1"/>
+        <SpeciesReference id="CK1" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_CK1" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von18</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_137" stoichiometry="1"/>
+        <SpeciesReference id="CDK5" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_137_CDK5" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff18</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_137_CDK5" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_137" stoichiometry="1"/>
+        <SpeciesReference id="CDK5" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff14</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_CK1" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75" stoichiometry="1"/>
+        <SpeciesReference id="CK1" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat14</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_CK1" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_137" stoichiometry="1"/>
+        <SpeciesReference id="CK1" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat18</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_137_CDK5" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_137" stoichiometry="1"/>
+        <SpeciesReference id="CDK5" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von21</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_137_PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat21</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137_PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_137" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff21</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137_PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_137" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von17</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75" stoichiometry="1"/>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_PP2B" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff17</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_PP2B" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75" stoichiometry="1"/>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat17</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_PP2B" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75" stoichiometry="1"/>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von19</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_137_PP2B" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat19</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_137_PP2B" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D137" stoichiometry="1"/>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff19</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_137_PP2B" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von27</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_137_PP2B" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff27</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137_PP2B" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat27</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137_PP2B" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von15</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75" stoichiometry="1"/>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_PP2A" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat15</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_PP2A" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34" stoichiometry="1"/>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff15</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_PP2A" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75" stoichiometry="1"/>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von22</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_137_PP2A" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat22</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137_PP2A" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D137" stoichiometry="1"/>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff22</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137_PP2A" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von25</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_137_PP2A" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat25</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137_PP2A" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff25</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137_PP2A" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von16</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75" stoichiometry="1"/>
+        <SpeciesReference id="PP2AP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_PP2AP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat16</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_PP2AP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34" stoichiometry="1"/>
+        <SpeciesReference id="PP2AP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff16</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_PP2AP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75" stoichiometry="1"/>
+        <SpeciesReference id="PP2AP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von23</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2AP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_137_PP2AP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat23</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137_PP2AP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D137" stoichiometry="1"/>
+        <SpeciesReference id="PP2AP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff23</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137_PP2AP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2AP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat26</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137_PP2AP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2AP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von26</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2AP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_137_PP2AP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff26</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137_PP2AP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2AP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von20</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2C" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_137_PP2C" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat20</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_137_PP2C" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34" stoichiometry="1"/>
+        <SpeciesReference id="PP2C" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff20</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_137_PP2C" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2C" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von24</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2C" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_137_PP2C" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat24</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137_PP2C" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75" stoichiometry="1"/>
+        <SpeciesReference id="PP2C" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff24</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137_PP2C" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2C" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von28</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2C" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_137_PP2C" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat28</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137_PP2C" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75" stoichiometry="1"/>
+        <SpeciesReference id="PP2C" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff28</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137_PP2C" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2C" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von29</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="CK1P" stoichiometry="1"/>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="CK1P_PP2B" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff29</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="CK1P_PP2B" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="CK1P" stoichiometry="1"/>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat29</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="CK1P_PP2B" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="CK1" stoichiometry="1"/>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat30</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="CK1" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="CK1P" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von31</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PDE" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PDE_PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat31</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PDE_PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PDEP" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff31</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PDE_PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PDE" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat32</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PDEP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PDE" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von33</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2A_PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff33</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PP2A_PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat33</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PP2A_PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2AP" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat34</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PP2AP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von35</Id>
+      <Type>customized</Type>
+      <PropensityFunction>Spine * k1 * PP2Binactive * pow(Ca, 2)</PropensityFunction>
+      <Reactants>
+        <SpeciesReference id="PP2Binactive" stoichiometry="1"/>
+        <SpeciesReference id="Ca" stoichiometry="2"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2BinactiveCa2" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von36</Id>
+      <Type>customized</Type>
+      <PropensityFunction>Spine * k1 * PP2BinactiveCa2 * pow(Ca, 2)</PropensityFunction>
+      <Reactants>
+        <SpeciesReference id="PP2BinactiveCa2" stoichiometry="1"/>
+        <SpeciesReference id="Ca" stoichiometry="2"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff35</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PP2BinactiveCa2" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2Binactive" stoichiometry="1"/>
+        <SpeciesReference id="Ca" stoichiometry="2"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff36</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PP2B" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2BinactiveCa2" stoichiometry="1"/>
+        <SpeciesReference id="Ca" stoichiometry="2"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von37</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="R2C2" stoichiometry="1"/>
+        <SpeciesReference id="cAMP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="cAMP_R2C2" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von38</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP_R2C2" stoichiometry="1"/>
+        <SpeciesReference id="cAMP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="cAMP2_R2C2" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von39</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP2_R2C2" stoichiometry="1"/>
+        <SpeciesReference id="cAMP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="cAMP3_R2C2" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von40</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP3_R2C2" stoichiometry="1"/>
+        <SpeciesReference id="cAMP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="cAMP4_R2C2" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff37</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP_R2C2" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="R2C2" stoichiometry="1"/>
+        <SpeciesReference id="cAMP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff38</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP2_R2C2" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="cAMP_R2C2" stoichiometry="1"/>
+        <SpeciesReference id="cAMP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff39</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP3_R2C2" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="cAMP2_R2C2" stoichiometry="1"/>
+        <SpeciesReference id="cAMP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff40</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP4_R2C2" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="cAMP3_R2C2" stoichiometry="1"/>
+        <SpeciesReference id="cAMP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von41</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP4_R2C" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="cAMP4_R2C2" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff41</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP4_R2C2" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="cAMP4_R2C" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von42</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP4_R2" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="cAMP4_R2C" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von43</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP4_R2C" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="cAMP4_R2" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von44</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP" stoichiometry="1"/>
+        <SpeciesReference id="PDE" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="cAMP_PDE" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff44</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP_PDE" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="cAMP" stoichiometry="1"/>
+        <SpeciesReference id="PDE" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat44</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP_PDE" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="AMP" stoichiometry="1"/>
+        <SpeciesReference id="PDE" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von45</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP" stoichiometry="1"/>
+        <SpeciesReference id="PDEP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="cAMP_PDEP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff45</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP_PDEP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="cAMP" stoichiometry="1"/>
+        <SpeciesReference id="PDEP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat45</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="cAMP_PDEP" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="AMP" stoichiometry="1"/>
+        <SpeciesReference id="PDEP" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>v57</Id>
+      <Type>customized</Type>
+      <PropensityFunction>Spine * Constant_flux__irreversible(k57)</PropensityFunction>
+      <Reactants>
+        <SpeciesReference id="Empty" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="Ca" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>v58</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="Ca" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="Empty" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von46</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75" stoichiometry="1"/>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_PP2ACa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von47</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_137_PP2ACa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat47</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137_PP2ACa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff47</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137_PP2ACa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat46</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_PP2ACa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34" stoichiometry="1"/>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff46</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_PP2ACa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75" stoichiometry="1"/>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von48</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75" stoichiometry="1"/>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_PP2ACa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von49</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_137_PP2ACa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat49</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137_PP2ACa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D137" stoichiometry="1"/>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff49</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137_PP2ACa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat48</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_PP2ACa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D" stoichiometry="1"/>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff48</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_PP2ACa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75" stoichiometry="1"/>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von50</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75" stoichiometry="1"/>
+        <SpeciesReference id="PP2APCa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_PP2APCa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von51</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2APCa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_137_PP2APCa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat51</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137_PP2APCa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2APCa" stoichiometry="1"/>
+        <SpeciesReference id="D34_137" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff51</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_137_PP2APCa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2APCa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat50</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_PP2APCa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34" stoichiometry="1"/>
+        <SpeciesReference id="PP2APCa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff50</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D34_75_PP2APCa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D34_75" stoichiometry="1"/>
+        <SpeciesReference id="PP2APCa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von52</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75" stoichiometry="1"/>
+        <SpeciesReference id="PP2APCa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_PP2APCa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von53</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2APCa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_137_PP2APCa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat53</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137_PP2APCa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D137" stoichiometry="1"/>
+        <SpeciesReference id="PP2APCa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff53</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_137_PP2APCa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75_137" stoichiometry="1"/>
+        <SpeciesReference id="PP2APCa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat52</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_PP2APCa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D" stoichiometry="1"/>
+        <SpeciesReference id="PP2APCa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff52</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="D75_PP2APCa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="D75" stoichiometry="1"/>
+        <SpeciesReference id="PP2APCa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von54</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="Ca" stoichiometry="1"/>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff54</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2A" stoichiometry="1"/>
+        <SpeciesReference id="Ca" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von55</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2ACa_PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat55</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PP2ACa_PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2APCa" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>von56</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PP2AP" stoichiometry="1"/>
+        <SpeciesReference id="Ca" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2APCa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff56</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PP2APCa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2AP" stoichiometry="1"/>
+        <SpeciesReference id="Ca" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>vcat56</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PP2APCa" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>voff55</Id>
+      <Type>mass-action</Type>
+      <Rate>Spine*k1</Rate>
+      <Reactants>
+        <SpeciesReference id="PP2ACa_PKA" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="PP2ACa" stoichiometry="1"/>
+        <SpeciesReference id="PKA" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+  </ReactionsList>
+  <SpeciesList>
+    <Species>
+      <Id>D</Id>
+      <InitialConcentration>4.98e-06</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>CDK5</Id>
+      <InitialConcentration>2e-07</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D_CDK5</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D75</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>CK1</Id>
+      <InitialConcentration>1.66e-07</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D_CK1</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D137</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>PKA</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D_PKA</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_CDK5</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_CK1</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>PP2B</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_PP2B</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_75</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_137</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D75CK1</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D75_PKA</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>PP2A</Id>
+      <InitialConcentration>2e-07</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D75_PP2A</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>PP2AP</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D75_PP2AP</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D75_137</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D137_CDK5</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D137_PKA</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D137_PP2C</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>PP2C</Id>
+      <InitialConcentration>1.33e-07</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_75_CK1</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_137_CDK5</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_75_137</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D75_137_PKA</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_75_PP2B</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_137_PP2B</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_75_137_PP2B</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_75_PP2A</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D75_137_PP2A</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_75_137_PP2A</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_75_PP2AP</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D75_137_PP2AP</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_75_137_PP2AP</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_137_PP2C</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D75_137_PP2C</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>PDE</Id>
+      <InitialConcentration>2e-06</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>PP2Binactive</Id>
+      <InitialConcentration>3.32e-07</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_75_137_PP2C</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>CK1P</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>CK1P_PP2B</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>PDE_PKA</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>PDEP</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>PP2A_PKA</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>Ca</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>PP2BinactiveCa2</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>R2C2</Id>
+      <InitialConcentration>6.64e-06</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>cAMP</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>cAMP_R2C2</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>cAMP2_R2C2</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>cAMP3_R2C2</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>cAMP4_R2C2</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>cAMP4_R2C</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>cAMP4_R2</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>cAMP_PDE</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>AMP</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>cAMP_PDEP</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>PP2ACa</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_75_PP2ACa</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_75_137_PP2ACa</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D75_PP2ACa</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D75_137_PP2ACa</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_75_PP2APCa</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>PP2APCa</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D34_75_137_PP2APCa</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D75_PP2APCa</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>D75_137_PP2APCa</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>PP2ACa_PKA</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+    <Species>
+      <Id>Empty</Id>
+      <InitialConcentration>0</InitialConcentration>
+      <Units>Unknown</Units>
+    </Species>
+  </SpeciesList>
+</Model>

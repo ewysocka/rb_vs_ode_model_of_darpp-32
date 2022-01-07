@@ -1,0 +1,28 @@
+%obs: 'cAMP(a)' cAMP(a, c~on)
+%obs: 'R2C2_1_2_3_4_pka1on' R2C2(camp1!0, camp2!1, camp3!2, camp4!3, pka1~on, pka2~off),cAMP(a!1, c~on),cAMP(a!0, c~on),cAMP(a!2, c~on),cAMP(a!3, c~on)
+%obs: 'R2C2_1_2_3_4_pka2on' R2C2(camp1!0,camp2!1,camp3!2,camp4!3,pka1~off,pka2~on),cAMP(a!2,c~on),cAMP(a!1,c~on),cAMP(a!0,c~on),cAMP(a!3,c~on)
+%obs: 'R2C2_1_2_3_4_pka1on_pka2on' R2C2(camp1!0, camp2!1, camp3!2, camp4!3, pka1~on, pka2~on),cAMP(a!3, c~on),cAMP(a!0, c~on),cAMP(a!1, c~on),cAMP(a!2, c~on)
+%obs: 'PDEp_cAMP' PDE(pSite~p!0),cAMP(a!0, c~on)
+%obs: 'PDEu_cAMP' PDE(pSite~u!0),cAMP(a!0, c~on)
+
+%obs: 'R2C2_1' R2C2(camp1!0, camp2, camp3, camp4, pka1~off, pka2~off),cAMP(a!0, c~on)
+%obs: 'R2C2_2' R2C2(camp1, camp2!0, camp3, camp4, pka1~off, pka2~off),cAMP(a!0, c~on)
+%obs: 'R2C2_3' R2C2(camp1, camp2, camp3!0, camp4, pka1~off, pka2~off),cAMP(a!0, c~on)
+%obs: 'R2C2_4' R2C2(camp1, camp2, camp3, camp4!0, pka1~off, pka2~off),cAMP(a!0, c~on)
+
+%obs: 'R2C2_1_2' R2C2(camp1!0,camp2!1,camp3  ,camp4  , pka1~off, pka2~off),cAMP(a!1, c~on),cAMP(a!0, c~on)
+%obs: 'R2C2_1_3' R2C2(camp1!0,camp2  ,camp3!1,camp4  , pka1~off, pka2~off),cAMP(a!1, c~on),cAMP(a!0, c~on)
+%obs: 'R2C2_1_4' R2C2(camp1!0,camp2  ,camp3  ,camp4!1,pka1~off,pka2~off),cAMP(a!1,c~on),cAMP(a!0,c~on)
+%obs: 'R2C2_2_3' R2C2(camp1  ,camp2!0,camp3!1,camp4  ,pka1~off,pka2~off),cAMP(a!0,c~on),cAMP(a!1,c~on)
+%obs: 'R2C2_2_4' R2C2(camp1  ,camp2!0,camp3  ,camp4!1,pka1~off,pka2~off),cAMP(a!1,c~on),cAMP(a!0,c~on)
+%obs: 'R2C2_3_4' R2C2(camp1, camp2, camp3!0, camp4!1, pka1~off, pka2~off),cAMP(a!1, c~on),cAMP(a!0, c~on)
+
+%obs: 'R2C2_1_2_3' R2C2(camp1!0,camp2!1,camp3!2,camp4  ,pka1~off,pka2~off),cAMP(a!2, c~on),cAMP(a!1, c~on),cAMP(a!0, c~on)
+%obs: 'R2C2_1_3_4' R2C2(camp1!0,camp2  ,camp3!1,camp4!2,pka1~off,pka2~off),cAMP(a!2, c~on),cAMP(a!1, c~on),cAMP(a!0, c~on)
+%obs: 'R2C2_2_3_4' R2C2(camp1  ,camp2!0,camp3!1,camp4!2,pka1~off,pka2~off),cAMP(a!2, c~on),cAMP(a!1,c~on),cAMP(a!0,c~on)
+%obs: 'R2C2_1_2_4' R2C2(camp1!0,camp2!1,camp3  ,camp4!2,pka1~off,pka2~off),cAMP(a!2, c~on),cAMP(a!0,c~on),cAMP(a!1,c~on)
+
+
+
+
+

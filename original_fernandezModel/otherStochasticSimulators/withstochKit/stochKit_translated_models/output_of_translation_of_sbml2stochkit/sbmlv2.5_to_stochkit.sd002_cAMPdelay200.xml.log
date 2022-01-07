@@ -1,0 +1,11 @@
+            filename: /home/fewpills/projectrepo/original_fernandezModel/withCopasiGUI/filesProducedWithGUI/exportSBML_to_otherSBML/sbmlv2.5_pcbi.0020176.sd002_cAMPdelay200.xml
+ validation error(s): 2
+
+
+Encountered 2 errors in this file:
+line 98: (99101 [Error]) The level and version specified for the document must be consistent with a valid published SBML specification.  These are Level 1, Versions 1 and 2 and Level 2, Versions 1, 2, 3 and 4.
+
+line 98: (20101 [Error]) The <sbml> container element must declare the XML Namespace for SBML, and this declaration must be consistent with the values of the 'level' and 'version' attributes on the <sbml> element. (References: L2V2 Section 4.1; L2V3 Section 4.1; L2V4 Section 4.1)
+
+
+StochKit ERROR: Further consistency checking aborted.

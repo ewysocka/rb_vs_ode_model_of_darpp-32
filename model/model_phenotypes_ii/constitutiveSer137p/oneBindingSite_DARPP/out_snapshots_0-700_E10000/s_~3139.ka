@@ -1,0 +1,94 @@
+# Snapshot [Event: 15170000, Time: 274.252042]
+%init: 23 \
+R2C2(camp1!0,camp2!1,camp3!2,camp4!3,pka1~on,pka2~on),cAMP(a!0,c~on),cAMP(a!2,c~on),cAMP(a!1,c~on),cAMP(a!3,c~on)
+%init: 4 \
+D(s!0,ser137~p,thr34~p,thr75~p),PP2A(ca!1,pSite~u!0),Ca2+(a!1)
+%init: 116 \
+D(s!0,ser137~p,thr34~p,thr75~u),PP2B(ca1!1,ca2!2,ca3!3,ca4!4,state~a!0),Ca2+(a!4),Ca2+(a!2),Ca2+(a!1),Ca2+(a!3)
+%init: 662 \
+PDE(pSite~u)
+%init: 51 \
+CDK5(a)
+%init: 13 \
+D(s,ser137~u,thr34~p,thr75~u)
+%init: 3 \
+PP2A(ca,pSite~p)
+%init: 36 \
+CK1(pSite~u)
+%init: 12 \
+PP2C(a)
+%init: 3586 \
+cAMP(a,c~off)
+%init: 59 \
+CK1(pSite~p)
+%init: 3 \
+PDE(pSite~u!0),cAMP(a!0,c~on)
+%init: 1 \
+D(s!0,ser137~u,thr34~u,thr75~p),PKA(a!0)
+%init: 11 \
+D(s,ser137~u,thr34~u,thr75~p)
+%init: 65 \
+D(s,ser137~p,thr34~u,thr75~u)
+%init: 37 \
+D(s,ser137~p,thr34~u,thr75~p)
+%init: 79 \
+PP2B(ca1!0,ca2!1,ca3!2,ca4!3,state~a),Ca2+(a!0),Ca2+(a!2),Ca2+(a!3),Ca2+(a!1)
+%init: 2 \
+D(s,ser137~u,thr34~p,thr75~p)
+%init: 3674 \
+R2C2(camp1,camp2,camp3,camp4,pka1~off,pka2~off)
+%init: 68 \
+D(s!0,ser137~p,thr34~p,thr75~u),CDK5(a!0)
+%init: 2 \
+PP2A(ca,pSite~u!0),PKA(a!0)
+%init: 44 \
+D(s!0,ser137~p,thr34~p,thr75~u),PP2C(a!0)
+%init: 66 \
+R2C2(camp1,camp2,camp3,camp4!0,pka1~off,pka2~off),cAMP(a!0,c~on)
+%init: 70 \
+R2C2(camp1,camp2!0,camp3,camp4,pka1~off,pka2~off),cAMP(a!0,c~on)
+%init: 90 \
+R2C2(camp1!0,camp2,camp3,camp4,pka1~off,pka2~off),cAMP(a!0,c~on)
+%init: 74 \
+R2C2(camp1,camp2,camp3!0,camp4,pka1~off,pka2~off),cAMP(a!0,c~on)
+%init: 1 \
+R2C2(camp1!0,camp2,camp3!1,camp4,pka1~off,pka2~off),cAMP(a!0,c~on),cAMP(a!1,c~on)
+%init: 1 \
+R2C2(camp1,camp2!0,camp3,camp4!1,pka1~off,pka2~off),cAMP(a!0,c~on),cAMP(a!1,c~on)
+%init: 761 \
+D(s,ser137~p,thr34~p,thr75~p)
+%init: 1814 \
+D(s,ser137~p,thr34~p,thr75~u)
+%init: 5 \
+CK1(pSite~p!0),PP2B(ca1!1,ca2!2,ca3!3,ca4!4,state~a!0),Ca2+(a!4),Ca2+(a!2),Ca2+(a!1),Ca2+(a!3)
+%init: 6 \
+PDE(pSite~u!0),PKA(a!0)
+%init: 2 \
+D(s!0,ser137~p,thr34~u,thr75~u),PP2C(a!0)
+%init: 1 \
+D(s!0,ser137~p,thr34~u,thr75~u),PKA(a!0)
+%init: 13 \
+D(s!0,ser137~p,thr34~p,thr75~p),PP2A(ca,pSite~u!0)
+%init: 11 \
+cAMP(a,c~on)
+%init: 1 \
+D(s!0,ser137~u,thr34~u,thr75~u),PKA(a!0)
+%init: 24 \
+D(s,ser137~u,thr34~u,thr75~u)
+%init: 82 \
+PP2A(ca,pSite~u)
+%init: 903 \
+Ca2+(a)
+%init: 16 \
+PP2A(ca!0,pSite~u),Ca2+(a!0)
+%init: 1 \
+R2C2(camp1!0,camp2!1,camp3!2,camp4!3,pka1~off,pka2~on),cAMP(a!0,c~on),cAMP(a!2,c~on),cAMP(a!3,c~on),cAMP(a!1,c~on)
+%init: 36 \
+PKA(a)
+%init: 22 \
+D(s!0,ser137~p,thr34~p,thr75~p),PP2C(a!0)
+%init: 533 \
+PDE(pSite~p)
+%init: 1 \
+D(s!0,ser137~p,thr34~u,thr75~u),CDK5(a!0)
+# End snapshot

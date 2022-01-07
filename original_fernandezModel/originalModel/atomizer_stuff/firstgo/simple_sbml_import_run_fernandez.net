@@ -1,0 +1,370 @@
+# Created by BioNetGen 2.3.1
+begin parameters
+    1 k57                       2.5e-08  # Constant
+    2 cAMP_delay                200.0  # Constant
+    3 cAMP_Ca_delay             50.0  # Constant
+    4 kon_high                  6.6e-06  # Constant
+    5 spike_duration            2.0  # Constant
+    6 spike_interval            2.0  # Constant
+    7 kon_low                   2.5e-08  # Constant
+    8 r1_kon1                   5600000.000000  # Constant
+    9 r2_koff1                  12.000000  # Constant
+   10 r3_kcat1                  3.000000  # Constant
+   11 r4_kon2                   4400000.000000  # Constant
+   12 r5_koff2                  12.000000  # Constant
+   13 r6_kcat2                  3.000000  # Constant
+   14 r7_kon3                   5600000.000000  # Constant
+   15 r8_koff3                  10.800000  # Constant
+   16 r9_kcat3                  2.700000  # Constant
+   17 r10_kon4                  5600000.000000  # Constant
+   18 r11_kon5                  4400000.000000  # Constant
+   19 r12_kon6                  10000000.000000  # Constant
+   20 r13_koff4                 12.000000  # Constant
+   21 r14_kcat4                 3.000000  # Constant
+   22 r15_koff5                 12.000000  # Constant
+   23 r16_kcat5                 3.000000  # Constant
+   24 r17_kcat6                 4.000000  # Constant
+   25 r18_koff6                 16.000000  # Constant
+   26 r19_kon7                  4400000.000000  # Constant
+   27 r20_kon8                  5600000.000000  # Constant
+   28 r21_kon9                  3800000.000000  # Constant
+   29 r22_kon10                 17000000.000000  # Constant
+   30 r23_koff7                 12.000000  # Constant
+   31 r24_kcat7                 3.000000  # Constant
+   32 r25_kcat8                 0.000000  # Constant
+   33 r26_koff8                 10.800000  # Constant
+   34 r27_kcat9                 10.000000  # Constant
+   35 r28_koff9                 24.000000  # Constant
+   36 r29_kcat10                24.000000  # Constant
+   37 r30_koff10                40.000000  # Constant
+   38 r31_kon11                 5600000.000000  # Constant
+   39 r32_kon12                 5600000.000000  # Constant
+   40 r33_kon13                 7500000.000000  # Constant
+   41 r34_koff11                12.000000  # Constant
+   42 r35_kcat11                3.000000  # Constant
+   43 r36_koff12                10.800000  # Constant
+   44 r37_kcat12                2.700000  # Constant
+   45 r38_kcat13                3.000000  # Constant
+   46 r39_koff13                12.000000  # Constant
+   47 r40_kon14                 4400000.000000  # Constant
+   48 r41_kon18                 5600000.000000  # Constant
+   49 r42_koff18                12.000000  # Constant
+   50 r43_koff14                12.000000  # Constant
+   51 r44_kcat14                3.000000  # Constant
+   52 r45_kcat18                3.000000  # Constant
+   53 r46_kon21                 5600000.000000  # Constant
+   54 r47_kcat21                0.000000  # Constant
+   55 r48_koff21                10.800000  # Constant
+   56 r49_kon17                 10000000.000000  # Constant
+   57 r50_koff17                1600.000000  # Constant
+   58 r51_kcat17                4.000000  # Constant
+   59 r52_kon19                 75000.000000  # Constant
+   60 r53_kcat19                0.030000  # Constant
+   61 r54_koff19                0.120000  # Constant
+   62 r55_kon27                 75000.000000  # Constant
+   63 r56_koff27                120.000000  # Constant
+   64 r57_kcat27                0.030000  # Constant
+   65 r58_kon15                 3800000.000000  # Constant
+   66 r59_kcat15                10.000000  # Constant
+   67 r60_koff15                24.000000  # Constant
+   68 r61_kon22                 3800000.000000  # Constant
+   69 r62_kcat22                10.000000  # Constant
+   70 r63_koff22                24.000000  # Constant
+   71 r64_kon25                 3800000.000000  # Constant
+   72 r65_kcat25                10.000000  # Constant
+   73 r66_koff25                24.000000  # Constant
+   74 r67_kon16                 17000000.000000  # Constant
+   75 r68_kcat16                24.000000  # Constant
+   76 r69_koff16                40.000000  # Constant
+   77 r70_kon23                 17000000.000000  # Constant
+   78 r71_kcat23                24.000000  # Constant
+   79 r72_koff23                40.000000  # Constant
+   80 r73_kcat26                24.000000  # Constant
+   81 r74_kon26                 17000000.000000  # Constant
+   82 r75_koff26                40.000000  # Constant
+   83 r76_kon20                 7500000.000000  # Constant
+   84 r77_kcat20                3.000000  # Constant
+   85 r78_koff20                12.000000  # Constant
+   86 r79_kon24                 7500000.000000  # Constant
+   87 r80_kcat24                3.000000  # Constant
+   88 r81_koff24                12.000000  # Constant
+   89 r82_kon28                 7500000.000000  # Constant
+   90 r83_kcat28                3.000000  # Constant
+   91 r84_koff28                12.000000  # Constant
+   92 r85_kon29                 30000000.000000  # Constant
+   93 r86_koff29                24.000000  # Constant
+   94 r87_kcat29                6.000000  # Constant
+   95 r88_kcat30                1.000000  # Constant
+   96 r89_kon31                 6000000.000000  # Constant
+   97 r90_kcat31                9.000000  # Constant
+   98 r91_koff31                36.000000  # Constant
+   99 r92_kcat32                0.100000  # Constant
+  100 r93_kon33                 10000000.000000  # Constant
+  101 r94_koff33                16.000000  # Constant
+  102 r95_kcat33                4.000000  # Constant
+  103 r96_kcat34                5.000000  # Constant
+  104 r97_kon35                 1000000000000000.000000  # Constant
+  105 r98_kon36                 3000000000000000.000000  # Constant
+  106 r99_koff35                1.000000  # Constant
+  107 r100_koff36               1.000000  # Constant
+  108 r101_kon37                54000000.000000  # Constant
+  109 r102_kon38                54000000.000000  # Constant
+  110 r103_kon39                75000000.000000  # Constant
+  111 r104_kon40                75000000.000000  # Constant
+  112 r105_koff37               33.000000  # Constant
+  113 r106_koff38               33.000000  # Constant
+  114 r107_koff39               110.000000  # Constant
+  115 r108_koff40               32.500000  # Constant
+  116 r109_kon41                18000000.000000  # Constant
+  117 r110_koff41               60.000000  # Constant
+  118 r111_kon42                18000000.000000  # Constant
+  119 r112_kon43                60.000000  # Constant
+  120 r113_kon44                2520000.000000  # Constant
+  121 r114_koff44               40.000000  # Constant
+  122 r115_kcat44               10.000000  # Constant
+  123 r116_kon45                5040000.000000  # Constant
+  124 r117_koff45               80.000000  # Constant
+  125 r118_kcat45               20.000000  # Constant
+  126 r120_k58                  1.700000  # Constant
+  127 r121_kon46                3800000.000000  # Constant
+  128 r122_kon47                3800000.000000  # Constant
+  129 r123_kcat47               10.000000  # Constant
+  130 r124_koff47               6.000000  # Constant
+  131 r125_kcat46               10.000000  # Constant
+  132 r126_koff46               6.000000  # Constant
+  133 r127_kon48                3800000.000000  # Constant
+  134 r128_kon49                3800000.000000  # Constant
+  135 r129_kcat49               10.000000  # Constant
+  136 r130_koff49               6.000000  # Constant
+  137 r131_kcat48               10.000000  # Constant
+  138 r132_koff48               6.000000  # Constant
+  139 r133_kon50                17000000.000000  # Constant
+  140 r134_kon51                17000000.000000  # Constant
+  141 r135_kcat51               24.000000  # Constant
+  142 r136_koff51               10.000000  # Constant
+  143 r137_kcat50               24.000000  # Constant
+  144 r138_koff50               10.000000  # Constant
+  145 r139_kon52                17000000.000000  # Constant
+  146 r140_kon53                17000000.000000  # Constant
+  147 r141_kcat53               24.000000  # Constant
+  148 r142_koff53               10.000000  # Constant
+  149 r143_kcat52               24.000000  # Constant
+  150 r144_koff52               10.000000  # Constant
+  151 r145_kon54                200000.000000  # Constant
+  152 r146_koff54               1.000000  # Constant
+  153 r147_kon55                10000000.000000  # Constant
+  154 r148_kcat55               4.000000  # Constant
+  155 r149_kon56                200000.000000  # Constant
+  156 r150_koff56               1.000000  # Constant
+  157 r151_kcat56               5.000000  # Constant
+  158 r152_koff55               16.000000  # Constant
+  159 _rateLaw1                 r100_koff36/6  # ConstantExpression
+  160 _rateLaw2                 r106_koff38/2  # ConstantExpression
+  161 _rateLaw3                 r107_koff39/3  # ConstantExpression
+end parameters
+begin functions
+    1 functionRate0() 5600000.0/6.022e23
+    2 functionRate3() if((CK1_Spine>0),((CK1_Spine*4400000.0)/CK1_Spine),0)/6.022e23
+    3 functionRate6() if((PKA_Spine>0),((PKA_Spine*5600000.0)/PKA_Spine),0)/6.022e23
+    4 functionRate9() if((CDK5_Spine>0),((CDK5_Spine*5600000.0)/CDK5_Spine),0)/6.022e23
+    5 functionRate10() if((CK1_Spine>0),((CK1_Spine*4400000.0)/CK1_Spine),0)/6.022e23
+    6 functionRate11() if((PP2B_Spine>0),((PP2B_Spine*10000000.0)/PP2B_Spine),0)/6.022e23
+    7 functionRate18() if((CK1_Spine>0),((CK1_Spine*4400000.0)/CK1_Spine),0)/6.022e23
+    8 functionRate19() if((PKA_Spine>0),((PKA_Spine*5600000.0)/PKA_Spine),0)/6.022e23
+    9 functionRate20() if((PP2A_Spine>0),((PP2A_Spine*3800000.0)/PP2A_Spine),0)/6.022e23
+   10 functionRate21() if((PP2AP_Spine>0),((PP2AP_Spine*17000000.0)/PP2AP_Spine),0)/6.022e23
+   11 functionRate30() if((CDK5_Spine>0),((CDK5_Spine*5600000.0)/CDK5_Spine),0)/6.022e23
+   12 functionRate31() if((PKA_Spine>0),((PKA_Spine*5600000.0)/PKA_Spine),0)/6.022e23
+   13 functionRate32() if((PP2C_Spine>0),((PP2C_Spine*7500000.0)/PP2C_Spine),0)/6.022e23
+   14 functionRate39() if((CK1_Spine>0),((CK1_Spine*4400000.0)/CK1_Spine),0)/6.022e23
+   15 functionRate40() if((CDK5_Spine>0),((CDK5_Spine*5600000.0)/CDK5_Spine),0)/6.022e23
+   16 functionRate45() if((PKA_Spine>0),((PKA_Spine*5600000.0)/PKA_Spine),0)/6.022e23
+   17 functionRate48() if((PP2B_Spine>0),((PP2B_Spine*10000000.0)/PP2B_Spine),0)/6.022e23
+   18 functionRate51() if((PP2B_Spine>0),((PP2B_Spine*75000.0)/PP2B_Spine),0)/6.022e23
+   19 functionRate54() if((PP2B_Spine>0),((PP2B_Spine*75000.0)/PP2B_Spine),0)/6.022e23
+   20 functionRate57() if((PP2A_Spine>0),((PP2A_Spine*3800000.0)/PP2A_Spine),0)/6.022e23
+   21 functionRate60() if((PP2A_Spine>0),((PP2A_Spine*3800000.0)/PP2A_Spine),0)/6.022e23
+   22 functionRate63() if((PP2A_Spine>0),((PP2A_Spine*3800000.0)/PP2A_Spine),0)/6.022e23
+   23 functionRate66() if((PP2AP_Spine>0),((PP2AP_Spine*17000000.0)/PP2AP_Spine),0)/6.022e23
+   24 functionRate69() if((PP2AP_Spine>0),((PP2AP_Spine*17000000.0)/PP2AP_Spine),0)/6.022e23
+   25 functionRate73() if((PP2AP_Spine>0),((PP2AP_Spine*17000000.0)/PP2AP_Spine),0)/6.022e23
+   26 functionRate75() if((PP2C_Spine>0),((PP2C_Spine*7500000.0)/PP2C_Spine),0)/6.022e23
+   27 functionRate78() if((PP2C_Spine>0),((PP2C_Spine*7500000.0)/PP2C_Spine),0)/6.022e23
+   28 functionRate81() if((PP2C_Spine>0),((PP2C_Spine*7500000.0)/PP2C_Spine),0)/6.022e23
+   29 functionRate84() if((PP2B_Spine>0),((PP2B_Spine*30000000.0)/PP2B_Spine),0)/6.022e23
+   30 functionRate88() if((PKA_Spine>0),((PKA_Spine*6000000.0)/PKA_Spine),0)/6.022e23
+   31 functionRate92() if((PKA_Spine>0),((PKA_Spine*10000000.0)/PKA_Spine),0)/6.022e23
+   32 functionRate96() ((if((Ca_Spine>0),((Ca_Spine*1e+15)/Ca_Spine),0)*2)/6.022e23)/6
+   33 functionRate97() (if((Ca_Spine>0),((Ca_Spine*3e+15)/Ca_Spine),0)*2)/6.022e23
+   34 functionRate100() (if((cAMP_Spine>0),((cAMP_Spine*54000000.0)/cAMP_Spine),0)/6.022e23)/3
+   35 functionRate101() (if((cAMP_Spine>0),((cAMP_Spine*54000000.0)/cAMP_Spine),0)/6.022e23)/2
+   36 functionRate102() if((cAMP_Spine>0),((cAMP_Spine*75000000.0)/cAMP_Spine),0)/6.022e23
+   37 functionRate103() if((cAMP_Spine>0),((cAMP_Spine*75000000.0)/cAMP_Spine),0)/6.022e23
+   38 functionRate108() if((PKA_Spine>0),((PKA_Spine*18000000.0)/PKA_Spine),0)/6.022e23
+   39 functionRate110() if((PKA_Spine>0),((PKA_Spine*18000000.0)/PKA_Spine),0)/6.022e23
+   40 functionRate112() if((PDE_Spine>0),((PDE_Spine*2520000.0)/PDE_Spine),0)/6.022e23
+   41 functionRate115() if((PDEP_Spine>0),((PDEP_Spine*5040000.0)/PDEP_Spine),0)/6.022e23
+   42 functionRate118() if((Empty_Spine>0),(k57/Empty_Spine),0)
+   43 functionRate120() if((PP2ACa_Spine>0),((PP2ACa_Spine*3800000.0)/PP2ACa_Spine),0)/6.022e23
+   44 functionRate121() if((PP2ACa_Spine>0),((PP2ACa_Spine*3800000.0)/PP2ACa_Spine),0)/6.022e23
+   45 functionRate126() if((PP2ACa_Spine>0),((PP2ACa_Spine*3800000.0)/PP2ACa_Spine),0)/6.022e23
+   46 functionRate127() if((PP2ACa_Spine>0),((PP2ACa_Spine*3800000.0)/PP2ACa_Spine),0)/6.022e23
+   47 functionRate132() if((PP2APCa_Spine>0),((PP2APCa_Spine*17000000.0)/PP2APCa_Spine),0)/6.022e23
+   48 functionRate133() if((PP2APCa_Spine>0),((PP2APCa_Spine*17000000.0)/PP2APCa_Spine),0)/6.022e23
+   49 functionRate138() if((PP2APCa_Spine>0),((PP2APCa_Spine*17000000.0)/PP2APCa_Spine),0)/6.022e23
+   50 functionRate139() if((PP2APCa_Spine>0),((PP2APCa_Spine*17000000.0)/PP2APCa_Spine),0)/6.022e23
+   51 functionRate144() (if((Ca_Spine>0),((Ca_Spine*200000.0)/Ca_Spine),0)/6.022e23)/4
+   52 functionRate146() if((PP2ACa_Spine>0),((PP2ACa_Spine*10000000.0)/PP2ACa_Spine),0)/6.022e23
+   53 functionRate148() (if((Ca_Spine>0),((Ca_Spine*200000.0)/Ca_Spine),0)/6.022e23)/4
+end functions
+begin species
+    1 @Spine::D(cdk5,ck1,pka) 2998.956
+    2 @Spine::CDK5(d,d137,d34,d34_137) 120.44
+    3 @Spine::CK1(d,d34,d75,p~0) 99.9652
+    4 @Spine::PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,d137,d34_137,d75,d75_137,p~0,pka) 120.44
+    5 @Spine::PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,d137,d34_137,d75,d75_137,p~0,pka) 80.0926
+    6 @Spine::PDE(amp,p~0,pka) 1204.4
+    7 @Spine::PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca,ca,ca,ca,d137,d34_137,d75,d75_137,p~0,pka) 199.9304
+    8 @Spine::R2C2(amp,amp,amp) 3998.608
+    9 @Spine::$Ca(Empty~Empty,pp2) 0
+   10 @Spine::CDK5(d!1,d137,d34,d34_137).D(cdk5!1,ck1,pka) 0
+   11 @Spine::CK1(d!1,d34,d75,p~0).D(cdk5,ck1!1,pka) 0
+   12 @Spine::CK1(d,d34,d75,p~P) 0
+   13 @Spine::Ca(Empty~0,pp2) 0
+   14 @Spine::D75(ck1,pka,pp2) 0
+   15 @Spine::D137(cdk5,pka,pp2) 0
+   16 @Spine::Ca(Empty~0,pp2!1).Ca(Empty~0,pp2!2).PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!1,ca!2,ca,ca,d137,d34_137,d75,d75_137,p~0,pka) 0
+   17 @Spine::Ca(Empty~0,pp2!1).PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!1,ca,ca,ca,d137,d34_137,d75,d75_137,p~0,pka) 0
+   18 @Spine::CK1(d,d34,d75!1,p~0).D75(ck1!1,pka,pp2) 0
+   19 @Spine::D75(ck1,pka,pp2!1).PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,d137,d34_137,d75!1,d75_137,p~0,pka) 0
+   20 @Spine::CDK5(d,d137!1,d34,d34_137).D137(cdk5!1,pka,pp2) 0
+   21 @Spine::D137(cdk5,pka,pp2!1).PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,d137!1,d34_137,d75,d75_137,p~0,pka) 0
+   22 @Spine::Ca(Empty~0,pp2!1).Ca(Empty~0,pp2!2).Ca(Empty~0,pp2!3).Ca(Empty~0,pp2!4).PP2(PP2A~0,PP2Binactive~PP2Binactive,c~0,ca!1,ca!2,ca!3,ca!4,d137,d34_137,d75,d75_137,p~0,pka) 0
+   23 @Spine::Ca(Empty~0,pp2!1).D75(ck1,pka,pp2!2).PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!1,ca,ca,ca,d137,d34_137,d75!2,d75_137,p~0,pka) 0
+   24 @Spine::D75_137(pka,pp2) 0
+   25 @Spine::CK1P_PP2B() 0
+   26 @Spine::D75_137(pka,pp2!1).PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca,ca,ca,ca,d137,d34_137,d75,d75_137!1,p~0,pka) 0
+   27 @Spine::D75_137(pka,pp2!1).PP2(PP2A~0,PP2Binactive~0,c~C,ca,ca,ca,ca,d137,d34_137,d75,d75_137!1,p~0,pka) 0
+   28 @Spine::Ca(Empty~0,pp2!1).D75_137(pka,pp2!2).PP2(PP2A~PP2A,PP2Binactive~0,c~0,ca!1,ca,ca,ca,d137,d34_137,d75,d75_137!2,p~0,pka) 0
+end species
+begin reactions
+    1 1,2 10 1e+15*functionRate0 #von1 unit_conversion=1/1e-15
+    2 1,3 11 1e+15*functionRate3 #von2 unit_conversion=1/1e-15
+    3 3 12 r88_kcat30 #vcat30
+    4 9 13 functionRate118 #v57
+    5 10 1,2 r2_koff1 #voff1
+    6 10 2,14 r3_kcat1 #vcat1
+    7 11 1,3 r5_koff2 #voff2
+    8 11 3,15 r6_kcat2 #vcat2
+    9 7,13,13 16 6e+30*functionRate96 #von35 unit_conversion=1/1e-15/1e-15
+   10 13 9 r120_k58 #v58
+   11 13,4 17 4e+15*functionRate144 #von54 unit_conversion=1/1e-15
+   12 14,3 18 1e+15*functionRate18 #von7 unit_conversion=1/1e-15
+   13 14,4 19 1e+15*functionRate20 #von9 unit_conversion=1/1e-15
+   14 15,2 20 1e+15*functionRate30 #von11 unit_conversion=1/1e-15
+   15 15,5 21 1e+15*functionRate32 #von13 unit_conversion=1/1e-15
+   16 16,13,13 22 1e+30*functionRate97 #von36 unit_conversion=1/1e-15/1e-15
+   17 16 7,13,13 r99_koff35 #voff35
+   18 14,17 23 1e+15*functionRate126 #von48 unit_conversion=1/1e-15
+   19 17 4,13 r146_koff54 #voff54
+   20 18 3,14 r23_koff7 #voff7
+   21 18 3,24 r24_kcat7 #vcat7
+   22 19 1,4 r27_kcat9 #vcat9
+   23 19 4,14 r28_koff9 #voff9
+   24 20 2,15 r34_koff11 #voff11
+   25 20 2,24 r35_kcat11 #vcat11
+   26 21 1,5 r38_kcat13 #vcat13
+   27 21 5,15 r39_koff13 #voff13
+   28 12,22 25 1e+15*functionRate84 #von29 unit_conversion=1/1e-15
+   29 22 13,13,16 6*_rateLaw1 #voff36
+   30 23 1,17 r131_kcat48 #vcat48
+   31 23 14,17 r132_koff48 #voff48
+   32 24,4 26 1e+15*functionRate60 #von22 unit_conversion=1/1e-15
+   33 24,5 27 1e+15*functionRate78 #von24 unit_conversion=1/1e-15
+   34 25 12,22 r86_koff29 #voff29
+   35 25 3,22 r87_kcat29 #vcat29
+   36 24,17 28 1e+15*functionRate127 #von49 unit_conversion=1/1e-15
+   37 26 4,15 r62_kcat22 #vcat22
+   38 26 4,24 r63_koff22 #voff22
+   39 27 5,14 r80_kcat24 #vcat24
+   40 27 5,24 r81_koff24 #voff24
+   41 28 15,17 r129_kcat49 #vcat49
+   42 28 17,24 r130_koff49 #voff49
+end reactions
+begin groups
+    1 D_Spine              1
+    2 CDK5_Spine           2
+    3 D_CDK5_Spine         10
+    4 D75_Spine            14
+    5 CK1_Spine            3
+    6 D_CK1_Spine          11
+    7 D137_Spine           15
+    8 PKA_Spine            
+    9 D_PKA_Spine          
+   10 D34_Spine            
+   11 D34_CDK5_Spine       
+   12 D34_CK1_Spine        
+   13 PP2B_Spine           22
+   14 D34_PP2B_Spine       
+   15 D34_75_Spine         
+   16 D34_137_Spine        
+   17 D75_CK1_Spine        18
+   18 D75_PKA_Spine        
+   19 PP2A_Spine           4
+   20 D75_PP2A_Spine       19
+   21 PP2AP_Spine          
+   22 D75_PP2AP_Spine      
+   23 D75_137_Spine        24
+   24 D137_CDK5_Spine      20
+   25 D137_PKA_Spine       
+   26 D137_PP2C_Spine      21
+   27 PP2C_Spine           5
+   28 D34_75_CK1_Spine     
+   29 D34_137_CDK5_Spine   
+   30 D34_75_137_Spine     
+   31 D75_137_PKA_Spine    
+   32 D34_75_PP2B_Spine    
+   33 D34_137_PP2B_Spine   
+   34 D34_75_137_PP2B_Spine 
+   35 D34_75_PP2A_Spine    
+   36 D75_137_PP2A_Spine   26
+   37 D34_75_137_PP2A_Spine 
+   38 D34_75_PP2AP_Spine   
+   39 D75_137_PP2AP_Spine  
+   40 D34_75_137_PP2AP_Spine 
+   41 D34_137_PP2C_Spine   
+   42 D75_137_PP2C_Spine   27
+   43 PDE_Spine            6
+   44 PP2Binactive_Spine   7
+   45 D34_75_137_PP2C_Spine 
+   46 CK1P_Spine           12
+   47 CK1P_PP2B_Spine      25
+   48 PDE_PKA_Spine        
+   49 PDEP_Spine           
+   50 PP2A_PKA_Spine       
+   51 Ca_Spine             13
+   52 PP2BinactiveCa2_Spine 16
+   53 R2C2_Spine           8
+   54 cAMP_Spine           
+   55 cAMP_R2C2_Spine      
+   56 cAMP2_R2C2_Spine     
+   57 cAMP3_R2C2_Spine     
+   58 cAMP4_R2C2_Spine     
+   59 cAMP4_R2C_Spine      
+   60 cAMP4_R2_Spine       
+   61 cAMP_PDE_Spine       
+   62 AMP_Spine            
+   63 cAMP_PDEP_Spine      
+   64 PP2ACa_Spine         17
+   65 D34_75_PP2ACa_Spine  
+   66 D34_75_137_PP2ACa_Spine 
+   67 D75_PP2ACa_Spine     23
+   68 D75_137_PP2ACa_Spine 28
+   69 D34_75_PP2APCa_Spine 
+   70 PP2APCa_Spine        
+   71 D34_75_137_PP2APCa_Spine 
+   72 D75_PP2APCa_Spine    
+   73 D75_137_PP2APCa_Spine 
+   74 PP2ACa_PKA_Spine     
+   75 Empty_Spine          9
+end groups

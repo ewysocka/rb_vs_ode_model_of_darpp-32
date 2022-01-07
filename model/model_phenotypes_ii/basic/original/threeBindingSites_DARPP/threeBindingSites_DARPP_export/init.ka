@@ -1,0 +1,26 @@
+##............ FIFTH VERSION OF THE MODEL -------------
+%agent: D(thr34~u~p, ser137~u~p, thr75~u~p)
+%agent: CDK5(a)
+%agent: CK1(pSite~u~p)
+%agent: PKA(a)
+%agent: PP2A(ca, pSite~u~p)
+%agent: PP2C(a)
+%agent: PP2B(ca1, ca2, ca3,ca4, state~i~a)
+%agent: PDE(pSite~u~p)
+%agent: Ca2+(a)
+%agent: cAMP(a, c~on~off)
+%agent: R2C2(camp1, camp2, camp3, camp4, pka1~off~on, pka2~off~on)
+##...
+%init: 3000 D(thr34~u, ser137~u, thr75~u)
+%init: 120 CDK5(a)
+%init: 100 CK1( pSite~u)
+%init: 1204 PDE( pSite~u)
+%init: 120 PP2A(ca, pSite~u)
+%init: 200 PP2B(ca1, ca2, ca3,ca4, state~i)
+%init: 80 PP2C(a)
+%init: 4000 R2C2(camp1, camp2, camp3, camp4, pka1~off, pka2~off)
+# %init: 0 PKA(a)
+# %init: 0 cAMP(a, c~off)
+# %init: 0 Ca2+(a)
+
+## 11 agents  ## 

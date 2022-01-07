@@ -1,0 +1,99 @@
+%var: 'V' 1.0e-15
+%var: 'Avo' 6.022e23
+%var: 'VA' 'V'*'Avo'
+## D(), CDK5()
+%var: 'kon1' 5.6e6/'VA' # M-1 s-1
+%var: 'koff1' 12  # s-1 .. and all the following off-rates
+%var: 'kcat1' 3   # s-1 .. and all the following catalitic rates
+## D(), CK1() 
+%var: 'kon2' 4.4e6/'VA' # M-1 s-1
+%var: 'koff2' 12
+### MUTATION HAPPENS HERE
+%var: 'kcat2' 0
+## D(), PKA()
+%var: 'kon3' 5.6e6/'VA' # M-1 s-1
+%var: 'koff3' 10.8
+%var: 'kcat3' 2.7
+# reserved only for PKA reacting with D75 and D75:137
+# expressed as negative rule - Thr75 has to be ~u to
+# PKA phosphorylate Thr34
+%var: 'kcat8' 0
+## D(34), PP2B() 01
+%var: 'kon6' 1.0e7/'VA' # M-1 s-1 'general binding'
+%var: 'koff6' 16
+%var: 'kcat6' 4
+## D(34,75), PP2B() 02
+# %var: 'kon17' 1.0e7/'VA' # M-1 s-1 ## same as kon6
+%var: 'koff17' 1600
+## D(34,137), PP2B() 03
+%var: 'kon19' 7.5e4/'VA' # M-1 s-1
+%var: 'koff19' 0.12
+%var: 'kcat19' 0.03
+## D(34,75,137), PP2B() 04
+# %var: 'kon27' 7.5e4/'VA' # M-1 s-1 ## same as kon19
+%var: 'koff27' 120
+## D(), PP2C()
+%var: 'kon13' 7.5e6/'VA' # M -1 s-1
+%var: 'koff13' 12 
+%var: 'kcat13' 3
+## D(), PP2A(pSite~u) 
+%var: 'kon9' 3.8e6/'VA' # M-1 s-1
+%var: 'koff9' 24
+%var: 'kcat9' 10
+## D(), PP2A(pStite~p) 
+%var: 'kon10' 1.7e7/'VA' # M-1 s-1
+%var: 'koff10' 40
+%var: 'kcat10' 24
+## CK1, PP2B
+%var: 'kon29' 3e7/'VA' # M-1 s-1
+%var: 'koff29' 24
+%var: 'kcat29' 6
+%var: 'kcat30' 1
+## PDE, PKA
+%var: 'kon31' 6e6/'VA' # M-1 s-1
+%var: 'koff31' 36
+%var: 'kcat31' 9
+%var: 'kcat32' 0.1
+## PP2A, PKA
+%var: 'kon33' 1e7/'VA' # M-1.s-1
+%var: 'koff33' 16
+%var: 'kcat33' 4
+%var: 'kcat34' 5
+## PP2B activation via Ca2+ x4 binding two Ca2+ binding at once
+# paper: = O’Donnell2011 about the structure of PP2B indicates on 4 binding sites for Ca2+ (can ions dimerise ? NAH)
+# x2
+%var: 'kon35' 1e15/('VA'^2) # M-2 s-1
+%var: 'koff35' 1
+# x4
+%var: 'kon36' 3e15/('VA'^2) # M-2 s-1
+%var: 'koff36' 1
+## PKA activation
+# one bond and two bonds
+%var: 'kon38' 5.4e7/'VA' # M-1 s-1
+%var: 'koff38' 33 
+# three bonds and four bonds on
+%var: 'kon39' 7.5e7/'VA' # M-1 s-1
+# three bonds off
+%var: 'koff39' 110 # s-1
+# four bonds off
+%var: 'koff40' 32.5 # s-1
+## PKA appears:
+%var: 'kon41' 1.8e7/'VA' # M-1 s-1
+%var: 'koff41' 60 # s-1
+## cAMP degradation 
+%var: 'kon44' 2.52e6/'VA' # M-1 s-1
+%var: 'koff44' 40 # s-1
+%var: 'kcat44' 10 # s-1
+%var: 'kon45' 5.04e6/'VA' # M-1 s-1
+%var: 'koff45' 80 # s-1
+%var: 'kcat45' 20 # s-1
+## Ca2+ in- and out-flux
+%var: 'k57' 15 # set to 5 because of Thr34 curve; set to 8 because of Ser137 curve and PKA curve # 2.5e-8 M.s-1/('VA'^-1)= 15("ZERO -order reaction")  - without division (so multiplication) looks very bad, =1 also bad (Thr34 jumps to the sky, no Ser137)
+%var: 'k58'  1.7 # value from the model is used; Value from the paper: 0.6  # s-1
+## PP2A and Ca2+
+%var: 'kon54' 2e5/'VA' # M-1 s-1
+%var: 'koff54' 1 # s-1
+## PP2Au with Ca
+%var: 'koff46' 6
+## PP2Ap with Ca
+%var: 'koff50' 10

@@ -1,0 +1,1 @@
+KaSim  -i init.ka -i FINALrates_thr75inhibition.ka -i FINALrules_thr75inhibition_PKArulesDiff.ka -i stimuli_pulse_spikes_CaWithRates.ka -i obs_pp2_pka_d75.ka -i tracking2.ka -l 700 -p 0.5 -d ./out -o pka_pp2a_d75_ca-15_1.7_caStim-rateBased.out
