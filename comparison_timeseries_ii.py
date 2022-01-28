@@ -3,7 +3,7 @@ import matplotlib
 from matplotlib import pyplot as plt
 import numpy as np
 import sys, os
-sys.path.append("/home/fewpills/projectrepo/pytoolbox")
+sys.path.append(os.path.join(sys.path[0], "pytoolbox"))
 import corex_tools
 from corex_tools import timeseries_2_array
 from corex_tools import plot_timeseriesRe
