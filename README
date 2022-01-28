@@ -1,0 +1,2 @@
+Repository of the manuscript of Wysocka et al. 2022: "Comparison of rule- and ordinary differential equation-based dynamic model of DARPP-32 signalling network" ([bioRxiv publication link.]()).
+It contains the Kappa code encoding the DARPP-32 model variants and Python code to reproduce published figures.
