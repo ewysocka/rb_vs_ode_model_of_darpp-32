@@ -1,10 +1,3 @@
-# from libsbml import *
-# reader = SBMLReader()
-# document = reader.readSBML(orfile)
-#
-# the library serves to model writing more than model parsing
-# for parsing use bs4
-
 from bs4 import BeautifulSoup
 import sys, os
 sys.path.append(os.path.join(sys.path[0], "pytoolbox"))
