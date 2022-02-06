@@ -1,8 +1,5 @@
 import os
 import glob
-import fileinput
-import pandas as pd
-
 
 def snapshotKa_2_dict(snapsdir, snapfiles):
     """

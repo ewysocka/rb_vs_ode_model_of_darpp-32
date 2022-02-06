@@ -6,12 +6,12 @@
 # for parsing use bs4
 
 from bs4 import BeautifulSoup
-sys.path.append("/home/fewpills/projectrepo/pytoolbox")
-import corex_tools
-from corex_tools import kafile_to_ratesdict
+import sys, os
+sys.path.append(os.path.join(sys.path[0], "pytoolbox"))
+from basic_tools import kafile_to_ratesdict
 import pandas as pd
 
-orfile = "/home/fewpills/projectrepo/original_fernandezModel/originalModel/pcbi.0020176.sd002.xml"
+orfile = "./ode_model/originalModel/sbmlFormat/pcbi.0020176.sd002.xml"
 
 with open(orfile) as f:
     reador = f.read()
@@ -22,7 +22,7 @@ paramsdict = {par['name']: float(par['value']) for par in soup.find_all("paramet
 paramdf = pd.DataFrame(paramsdict, index=[0])
 
 ########
-minefile = "/home/fewpills/projectrepo/postmodel_pipeline/model_phenotypes_ii/basic/original/FINALrates_thr75inhibition.ka"
+minefile = "./rb_model/wildType/models/oneBindingSite_DARPP/oBS_FINALrates_thr75inhibition.ka"
 
 minerates = kafile_to_ratesdict(minefile)
 

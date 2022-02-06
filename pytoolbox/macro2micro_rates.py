@@ -1,4 +1,3 @@
-#!usr/bin/env python
 
 
 def read_rates_as_list(f):

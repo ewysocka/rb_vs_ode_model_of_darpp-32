@@ -1,8 +1,7 @@
 import sys, getopt
-sys.path.append("/home/fewpills/projectrepo/pytoolbox")
-import corex_tools
-from corex_tools import timeseries_2_array
-from corex_tools import plot_timeseries
+import os
+sys.path.append(os.path.join(sys.path[0], "pytoolbox"))
+from basic_tools import plot_timeseries
 
 def main(argv):
     try:

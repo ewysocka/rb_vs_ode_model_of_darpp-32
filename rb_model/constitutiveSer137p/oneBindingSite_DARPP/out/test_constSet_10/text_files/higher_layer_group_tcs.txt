@@ -1,4 +1,0 @@
-At layer: 0, Total TC: 4.043
-Individual TCS:[ 3.218  0.566  0.226  0.196  0.004  0.004  0.002  0.002 -0.002 -0.171]
-At layer: 1, Total TC: 0.889
-Individual TCS:[ 0.889]

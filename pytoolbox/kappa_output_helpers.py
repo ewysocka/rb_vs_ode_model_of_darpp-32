@@ -1,7 +1,5 @@
 from matplotlib import pyplot as plt
-import numpy as np
 import re
-import pickle
 from emtools import listOflist2dict
 from igraph import *
 import graph_tools

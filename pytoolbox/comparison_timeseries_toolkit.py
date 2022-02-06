@@ -1,33 +1,21 @@
-import  matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-import scipy
 import sys, os
-sys.path.append("/home/fewpills/projectrepo/pytoolbox")
-import corex_tools
-from corex_tools import timeseries_2_array
-from corex_tools import plot_timeseriesRe
-from corex_tools import plot_df
-from corex_tools import plot_two_curves
-from macro2micro_rates import convert_concentrations_to_copies
-from corex_tools import factorise_2
+sys.path.append(os.path.join(sys.path[0], "pytoolbox"))
+from basic_tools import timeseries_2_array
+from basic_tools import plot_df
+from basic_tools import factorise_2
 import re
 import glob
 from collections import defaultdict
 import itertools
 
-from matplotlib.offsetbox import AnchoredText
-import statsmodels.api as sm
-from pandas.stats.moments import rolling_window
-import statsmodels.tsa.stattools as ts
-import statsmodels
 from statsmodels.tsa.stattools import coint
 import seaborn as sns
 import matplotlib.pyplot as plt
-from corex_tools import factorise_2
 
 
-def originalModel_2_selected_df(outfile, delim, obstocomparewith):
+def modelsModel_2_selected_df(outfile, delim, obstocomparewith):
     """
     Loads the file as a matrix, selects observables that are in the provided
     list and summed under each name (multiple species under each observable).
@@ -58,7 +46,7 @@ def originalModel_2_selected_df(outfile, delim, obstocomparewith):
 
 
 
-def plot_originalSelected_as_paper(outfile, foldername, name, prefix=''):
+def plot_modelsSelected_as_paper(outfile, foldername, name, prefix=''):
 
     delim = '\t'
 
@@ -81,7 +69,7 @@ def plot_originalSelected_as_paper(outfile, foldername, name, prefix=''):
                         "137"]
 
     ## File to dataframe:
-    orgdf = originalModel_2_selected_df(outfile, delim, obstocomparewith)
+    orgdf = modelsModel_2_selected_df(outfile, delim, obstocomparewith)
 
     ## Set cleaned columns names:
     orgdf.columns = ["cAMP",
@@ -104,7 +92,7 @@ def plot_originalSelected_as_paper(outfile, foldername, name, prefix=''):
     ## 3. Plot
     plot_df(orgdf[orgdf.columns[[0,1,11,12,13,14]]],
             plottitle="ODE model: "+name+prefix,
-            figfilename=foldername+'/'+name+prefix+"_summedpatternsOriginal_selected_"+prefix+".png",
+            figfilename=foldername+'/'+name+prefix+"_summedpatternsModels_selected_"+prefix+".png",
             xmax=1400,
             ymax=4400)
 
@@ -210,7 +198,7 @@ def plot_overlaid_ode2rb(outfile, outfile3, name, prefix, foldername, paired=Fal
                         "137"]
 
     ## File to dataframe:
-    orgdf = originalModel_2_selected_df(outfile, delim, obstocomparewith)
+    orgdf = modelsModel_2_selected_df(outfile, delim, obstocomparewith)
 
     ## Set cleaned columns names:
     orgdf.columns = ["cAMP",
@@ -605,7 +593,7 @@ def prepare_ensemble_ode_models(ensemblefile, foldertosave, defcols=True, obstoc
 
 
         for outf in glob.glob(foldertosave+'/data_*'):
-            orgdf = originalModel_2_selected_df(outf, delim, obstocomparewith)
+            orgdf = modelsModel_2_selected_df(outf, delim, obstocomparewith)
             ## Set cleaned columns names:
             orgdf.columns = cols
             orgdflist.append(orgdf)
@@ -615,7 +603,7 @@ def prepare_ensemble_ode_models(ensemblefile, foldertosave, defcols=True, obstoc
             raise Exception("Provide list of patterns to retrieve.")
 
         for outf in glob.glob(foldertosave+'/data_*'):
-            orgdf = originalModel_2_selected_df(outf, delim, obstocomparewith)
+            orgdf = modelsModel_2_selected_df(outf, delim, obstocomparewith)
             orgdf.columns = [o.lstrip('^').replace('.ParticleNumber$', '') for o in obstocomparewith]
             orgdflist.append(orgdf)
 
@@ -633,7 +621,7 @@ def prepare_ensemble_ode_models(ensemblefile, foldertosave, defcols=True, obstoc
 
 
 
-def plot_originalSelected_as_paper_SD(ensemblefile, ensemblefolder, name, prefix, foldername):
+def plot_modelsSelected_as_paper_SD(ensemblefile, ensemblefolder, name, prefix, foldername):
     """FIXME! briefly describe function
 
     :param ensemblefile: the output file of COPASI_SE; all runs were saved in one file

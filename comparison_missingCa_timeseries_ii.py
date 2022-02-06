@@ -1,25 +1,10 @@
-import  matplotlib.pyplot as plt
-import pandas as pd
 import numpy as np
 import copy
 import sys, os
-import re
-import seaborn as sns
-sys.path.append("/home/fewpills/projectrepo/pytoolbox")
-import corex_tools
-from corex_tools import timeseries_2_array
-from corex_tools import plot_timeseriesRe
-from corex_tools import plot_df
-from corex_tools import plot_two_curves
-from corex_tools import factorise_2
+sys.path.append(os.path.join(sys.path[0], "pytoolbox"))
 
-import comparison_timeseries_toolkit
 from comparison_timeseries_toolkit import prepare_ensemble_ode_models
 from comparison_timeseries_toolkit import prepare_ensemble_rb_models
-from comparison_timeseries_toolkit import plot_mineSelected_as_paper_SD
-from comparison_timeseries_toolkit import plot_originalSelected_as_paper_SD
-from comparison_timeseries_toolkit import plot_overlaid_ode2rb_SD
-from comparison_timeseries_toolkit import plot_overlaid_rb2rb_SD
 from comparison_timeseries_toolkit import get_ode_obstocomparewith
 from comparison_timeseries_toolkit import plot_paired_SD
 from comparison_timeseries_toolkit import plot_paired_separate_SD
@@ -28,21 +13,21 @@ from comparison_timeseries_toolkit import plot_paired_separate_SD
 ## -----------
 ##  DATA prep:
 ## -----------
-
-foldername = "/home/fewpills/projectrepo/comparisonOfModels/all_ca_case"
+mainpath =
+foldername = "./comparisonOfModels/ca_all_case"
 
 legendlabels = ["ODE","RB"]
 
 ### RB model ---------------
-ensembleRB = "/home/fewpills/projectrepo/model/model_phenotypes_ii/basic/original/threeBindingSites_DARPP/out_ensemble_ca_all"
+ensembleRB = "./rb_model/wildType/models/threeBindingSites_DARPP/out_ensemble_ca_all"
 pattern = "data_*"
 
 rbdicarr, rbcols =  prepare_ensemble_rb_models(ensembleRB, pattern, defcols = False)
 
 
 ### ODE model stochastic ----------------
-ensembleODE = "/home/fewpills/projectrepo/original_fernandezModel/withCopasiGUI_SE/DirMethresults/ensemble_40runs_tc_directmethod700_1400"
-ensemblefolder = "/home/fewpills/projectrepo/original_fernandezModel/withCopasiGUI_SE/DirMethresults/ensemble_out"
+ensembleODE = "./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_40runs_tc_directmethod700_1400"
+ensemblefolder = "./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_out"
 
 patternslist = ['Ca']
 
@@ -83,7 +68,6 @@ rbcolsCopy = sorted(list(rbdicarrCopy.keys()))
 
 # plot_paired_SD(odedicarr, odecols, rbdicarrCopy, rbcolsCopy, foldername = foldername, name = name, legendlabels=legendlabels, format='portrait', ii=3, jj=5 )
 
-# foldername = "/home/fewpills/projectrepo/comparisonOfModels/forUCBTalk"
 plot_paired_SD(odedicarr, odecols, rbdicarrCopy, rbcolsCopy, foldername = foldername, name = name, legendlabels=legendlabels, format='portrait', ii=3, jj=5)
 
 name='sep'
@@ -130,7 +114,7 @@ rbdicSum = {rbcolssummed:rbtosumall2}
 
 odetosumall = [val for val in odedicarr.itervalues()]
 odetosumall2 = reduce(np.add, odetosumall)
-odecolssummed = "all_Ca2+"
+odecolssummed = "all_Ca2"
 
 odedicSum = {odecolssummed:odetosumall2}
 
