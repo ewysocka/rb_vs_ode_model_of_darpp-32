@@ -1,0 +1,73 @@
+# This file is to trace the amounts of Ca2+ in the system
+# as in original according to filter applied in file :
+# /home/fewpills/projectrepo/original_fernandezModel/comparisonOfModels/comparison_missingCa_timeseries.py
+
+### 6 ones wich come with PP2B 
+# CK1P_PP2B
+# D34:137_PP2B
+# D34:75:137_PP2B
+# D34:75_PP2B
+# D34_PP2B
+# PP2B
+
+
+### - 13 ones which come with Ca
+# PP2ACa
+# PP2ACa_PKA
+# PP2APCa
+# D75_PP2ACa
+# D75_PP2APCa
+# Ca
+# PP2BinactiveCa2
+# D34:75:137_PP2ACa
+# D34:75:137_PP2APCa
+# D34:75_PP2ACa
+# D34:75_PP2APCa
+# D75:137_PP2ACa
+# D75:137_PP2APCa
+
+### the list from notFull_obs_Ca_bonds.ka
+# 'Ca',
+# 'D34:75:137_PP2ACa',
+# 'D34:75:137_PP2APCa',
+# 'D34:75_PP2ACa',
+# 'D34:75_PP2APCa',
+# 'D75:137_PP2ACa',
+# 'D75:137_PP2APCa',
+# 'D75_PP2ACa',
+# 'D75_PP2APCa',
+# 'PP2ACa',
+# 'PP2ACa_PKA',
+# 'PP2APCa',
+# 'PP2BinactiveCa2'
+
+%obs: 'Ca' Ca2+(a)
+%obs: 'D34:75:137_PP2ACa' D(thr34~p, ser137~p, thr75~p!0),PP2A(ca!1, pSite~u!0),Ca2+(a!1)
+%obs: 'D34:75:137_PP2APCa' D(thr34~p, ser137~p, thr75~p!0),PP2A(ca!1, pSite~p!0),Ca2+(a!1)
+%obs: 'D34:75_PP2ACa' D(thr34~p, ser137~u, thr75~p!0),PP2A(ca!1, pSite~u!0),Ca2+(a!1)
+%obs: 'D34:75_PP2APCa' D(thr34~p, ser137~u, thr75~p!0),PP2A(ca!1, pSite~p!0),Ca2+(a!1)
+%obs: 'D75:137_PP2ACa' D(thr34~u, ser137~p, thr75~p!0),PP2A(ca!1, pSite~u!0),Ca2+(a!1)
+%obs: 'D75:137_PP2APCa' D(thr34~u, ser137~p, thr75~p!0),PP2A(ca!1, pSite~p!0),Ca2+(a!1)
+%obs: 'D75_PP2ACa' D(thr34~u, ser137~u, thr75~p!0),PP2A(ca!1, pSite~u!0),Ca2+(a!1)
+%obs: 'D75_PP2APCa' D(thr34~u, ser137~u, thr75~p!0),PP2A(ca!1, pSite~p!0),Ca2+(a!1)
+%obs: 'PP2ACa' PP2A(ca!0, pSite~u),Ca2+(a!0) 
+%obs: 'PP2ACa_PKA' PP2A(ca!1, pSite~u!0),PKA(a!0),Ca2+(a!1)
+%obs: 'PP2APCa' PP2A(ca!0, pSite~p),Ca2+(a!0)
+%obs: 'PP2BinactiveCa2_1' PP2B(ca1, ca2!0, ca3!1, ca4, state~i),Ca2+(a!1),Ca2+(a!0)
+%obs: 'PP2BinactiveCa2_2' PP2B(ca1!0, ca2, ca3!1, ca4, state~i),Ca2+(a!0),Ca2+(a!1)
+%obs: 'PP2BinactiveCa2_3' PP2B(ca1, ca2, ca3!0, ca4!1, state~i),Ca2+(a!1),Ca2+(a!0)
+%obs: 'PP2BinactiveCa2_4' PP2B(ca1!0, ca2, ca3, ca4!1, state~i),Ca2+(a!0),Ca2+(a!1)
+%obs: 'PP2BinactiveCa2_5' PP2B(ca1!0, ca2!1, ca3, ca4, state~i),Ca2+(a!0),Ca2+(a!1)
+%obs: 'PP2BinactiveCa2_6' PP2B(ca1, ca2!0, ca3, ca4!1, state~i),Ca2+(a!0),Ca2+(a!1)
+
+### Not in the original model but if added PP2B.ParticleNumber -- 6
+# %obs: 'all_Ca2+' Ca2+()
+%obs: '+CK1_PP2Ba' CK1(pSite~p!0),PP2B(ca1!1, ca2!2, ca3!3, ca4!4, state~a!0),Ca2+(a!3),Ca2+(a!2),Ca2+(a!4),Ca2+(a!1)
+%obs: '+PP2Bact' PP2B(ca1!0, ca2!1, ca3!2, ca4!3, state~a),Ca2+(a!2),Ca2+(a!1),Ca2+(a!3),Ca2+(a!0)
+%obs: '+D_PP2Ba34' D(thr34~p!0, ser137~u, thr75~u),PP2B(ca1!1, ca2!2, ca3!3, ca4!4, state~a!0),Ca2+(a!2),Ca2+(a!4),Ca2+(a!1),Ca2+(a!3)
+%obs: '+D_PP2Ba34_137' D(thr34~p!0, ser137~p, thr75~u),PP2B(ca1!1, ca2!2, ca3!3, ca4!4, state~a!0),Ca2+(a!1),Ca2+(a!3),Ca2+(a!2),Ca2+(a!4)
+%obs: '+D_PP2Ba34_75' D(thr34~p!0, ser137~u, thr75~p),PP2B(ca1!1, ca2!2, ca3!3, ca4!4, state~a!0),Ca2+(a!3),Ca2+(a!4),Ca2+(a!1),Ca2+(a!2)
+%obs: '+D_PP2Ba34_137_75' D(thr34~p!0, ser137~p, thr75~p),PP2B(ca1!1, ca2!2, ca3!3, ca4!4, state~a!0),Ca2+(a!2),Ca2+(a!4),Ca2+(a!1),Ca2+(a!3)
+
+
+

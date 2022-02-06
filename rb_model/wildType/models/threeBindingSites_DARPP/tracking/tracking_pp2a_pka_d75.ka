@@ -1,0 +1,11 @@
+# %mod: [T]>200 do $TRACK 'D34*~?' [true]
+# %mod: [T]>300 do $TRACK 'D34*~?' [false]
+
+%mod: [T]>200 do $TRACK 'PP2A_PKA' [true]
+%mod: [T]>300 do $TRACK 'PP2A_PKA' [false]
+# %mod: [T]>200 do $TRACK 'D75_PP2A' [true]
+# %mod: [T]>200 do $TRACK 'D75_PKA' [true] 
+# %mod: [T]>200 do $TRACK 'D34_PKA' [true] 
+
+%def: "displayCompression"  "weak" 
+# %def: "cflowFileName" "tracking_D34"

@@ -1,0 +1,64 @@
+<!---->
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>output/Agent_trace_Ca2+.a^</title>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="http://cpettitt.github.io/project/dagre-d3/latest/dagre-d3.min.js" charset="utf-8"></script>
+  <style>
+    dt {float: left; clear: left; width: 20em;}
+    dd {font-weight: bold; margin: 0 0 0 21em;}
+    .node rect {stroke: #333; fill: #fff;}
+    .edgePath path {stroke: #333; fill: #333; stroke-width: 1.5px;}
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1>output/Agent_trace_Ca2+.a^</h1>
+  <svg width=960 height=600><g/></svg>
+  <script>
+  // Create a new directed graph
+  var g = new dagreD3.graphlib.Graph().setGraph({});
+  g.setNode(1, { label: "", style: "visibility:hidden", width: "0", height: "0" });
+  g.setNode(2, { label: "", style: "visibility:hidden", width: "0", height: "0" });
+  g.setNode(3, { label: "Ca2+(a!PP2B@ca4)" });
+  g.setNode(4, { label: "Ca2+(a!PP2B@ca3)" });
+  g.setNode(5, { label: "Ca2+(a!PP2B@ca2)" });
+  g.setNode(6, { label: "Ca2+(a!PP2B@ca1)" });
+  g.setNode(7, { label: "Ca2+(a!PP2A@ca)" });
+  g.setNode(8, { label: "Ca2+(a!free)" });
+  g.setEdge(1,8,{ label: "129" });
+  g.setEdge(7,8,{ label: "30" });
+  g.setEdge(8,2,{ label: "130" });
+  g.setEdge(8,7,{ label: "29" });
+  g.setEdge(8,6,{ label: "65,63,61,47,45,43" });
+  g.setEdge(8,5,{ label: "65,59,57,51,49,43" });
+  g.setEdge(8,4,{ label: "63,59,55,53,49,45" });
+  g.setEdge(8,3,{ label: "61,57,55,53,51,47" });
+  g.setEdge(6,8,{ label: "66,64,62,48,46,44" });
+  g.setEdge(5,8,{ label: "66,60,58,52,50,44" });
+  g.setEdge(4,8,{ label: "64,60,56,54,50,46" });
+  g.setEdge(3,8,{ label: "62,58,56,54,52,48" });
+  var svg = d3.select("svg"),inner = svg.select("g");
+  // Set up zoom support
+  var zoom = d3.behavior.zoom().on("zoom", function() {
+  inner.attr("transform", "translate(" + d3.event.translate + ")" +
+  "scale(" + d3.event.scale + ")");
+  });
+  svg.call(zoom);// Create the renderer
+   var render = new dagreD3.render();
+  // Run the renderer. This is what draws the final graph.
+  render(inner, g);
+  // Center the graph
+  var initialScale = 0.75;
+  zoom
+  .translate([(svg.attr("width") - g.graph().width * initialScale) / 2, 20])
+  .scale(initialScale)
+  .event(svg);
+  svg.attr('height', g.graph().height * initialScale + 40);
+  </script>
+  </div>
+</body>
+</html>

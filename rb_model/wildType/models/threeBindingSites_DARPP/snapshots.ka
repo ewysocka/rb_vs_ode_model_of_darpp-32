@@ -1,0 +1,48 @@
+# %obs: '[E+]/([E+]+[E-])' [E+]/([E+]+[E-])
+# %obs: '[E+]/([E]+[E-])' [E+]/([E]+[E-])
+# %obs: '[E+]/([E])' [E+]/([E])
+
+# %mod: repeat [T]>200 && ([E+]/[E])>0.96  && ([E+] [mod] 100000 )=0 do $SNAPSHOT "../snapshots/s_" until [T]=290
+# %mod: repeat ([E+]/[E])>0.95  && ([E+] [mod] 100000 )=0 do $SNAPSHOT "./snapshots/s_" until [T]=700
+# %mod: repeat ([E+] [mod] 10000 )=0 do $SNAPSHOT "/home/fewpills/projectrepo/postmodel_pipeline/model_phenotypes_ii/basic/snapshots_threeBindingSites_DARPP/snapshots_0-700_E1000/s_" until [T]=700
+
+# %mod: [E-]/([E]+[E-])>0.9 do $SNAPSHOT "snap.dot"
+# %mod: repeat [T]>0 && ([E+]/[E])>0.96  &&  ([E+] [mod] 100000)=0 do $SNAPSHOT "/home/fewpills/projectrepo/model/model_phenotypes_ii/basic/snapshots_threeBindingSites_DARPP/snapshots_0-700_E100000_096/s_" until [T]=700
+
+
+# %mod: repeat [T]>0 && ([E+] [mod] 10000)=0 do $SNAPSHOT "/home/fewpills/projectrepo/model/model_phenotypes_ii/basic/snapshots_threeBindingSites_DARPP/snapshots_0-700_E10000/s_" until [T]=700
+
+%mod: [T]=250 do $SNAPSHOT "/home/fewpills/projectrepo/model/model_phenotypes_ii/basic/snapshots_threeBindingSites_DARPP/dot_test.dot"
+%def: "dotSnapshots" "true"
+%def: "colorDot" "true"
+
+
+# %mod: [T]=200 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=201 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=202 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=203 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=204 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=205 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=206 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=207 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=208 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=210 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=211 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=212 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=213 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=214 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=215 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=216 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=217 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=218 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=219 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=220 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=221 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=222 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=223 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=224 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=225 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=226 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=227 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=228 do $SNAPSHOT "../snapshots/snap_"
+# %mod: [T]=229 do $SNAPSHOT "../snapshots/snap_"

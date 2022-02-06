@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- command line:  -->
+<!--       KaDE   oBS_FINALrules_thr75inhibition_PKArulesDiff.ka  oBS_FINALrates_thr75inhibition.ka   oBS_init.ka  oBS_obs_phosphoSites_22.ka   oBS_stimuli_pulse_spikes_CaWithRates.ka   -l  700    -ode-backend   sbml   -d  output-kade  -->
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" xmlns:celldesigner="http://www.sbml.org/2001/ns/celldesigner" level="2" version="4">
+<model name="KaDe output:">
+<!--
+THINGS THAT ARE KNOWN FROM KAPPA FILE AND KaSim OPTIONS:
+
+init - the initial abundances of each species and token
+tinit - the initial simulation time (likely 0)
+tend - the final simulation time 
+initialstep - initial time step at the beginning of numerical integration
+maxstep - maximal time step for numerical integration
+reltol - relative error tolerance;
+abstol - absolute error tolerance;
+period - the time period between points to return
+
+variables denote number of embeddings 
+rule rates are corrected by the number of automorphisms in the lhs of rules
+reaction rates are corrected by the product, for each species, of the factorial of the number of occurrence of this species in the lhs
+-->
+<listOfUnitDefinitions>
+<unitDefinition metaid="substance" id="substance" name="substance">
+<listOfUnits>
+<unit metaid="CMD2"  kind="mole"/>
+</listOfUnits>
+</unitDefinition>
+<unitDefinition metaid="volume" id="volume" name="volume">
+<listOfUnits>
+<unit metaid="CMD1" kind="litre"/>
+</listOfUnits>
+</unitDefinition>
+</listOfUnitDefinitions>
+<listOfCompartments>
+<compartment metaid="default" id="default" size="1" units="volume"/>
+</listOfCompartments>
+<listOfSpecies>
+<species metaid="CMD60" id="s1" name="R2C2(camp1, camp2, camp3, camp4, pka1~off, pka2~off)" compartment="default" initialAmount="4000" substanceUnits="substance"/>
+<species metaid="CMD61" id="s2" name="PP2C(a)" compartment="default" initialAmount="80" substanceUnits="substance"/>
+<species metaid="CMD62" id="s3" name="PP2B(ca1, ca2, ca3, ca4, state~i)" compartment="default" initialAmount="200" substanceUnits="substance"/>
+<species metaid="CMD63" id="s4" name="PP2A(ca, pSite~u)" compartment="default" initialAmount="120" substanceUnits="substance"/>
+<species metaid="CMD64" id="s5" name="PDE(pSite~u)" compartment="default" initialAmount="1204" substanceUnits="substance"/>
+<species metaid="CMD65" id="s6" name="CK1(pSite~u)" compartment="default" initialAmount="100" substanceUnits="substance"/>
+<species metaid="CMD66" id="s7" name="CDK5(a)" compartment="default" initialAmount="120" substanceUnits="substance"/>
+<species metaid="CMD67" id="s8" name="D(s, thr34~u, ser137~u, thr75~u)" compartment="default" initialAmount="3000" substanceUnits="substance"/>
+<species metaid="CMD68" id="s9" name="Ca2+(a)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD69" id="s10" name="CDK5(a!1), D(s!1, thr34~u, ser137~u, thr75~u)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD70" id="s11" name="D(s, thr34~u, ser137~u, thr75~p)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD71" id="s12" name="D(s!1, thr34~u, ser137~u, thr75~p), CK1(pSite~u!1)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD72" id="s13" name="D(s!1, thr34~u, ser137~u, thr75~u), CK1(pSite~u!1)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD73" id="s14" name="CK1(pSite~p)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD74" id="s15" name="D(s, thr34~u, ser137~p, thr75~u)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD75" id="s16" name="CDK5(a!1), D(s!1, thr34~u, ser137~p, thr75~u)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD76" id="s17" name="D(s, thr34~u, ser137~p, thr75~p)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD77" id="s18" name="D(s!1, thr34~u, ser137~p, thr75~p), PP2A(ca, pSite~u!1)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD78" id="s19" name="D(s!1, thr34~u, ser137~u, thr75~p), PP2A(ca, pSite~u!1)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD79" id="s20" name="Ca2+(a!1), PP2A(ca!1, pSite~u)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD80" id="s21" name="Ca2+(a!1), D(s!2, thr34~u, ser137~p, thr75~p), PP2A(ca!1, pSite~u!2)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD81" id="s22" name="Ca2+(a!1), D(s!2, thr34~u, ser137~u, thr75~p), PP2A(ca!1, pSite~u!2)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD82" id="s23" name="Ca2+(a!1), PP2B(ca1!2, ca2!1, ca3, ca4, state~i), Ca2+(a!2)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD83" id="s24" name="Ca2+(a!1), PP2B(ca1!2, ca2, ca3!1, ca4, state~i), Ca2+(a!2)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD84" id="s25" name="Ca2+(a!1), PP2B(ca1!2, ca2, ca3, ca4!1, state~i), Ca2+(a!2)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD85" id="s26" name="Ca2+(a!1), PP2B(ca1, ca2!2, ca3!1, ca4, state~i), Ca2+(a!2)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD86" id="s27" name="Ca2+(a!1), PP2B(ca1, ca2!2, ca3, ca4!1, state~i), Ca2+(a!2)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD87" id="s28" name="Ca2+(a!1), PP2B(ca1, ca2, ca3!2, ca4!1, state~i), Ca2+(a!2)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD88" id="s29" name="Ca2+(a!1), PP2B(ca1!2, ca2!3, ca3!4, ca4!1, state~a), Ca2+(a!4), Ca2+(a!3), Ca2+(a!2)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD89" id="s30" name="Ca2+(a!1), CK1(pSite~p!2), PP2B(ca1!1, ca2!3, ca3!4, ca4!5, state~a!2), Ca2+(a!5), Ca2+(a!4), Ca2+(a!3)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD90" id="s31" name="D(s!1, thr34~u, ser137~p, thr75~p), PP2C(a!1)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+<species metaid="CMD91" id="s32" name="D(s!1, thr34~u, ser137~p, thr75~u), PP2C(a!1)" compartment="default" initialAmount="0" substanceUnits="substance"/>
+</listOfSpecies>
+<listOfParameters>
+<parameter metaid="CMD3" id="tinit" value="0." units="time"/>
+<parameter metaid="CMD4" id="tend" value="700." units="time"/>
+<parameter metaid="CMD5" id="period" value="0.01" units="time"/>
+<parameter metaid="CMD6" id="D34*~?" value="0"/>
+<parameter metaid="CMD7" id="Thr34:Thr75:Ser137~?" value="0"/>
+<parameter metaid="CMD8" id="Thr34:Ser137~?" value="0"/>
+<parameter metaid="CMD9" id="Thr34:Thr75~?" value="0"/>
+<parameter metaid="CMD10" id="Thr34~?" value="0"/>
+<parameter metaid="CMD11" id="PDEp~?" value="0"/>
+<parameter metaid="CMD12" id="PP2Ap~?" value="0"/>
+<parameter metaid="CMD13" id="PKAa?" value="0"/>
+<parameter metaid="CMD14" id="cAMP_on" value="0"/>
+<parameter metaid="CMD15" id="koff50" value="10"/>
+<parameter metaid="CMD16" id="koff46" value="6"/>
+<parameter metaid="CMD17" id="koff54" value="1"/>
+<parameter metaid="CMD18" id="Avo" value="6.022e+23"/>
+<parameter metaid="CMD19" id="V" value="1e-15"/>
+<parameter metaid="CMD20" id="k58" value="1.7"/>
+<parameter metaid="CMD21" id="k57" value="15"/>
+<parameter metaid="CMD22" id="kcat45" value="20"/>
+<parameter metaid="CMD23" id="koff45" value="80"/>
+<parameter metaid="CMD24" id="kcat44" value="10"/>
+<parameter metaid="CMD25" id="koff44" value="40"/>
+<parameter metaid="CMD26" id="koff41" value="60"/>
+<parameter metaid="CMD27" id="koff40" value="32.5"/>
+<parameter metaid="CMD28" id="koff39" value="110"/>
+<parameter metaid="CMD29" id="koff38" value="33"/>
+<parameter metaid="CMD30" id="koff36" value="1"/>
+<parameter metaid="CMD31" id="koff35" value="1"/>
+<parameter metaid="CMD32" id="kcat34" value="5"/>
+<parameter metaid="CMD33" id="kcat33" value="4"/>
+<parameter metaid="CMD34" id="koff33" value="16"/>
+<parameter metaid="CMD35" id="kcat32" value="0.1"/>
+<parameter metaid="CMD36" id="kcat31" value="9"/>
+<parameter metaid="CMD37" id="koff31" value="36"/>
+<parameter metaid="CMD38" id="kcat30" value="1"/>
+<parameter metaid="CMD39" id="kcat29" value="6"/>
+<parameter metaid="CMD40" id="koff29" value="24"/>
+<parameter metaid="CMD41" id="kcat10" value="24"/>
+<parameter metaid="CMD42" id="koff10" value="40"/>
+<parameter metaid="CMD43" id="kcat9" value="10"/>
+<parameter metaid="CMD44" id="koff9" value="24"/>
+<parameter metaid="CMD45" id="kcat13" value="3"/>
+<parameter metaid="CMD46" id="koff13" value="12"/>
+<parameter metaid="CMD47" id="koff27" value="120"/>
+<parameter metaid="CMD48" id="kcat19" value="0.03"/>
+<parameter metaid="CMD49" id="koff19" value="0.12"/>
+<parameter metaid="CMD50" id="koff17" value="1600"/>
+<parameter metaid="CMD51" id="kcat6" value="4"/>
+<parameter metaid="CMD52" id="koff6" value="16"/>
+<parameter metaid="CMD53" id="kcat8" value="0"/>
+<parameter metaid="CMD54" id="kcat3" value="2.7"/>
+<parameter metaid="CMD55" id="koff3" value="10.8"/>
+<parameter metaid="CMD56" id="kcat2" value="3"/>
+<parameter metaid="CMD57" id="koff2" value="12"/>
+<parameter metaid="CMD58" id="kcat1" value="3"/>
+<parameter metaid="CMD59" id="koff1" value="12"/>
+</listOfParameters>
+<listOfReactions>
+<!-- rule    : D(s!1,ser137~p), PP2C(a!1) -> D(s,ser137~u), PP2C(a) -->
+<!-- reaction: D(s!1, thr34~u, ser137~p, thr75~p), PP2C(a!1) -> PP2C(a) + D(s, thr34~u, ser137~u, thr75~p)  -->
+<reaction id="re1" name="D(s!1,ser137~p), PP2C(a!1) -> D(s,ser137~u), PP2C(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD92" species="s31"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD93" species="s2"/>
+<speciesReference metaid="CMD94" species="s11"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> kcat13 </ci><ci> s31 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,ser137~p), PP2C(a!1) -> D(s,ser137~p), PP2C(a) -->
+<!-- reaction: D(s!1, thr34~u, ser137~p, thr75~p), PP2C(a!1) -> PP2C(a) + D(s, thr34~u, ser137~p, thr75~p)  -->
+<reaction id="re2" name="D(s!1,ser137~p), PP2C(a!1) -> D(s,ser137~p), PP2C(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD95" species="s31"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD96" species="s2"/>
+<speciesReference metaid="CMD97" species="s17"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff13 </ci><ci> s31 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,ser137~p), PP2C(a!1) -> D(s,ser137~u), PP2C(a) -->
+<!-- reaction: D(s!1, thr34~u, ser137~p, thr75~u), PP2C(a!1) -> PP2C(a) + D(s, thr34~u, ser137~u, thr75~u)  -->
+<reaction id="re3" name="D(s!1,ser137~p), PP2C(a!1) -> D(s,ser137~u), PP2C(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD98" species="s32"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD99" species="s2"/>
+<speciesReference metaid="CMD100" species="s8"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> kcat13 </ci><ci> s32 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,ser137~p), PP2C(a!1) -> D(s,ser137~p), PP2C(a) -->
+<!-- reaction: D(s!1, thr34~u, ser137~p, thr75~u), PP2C(a!1) -> PP2C(a) + D(s, thr34~u, ser137~p, thr75~u)  -->
+<reaction id="re4" name="D(s!1,ser137~p), PP2C(a!1) -> D(s,ser137~p), PP2C(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD101" species="s32"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD102" species="s2"/>
+<speciesReference metaid="CMD103" species="s15"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff13 </ci><ci> s32 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s,ser137~p), PP2C(a) -> D(s!1,ser137~p), PP2C(a!1) -->
+<!-- reaction: PP2C(a) + D(s, thr34~u, ser137~p, thr75~u) -> D(s!1, thr34~u, ser137~p, thr75~u), PP2C(a!1)  -->
+<reaction id="re5" name="D(s,ser137~p), PP2C(a) -> D(s!1,ser137~p), PP2C(a!1)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD104" species="s2"/>
+<speciesReference metaid="CMD105" species="s15"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD106" species="s32"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 7.5e+06 </cn><apply><times/><ci> V </ci><ci> Avo </ci></apply></apply><apply>
+<times/><ci> s15 </ci><ci> s2 </ci></apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s,ser137~p), PP2C(a) -> D(s!1,ser137~p), PP2C(a!1) -->
+<!-- reaction: PP2C(a) + D(s, thr34~u, ser137~p, thr75~p) -> D(s!1, thr34~u, ser137~p, thr75~p), PP2C(a!1)  -->
+<reaction id="re6" name="D(s,ser137~p), PP2C(a) -> D(s!1,ser137~p), PP2C(a!1)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD107" species="s2"/>
+<speciesReference metaid="CMD108" species="s17"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD109" species="s31"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 7.5e+06 </cn><apply><times/><ci> V </ci><ci> Avo </ci></apply></apply><apply>
+<times/><ci> s17 </ci><ci> s2 </ci></apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1!_,ca2!_,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!_,ca2!_,ca3!1,ca4!2,state~a), Ca2+(a!1), Ca2+(a!2) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1!2, ca2!1, ca3, ca4, state~i), Ca2+(a!2) + Ca2+(a) + Ca2+(a) -> Ca2+(a!1), PP2B(ca1!2, ca2!3, ca3!4, ca4!1, state~a), Ca2+(a!4), Ca2+(a!3), Ca2+(a!2)  -->
+<reaction id="re7" name="PP2B(ca1!_,ca2!_,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!_,ca2!_,ca3!1,ca4!2,state~a), Ca2+(a!1), Ca2+(a!2)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD110" species="s9" stoichiometry="2"/>
+<speciesReference metaid="CMD111" species="s23"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD112" species="s29"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 3e+15 </cn><apply><power/><apply><times/><ci> V </ci><ci> Avo </ci></apply><cn type="integer"> 2 </cn></apply></apply><apply>
+<times/><ci> s9 </ci><apply>
+<times/><ci> s9 </ci><ci> s23 </ci></apply>
+</apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1!1,ca2!2,ca3,ca4,state~i), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1!2, ca2!1, ca3, ca4, state~i), Ca2+(a!2) -> Ca2+(a) + Ca2+(a) + PP2B(ca1, ca2, ca3, ca4, state~i)  -->
+<reaction id="re8" name="PP2B(ca1!1,ca2!2,ca3,ca4,state~i), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD113" species="s23"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD114" species="s3"/>
+<speciesReference metaid="CMD115" species="s9" stoichiometry="2"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff35 </ci><ci> s23 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1!_,ca2,ca3!_,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!_,ca2!1,ca3!_,ca4!2,state~a), Ca2+(a!1), Ca2+(a!2) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1!2, ca2, ca3!1, ca4, state~i), Ca2+(a!2) + Ca2+(a) + Ca2+(a) -> Ca2+(a!1), PP2B(ca1!2, ca2!3, ca3!4, ca4!1, state~a), Ca2+(a!4), Ca2+(a!3), Ca2+(a!2)  -->
+<reaction id="re9" name="PP2B(ca1!_,ca2,ca3!_,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!_,ca2!1,ca3!_,ca4!2,state~a), Ca2+(a!1), Ca2+(a!2)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD116" species="s9" stoichiometry="2"/>
+<speciesReference metaid="CMD117" species="s24"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD118" species="s29"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 3e+15 </cn><apply><power/><apply><times/><ci> V </ci><ci> Avo </ci></apply><cn type="integer"> 2 </cn></apply></apply><apply>
+<times/><ci> s9 </ci><apply>
+<times/><ci> s9 </ci><ci> s24 </ci></apply>
+</apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1!1,ca2,ca3!2,ca4,state~i), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1!2, ca2, ca3!1, ca4, state~i), Ca2+(a!2) -> Ca2+(a) + Ca2+(a) + PP2B(ca1, ca2, ca3, ca4, state~i)  -->
+<reaction id="re10" name="PP2B(ca1!1,ca2,ca3!2,ca4,state~i), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD119" species="s24"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD120" species="s3"/>
+<speciesReference metaid="CMD121" species="s9" stoichiometry="2"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff35 </ci><ci> s24 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1!_,ca2,ca3,ca4!_,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!_,ca2!1,ca3!2,ca4!_,state~a), Ca2+(a!1), Ca2+(a!2) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1!2, ca2, ca3, ca4!1, state~i), Ca2+(a!2) + Ca2+(a) + Ca2+(a) -> Ca2+(a!1), PP2B(ca1!2, ca2!3, ca3!4, ca4!1, state~a), Ca2+(a!4), Ca2+(a!3), Ca2+(a!2)  -->
+<reaction id="re11" name="PP2B(ca1!_,ca2,ca3,ca4!_,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!_,ca2!1,ca3!2,ca4!_,state~a), Ca2+(a!1), Ca2+(a!2)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD122" species="s9" stoichiometry="2"/>
+<speciesReference metaid="CMD123" species="s25"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD124" species="s29"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 3e+15 </cn><apply><power/><apply><times/><ci> V </ci><ci> Avo </ci></apply><cn type="integer"> 2 </cn></apply></apply><apply>
+<times/><ci> s9 </ci><apply>
+<times/><ci> s9 </ci><ci> s25 </ci></apply>
+</apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1!1,ca2,ca3,ca4!2,state~i), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1!2, ca2, ca3, ca4!1, state~i), Ca2+(a!2) -> Ca2+(a) + Ca2+(a) + PP2B(ca1, ca2, ca3, ca4, state~i)  -->
+<reaction id="re12" name="PP2B(ca1!1,ca2,ca3,ca4!2,state~i), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD125" species="s25"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD126" species="s3"/>
+<speciesReference metaid="CMD127" species="s9" stoichiometry="2"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff35 </ci><ci> s25 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1,ca2!_,ca3!_,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!1,ca2!_,ca3!_,ca4!2,state~a), Ca2+(a!1), Ca2+(a!2) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1, ca2!2, ca3!1, ca4, state~i), Ca2+(a!2) + Ca2+(a) + Ca2+(a) -> Ca2+(a!1), PP2B(ca1!2, ca2!3, ca3!4, ca4!1, state~a), Ca2+(a!4), Ca2+(a!3), Ca2+(a!2)  -->
+<reaction id="re13" name="PP2B(ca1,ca2!_,ca3!_,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!1,ca2!_,ca3!_,ca4!2,state~a), Ca2+(a!1), Ca2+(a!2)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD128" species="s9" stoichiometry="2"/>
+<speciesReference metaid="CMD129" species="s26"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD130" species="s29"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 3e+15 </cn><apply><power/><apply><times/><ci> V </ci><ci> Avo </ci></apply><cn type="integer"> 2 </cn></apply></apply><apply>
+<times/><ci> s9 </ci><apply>
+<times/><ci> s9 </ci><ci> s26 </ci></apply>
+</apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1,ca2!1,ca3!2,ca4,state~i), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1, ca2!2, ca3!1, ca4, state~i), Ca2+(a!2) -> Ca2+(a) + Ca2+(a) + PP2B(ca1, ca2, ca3, ca4, state~i)  -->
+<reaction id="re14" name="PP2B(ca1,ca2!1,ca3!2,ca4,state~i), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD131" species="s26"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD132" species="s3"/>
+<speciesReference metaid="CMD133" species="s9" stoichiometry="2"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff35 </ci><ci> s26 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1,ca2!_,ca3,ca4!_,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!1,ca2!_,ca3!2,ca4!_,state~a), Ca2+(a!1), Ca2+(a!2) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1, ca2!2, ca3, ca4!1, state~i), Ca2+(a!2) + Ca2+(a) + Ca2+(a) -> Ca2+(a!1), PP2B(ca1!2, ca2!3, ca3!4, ca4!1, state~a), Ca2+(a!4), Ca2+(a!3), Ca2+(a!2)  -->
+<reaction id="re15" name="PP2B(ca1,ca2!_,ca3,ca4!_,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!1,ca2!_,ca3!2,ca4!_,state~a), Ca2+(a!1), Ca2+(a!2)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD134" species="s9" stoichiometry="2"/>
+<speciesReference metaid="CMD135" species="s27"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD136" species="s29"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 3e+15 </cn><apply><power/><apply><times/><ci> V </ci><ci> Avo </ci></apply><cn type="integer"> 2 </cn></apply></apply><apply>
+<times/><ci> s9 </ci><apply>
+<times/><ci> s9 </ci><ci> s27 </ci></apply>
+</apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1,ca2!1,ca3,ca4!2,state~i), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1, ca2!2, ca3, ca4!1, state~i), Ca2+(a!2) -> Ca2+(a) + Ca2+(a) + PP2B(ca1, ca2, ca3, ca4, state~i)  -->
+<reaction id="re16" name="PP2B(ca1,ca2!1,ca3,ca4!2,state~i), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD137" species="s27"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD138" species="s3"/>
+<speciesReference metaid="CMD139" species="s9" stoichiometry="2"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff35 </ci><ci> s27 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : CK1(pSite~p!1), PP2B(state~a!1) -> CK1(pSite~u), PP2B(state~a) -->
+<!-- reaction: Ca2+(a!1), CK1(pSite~p!2), PP2B(ca1!1, ca2!3, ca3!4, ca4!5, state~a!2), Ca2+(a!5), Ca2+(a!4), Ca2+(a!3) -> Ca2+(a!1), PP2B(ca1!2, ca2!3, ca3!4, ca4!1, state~a), Ca2+(a!4), Ca2+(a!3), Ca2+(a!2) + CK1(pSite~u)  -->
+<reaction id="re17" name="CK1(pSite~p!1), PP2B(state~a!1) -> CK1(pSite~u), PP2B(state~a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD140" species="s30"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD141" species="s6"/>
+<speciesReference metaid="CMD142" species="s29"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> kcat29 </ci><ci> s30 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : CK1(pSite~p!1), PP2B(state~a!1) -> CK1(pSite~p), PP2B(state~a) -->
+<!-- reaction: Ca2+(a!1), CK1(pSite~p!2), PP2B(ca1!1, ca2!3, ca3!4, ca4!5, state~a!2), Ca2+(a!5), Ca2+(a!4), Ca2+(a!3) -> Ca2+(a!1), PP2B(ca1!2, ca2!3, ca3!4, ca4!1, state~a), Ca2+(a!4), Ca2+(a!3), Ca2+(a!2) + CK1(pSite~p)  -->
+<reaction id="re18" name="CK1(pSite~p!1), PP2B(state~a!1) -> CK1(pSite~p), PP2B(state~a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD143" species="s30"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD144" species="s14"/>
+<speciesReference metaid="CMD145" species="s29"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff29 </ci><ci> s30 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1!1,ca2!2,ca3!_,ca4!_,state~a), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2,ca3!_,ca4!_,state~i), Ca2+(a), Ca2+(a) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1!2, ca2!3, ca3!4, ca4!1, state~a), Ca2+(a!4), Ca2+(a!3), Ca2+(a!2) -> Ca2+(a!1), PP2B(ca1, ca2, ca3!2, ca4!1, state~i), Ca2+(a!2) + Ca2+(a) + Ca2+(a)  -->
+<reaction id="re19" name="PP2B(ca1!1,ca2!2,ca3!_,ca4!_,state~a), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2,ca3!_,ca4!_,state~i), Ca2+(a), Ca2+(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD146" species="s29"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD147" species="s9" stoichiometry="2"/>
+<speciesReference metaid="CMD148" species="s28"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff36 </ci><ci> s29 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1!1,ca2!_,ca3!2,ca4!_,state~a), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2!_,ca3,ca4!_,state~i), Ca2+(a), Ca2+(a) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1!2, ca2!3, ca3!4, ca4!1, state~a), Ca2+(a!4), Ca2+(a!3), Ca2+(a!2) -> Ca2+(a!1), PP2B(ca1, ca2!2, ca3, ca4!1, state~i), Ca2+(a!2) + Ca2+(a) + Ca2+(a)  -->
+<reaction id="re20" name="PP2B(ca1!1,ca2!_,ca3!2,ca4!_,state~a), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2!_,ca3,ca4!_,state~i), Ca2+(a), Ca2+(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD149" species="s29"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD150" species="s9" stoichiometry="2"/>
+<speciesReference metaid="CMD151" species="s27"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff36 </ci><ci> s29 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1!1,ca2!_,ca3!_,ca4!2,state~a), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2!_,ca3!_,ca4,state~i), Ca2+(a), Ca2+(a) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1!2, ca2!3, ca3!4, ca4!1, state~a), Ca2+(a!4), Ca2+(a!3), Ca2+(a!2) -> Ca2+(a!1), PP2B(ca1, ca2!2, ca3!1, ca4, state~i), Ca2+(a!2) + Ca2+(a) + Ca2+(a)  -->
+<reaction id="re21" name="PP2B(ca1!1,ca2!_,ca3!_,ca4!2,state~a), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2!_,ca3!_,ca4,state~i), Ca2+(a), Ca2+(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD152" species="s29"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD153" species="s9" stoichiometry="2"/>
+<speciesReference metaid="CMD154" species="s26"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff36 </ci><ci> s29 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1!_,ca2!1,ca3!2,ca4!_,state~a), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1!_,ca2,ca3,ca4!_,state~i), Ca2+(a), Ca2+(a) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1!2, ca2!3, ca3!4, ca4!1, state~a), Ca2+(a!4), Ca2+(a!3), Ca2+(a!2) -> Ca2+(a!1), PP2B(ca1!2, ca2, ca3, ca4!1, state~i), Ca2+(a!2) + Ca2+(a) + Ca2+(a)  -->
+<reaction id="re22" name="PP2B(ca1!_,ca2!1,ca3!2,ca4!_,state~a), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1!_,ca2,ca3,ca4!_,state~i), Ca2+(a), Ca2+(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD155" species="s29"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD156" species="s9" stoichiometry="2"/>
+<speciesReference metaid="CMD157" species="s25"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff36 </ci><ci> s29 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1!_,ca2!1,ca3!_,ca4!2,state~a), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1!_,ca2,ca3!_,ca4,state~i), Ca2+(a), Ca2+(a) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1!2, ca2!3, ca3!4, ca4!1, state~a), Ca2+(a!4), Ca2+(a!3), Ca2+(a!2) -> Ca2+(a!1), PP2B(ca1!2, ca2, ca3!1, ca4, state~i), Ca2+(a!2) + Ca2+(a) + Ca2+(a)  -->
+<reaction id="re23" name="PP2B(ca1!_,ca2!1,ca3!_,ca4!2,state~a), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1!_,ca2,ca3!_,ca4,state~i), Ca2+(a), Ca2+(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD158" species="s29"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD159" species="s9" stoichiometry="2"/>
+<speciesReference metaid="CMD160" species="s24"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff36 </ci><ci> s29 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1!_,ca2!_,ca3!1,ca4!2,state~a), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1!_,ca2!_,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1!2, ca2!3, ca3!4, ca4!1, state~a), Ca2+(a!4), Ca2+(a!3), Ca2+(a!2) -> Ca2+(a!1), PP2B(ca1!2, ca2!1, ca3, ca4, state~i), Ca2+(a!2) + Ca2+(a) + Ca2+(a)  -->
+<reaction id="re24" name="PP2B(ca1!_,ca2!_,ca3!1,ca4!2,state~a), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1!_,ca2!_,ca3,ca4,state~i), Ca2+(a), Ca2+(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD161" species="s29"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD162" species="s9" stoichiometry="2"/>
+<speciesReference metaid="CMD163" species="s23"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff36 </ci><ci> s29 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : CK1(pSite~p), PP2B(state~a) -> CK1(pSite~p!1), PP2B(state~a!1) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1!2, ca2!3, ca3!4, ca4!1, state~a), Ca2+(a!4), Ca2+(a!3), Ca2+(a!2) + CK1(pSite~p) -> Ca2+(a!1), CK1(pSite~p!2), PP2B(ca1!1, ca2!3, ca3!4, ca4!5, state~a!2), Ca2+(a!5), Ca2+(a!4), Ca2+(a!3)  -->
+<reaction id="re25" name="CK1(pSite~p), PP2B(state~a) -> CK1(pSite~p!1), PP2B(state~a!1)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD164" species="s14"/>
+<speciesReference metaid="CMD165" species="s29"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD166" species="s30"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 3e+07 </cn><apply><times/><ci> V </ci><ci> Avo </ci></apply></apply><apply>
+<times/><ci> s14 </ci><ci> s29 </ci></apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1,ca2,ca3!_,ca4!_,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!1,ca2!2,ca3!_,ca4!_,state~a), Ca2+(a!1), Ca2+(a!2) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1, ca2, ca3!2, ca4!1, state~i), Ca2+(a!2) + Ca2+(a) + Ca2+(a) -> Ca2+(a!1), PP2B(ca1!2, ca2!3, ca3!4, ca4!1, state~a), Ca2+(a!4), Ca2+(a!3), Ca2+(a!2)  -->
+<reaction id="re26" name="PP2B(ca1,ca2,ca3!_,ca4!_,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!1,ca2!2,ca3!_,ca4!_,state~a), Ca2+(a!1), Ca2+(a!2)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD167" species="s9" stoichiometry="2"/>
+<speciesReference metaid="CMD168" species="s28"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD169" species="s29"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 3e+15 </cn><apply><power/><apply><times/><ci> V </ci><ci> Avo </ci></apply><cn type="integer"> 2 </cn></apply></apply><apply>
+<times/><ci> s9 </ci><apply>
+<times/><ci> s9 </ci><ci> s28 </ci></apply>
+</apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1,ca2,ca3!1,ca4!2,state~i), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -->
+<!-- reaction: Ca2+(a!1), PP2B(ca1, ca2, ca3!2, ca4!1, state~i), Ca2+(a!2) -> Ca2+(a) + Ca2+(a) + PP2B(ca1, ca2, ca3, ca4, state~i)  -->
+<reaction id="re27" name="PP2B(ca1,ca2,ca3!1,ca4!2,state~i), Ca2+(a!1), Ca2+(a!2) -> PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD170" species="s28"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD171" species="s3"/>
+<speciesReference metaid="CMD172" species="s9" stoichiometry="2"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff35 </ci><ci> s28 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1,ca2,ca3!1,ca4!2,state~i), Ca2+(a!1), Ca2+(a!2) -->
+<!-- reaction: Ca2+(a) + Ca2+(a) + PP2B(ca1, ca2, ca3, ca4, state~i) -> Ca2+(a!1), PP2B(ca1, ca2, ca3!2, ca4!1, state~i), Ca2+(a!2)  -->
+<reaction id="re28" name="PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1,ca2,ca3!1,ca4!2,state~i), Ca2+(a!1), Ca2+(a!2)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD173" species="s3"/>
+<speciesReference metaid="CMD174" species="s9" stoichiometry="2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD175" species="s28"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 1e+15 </cn><apply><power/><apply><times/><ci> V </ci><ci> Avo </ci></apply><cn type="integer"> 2 </cn></apply></apply><apply>
+<times/><ci> s3 </ci><apply>
+<times/><ci> s9 </ci><ci> s9 </ci></apply>
+</apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1,ca2!1,ca3,ca4!2,state~i), Ca2+(a!1), Ca2+(a!2) -->
+<!-- reaction: Ca2+(a) + Ca2+(a) + PP2B(ca1, ca2, ca3, ca4, state~i) -> Ca2+(a!1), PP2B(ca1, ca2!2, ca3, ca4!1, state~i), Ca2+(a!2)  -->
+<reaction id="re29" name="PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1,ca2!1,ca3,ca4!2,state~i), Ca2+(a!1), Ca2+(a!2)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD176" species="s3"/>
+<speciesReference metaid="CMD177" species="s9" stoichiometry="2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD178" species="s27"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 1e+15 </cn><apply><power/><apply><times/><ci> V </ci><ci> Avo </ci></apply><cn type="integer"> 2 </cn></apply></apply><apply>
+<times/><ci> s3 </ci><apply>
+<times/><ci> s9 </ci><ci> s9 </ci></apply>
+</apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1,ca2!1,ca3!2,ca4,state~i), Ca2+(a!1), Ca2+(a!2) -->
+<!-- reaction: Ca2+(a) + Ca2+(a) + PP2B(ca1, ca2, ca3, ca4, state~i) -> Ca2+(a!1), PP2B(ca1, ca2!2, ca3!1, ca4, state~i), Ca2+(a!2)  -->
+<reaction id="re30" name="PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1,ca2!1,ca3!2,ca4,state~i), Ca2+(a!1), Ca2+(a!2)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD179" species="s3"/>
+<speciesReference metaid="CMD180" species="s9" stoichiometry="2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD181" species="s26"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 1e+15 </cn><apply><power/><apply><times/><ci> V </ci><ci> Avo </ci></apply><cn type="integer"> 2 </cn></apply></apply><apply>
+<times/><ci> s3 </ci><apply>
+<times/><ci> s9 </ci><ci> s9 </ci></apply>
+</apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!1,ca2,ca3,ca4!2,state~i), Ca2+(a!1), Ca2+(a!2) -->
+<!-- reaction: Ca2+(a) + Ca2+(a) + PP2B(ca1, ca2, ca3, ca4, state~i) -> Ca2+(a!1), PP2B(ca1!2, ca2, ca3, ca4!1, state~i), Ca2+(a!2)  -->
+<reaction id="re31" name="PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!1,ca2,ca3,ca4!2,state~i), Ca2+(a!1), Ca2+(a!2)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD182" species="s3"/>
+<speciesReference metaid="CMD183" species="s9" stoichiometry="2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD184" species="s25"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 1e+15 </cn><apply><power/><apply><times/><ci> V </ci><ci> Avo </ci></apply><cn type="integer"> 2 </cn></apply></apply><apply>
+<times/><ci> s3 </ci><apply>
+<times/><ci> s9 </ci><ci> s9 </ci></apply>
+</apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!1,ca2,ca3!2,ca4,state~i), Ca2+(a!1), Ca2+(a!2) -->
+<!-- reaction: Ca2+(a) + Ca2+(a) + PP2B(ca1, ca2, ca3, ca4, state~i) -> Ca2+(a!1), PP2B(ca1!2, ca2, ca3!1, ca4, state~i), Ca2+(a!2)  -->
+<reaction id="re32" name="PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!1,ca2,ca3!2,ca4,state~i), Ca2+(a!1), Ca2+(a!2)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD185" species="s3"/>
+<speciesReference metaid="CMD186" species="s9" stoichiometry="2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD187" species="s24"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 1e+15 </cn><apply><power/><apply><times/><ci> V </ci><ci> Avo </ci></apply><cn type="integer"> 2 </cn></apply></apply><apply>
+<times/><ci> s3 </ci><apply>
+<times/><ci> s9 </ci><ci> s9 </ci></apply>
+</apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!1,ca2!2,ca3,ca4,state~i), Ca2+(a!1), Ca2+(a!2) -->
+<!-- reaction: Ca2+(a) + Ca2+(a) + PP2B(ca1, ca2, ca3, ca4, state~i) -> Ca2+(a!1), PP2B(ca1!2, ca2!1, ca3, ca4, state~i), Ca2+(a!2)  -->
+<reaction id="re33" name="PP2B(ca1,ca2,ca3,ca4,state~i), Ca2+(a), Ca2+(a) -> PP2B(ca1!1,ca2!2,ca3,ca4,state~i), Ca2+(a!1), Ca2+(a!2)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD188" species="s3"/>
+<speciesReference metaid="CMD189" species="s9" stoichiometry="2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD190" species="s23"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 1e+15 </cn><apply><power/><apply><times/><ci> V </ci><ci> Avo </ci></apply><cn type="integer"> 2 </cn></apply></apply><apply>
+<times/><ci> s3 </ci><apply>
+<times/><ci> s9 </ci><ci> s9 </ci></apply>
+</apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2A(ca), Ca2+(a) -> PP2A(ca!1), Ca2+(a!1) -->
+<!-- reaction: Ca2+(a) + D(s!1, thr34~u, ser137~p, thr75~p), PP2A(ca, pSite~u!1) -> Ca2+(a!1), D(s!2, thr34~u, ser137~p, thr75~p), PP2A(ca!1, pSite~u!2)  -->
+<reaction id="re34" name="PP2A(ca), Ca2+(a) -> PP2A(ca!1), Ca2+(a!1)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD191" species="s9"/>
+<speciesReference metaid="CMD192" species="s18"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD193" species="s21"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 200000 </cn><apply><times/><ci> V </ci><ci> Avo </ci></apply></apply><apply>
+<times/><ci> s18 </ci><ci> s9 </ci></apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,thr75~p), PP2A(pSite~u!1) -> D(s,thr75~u), PP2A(pSite~u) -->
+<!-- reaction: D(s!1, thr34~u, ser137~p, thr75~p), PP2A(ca, pSite~u!1) -> PP2A(ca, pSite~u) + D(s, thr34~u, ser137~p, thr75~u)  -->
+<reaction id="re35" name="D(s!1,thr75~p), PP2A(pSite~u!1) -> D(s,thr75~u), PP2A(pSite~u)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD194" species="s18"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD195" species="s4"/>
+<speciesReference metaid="CMD196" species="s15"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> kcat9 </ci><ci> s18 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,thr75~p), PP2A(ca,pSite~u!1) -> D(s,thr75~p), PP2A(ca,pSite~u) -->
+<!-- reaction: D(s!1, thr34~u, ser137~p, thr75~p), PP2A(ca, pSite~u!1) -> PP2A(ca, pSite~u) + D(s, thr34~u, ser137~p, thr75~p)  -->
+<reaction id="re36" name="D(s!1,thr75~p), PP2A(ca,pSite~u!1) -> D(s,thr75~p), PP2A(ca,pSite~u)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD197" species="s18"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD198" species="s4"/>
+<speciesReference metaid="CMD199" species="s17"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff9 </ci><ci> s18 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2A(ca), Ca2+(a) -> PP2A(ca!1), Ca2+(a!1) -->
+<!-- reaction: Ca2+(a) + D(s!1, thr34~u, ser137~u, thr75~p), PP2A(ca, pSite~u!1) -> Ca2+(a!1), D(s!2, thr34~u, ser137~u, thr75~p), PP2A(ca!1, pSite~u!2)  -->
+<reaction id="re37" name="PP2A(ca), Ca2+(a) -> PP2A(ca!1), Ca2+(a!1)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD200" species="s9"/>
+<speciesReference metaid="CMD201" species="s19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD202" species="s22"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 200000 </cn><apply><times/><ci> V </ci><ci> Avo </ci></apply></apply><apply>
+<times/><ci> s19 </ci><ci> s9 </ci></apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,thr75~p), PP2A(pSite~u!1) -> D(s,thr75~u), PP2A(pSite~u) -->
+<!-- reaction: D(s!1, thr34~u, ser137~u, thr75~p), PP2A(ca, pSite~u!1) -> PP2A(ca, pSite~u) + D(s, thr34~u, ser137~u, thr75~u)  -->
+<reaction id="re38" name="D(s!1,thr75~p), PP2A(pSite~u!1) -> D(s,thr75~u), PP2A(pSite~u)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD203" species="s19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD204" species="s4"/>
+<speciesReference metaid="CMD205" species="s8"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> kcat9 </ci><ci> s19 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,thr75~p), PP2A(ca,pSite~u!1) -> D(s,thr75~p), PP2A(ca,pSite~u) -->
+<!-- reaction: D(s!1, thr34~u, ser137~u, thr75~p), PP2A(ca, pSite~u!1) -> PP2A(ca, pSite~u) + D(s, thr34~u, ser137~u, thr75~p)  -->
+<reaction id="re39" name="D(s!1,thr75~p), PP2A(ca,pSite~u!1) -> D(s,thr75~p), PP2A(ca,pSite~u)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD206" species="s19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD207" species="s4"/>
+<speciesReference metaid="CMD208" species="s11"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff9 </ci><ci> s19 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2A(ca!1), Ca2+(a!1) -> PP2A(ca), Ca2+(a) -->
+<!-- reaction: Ca2+(a!1), D(s!2, thr34~u, ser137~p, thr75~p), PP2A(ca!1, pSite~u!2) -> Ca2+(a) + D(s!1, thr34~u, ser137~p, thr75~p), PP2A(ca, pSite~u!1)  -->
+<reaction id="re40" name="PP2A(ca!1), Ca2+(a!1) -> PP2A(ca), Ca2+(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD209" species="s21"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD210" species="s9"/>
+<speciesReference metaid="CMD211" species="s18"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff54 </ci><ci> s21 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,thr75~p), PP2A(ca!_,pSite~u!1) -> D(s,thr75~p), PP2A(ca!_,pSite~u) -->
+<!-- reaction: Ca2+(a!1), D(s!2, thr34~u, ser137~p, thr75~p), PP2A(ca!1, pSite~u!2) -> Ca2+(a!1), PP2A(ca!1, pSite~u) + D(s, thr34~u, ser137~p, thr75~p)  -->
+<reaction id="re41" name="D(s!1,thr75~p), PP2A(ca!_,pSite~u!1) -> D(s,thr75~p), PP2A(ca!_,pSite~u)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD212" species="s21"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD213" species="s17"/>
+<speciesReference metaid="CMD214" species="s20"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff46 </ci><ci> s21 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,thr75~p), PP2A(pSite~u!1) -> D(s,thr75~u), PP2A(pSite~u) -->
+<!-- reaction: Ca2+(a!1), D(s!2, thr34~u, ser137~p, thr75~p), PP2A(ca!1, pSite~u!2) -> Ca2+(a!1), PP2A(ca!1, pSite~u) + D(s, thr34~u, ser137~p, thr75~u)  -->
+<reaction id="re42" name="D(s!1,thr75~p), PP2A(pSite~u!1) -> D(s,thr75~u), PP2A(pSite~u)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD215" species="s21"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD216" species="s15"/>
+<speciesReference metaid="CMD217" species="s20"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> kcat9 </ci><ci> s21 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2A(ca!1), Ca2+(a!1) -> PP2A(ca), Ca2+(a) -->
+<!-- reaction: Ca2+(a!1), D(s!2, thr34~u, ser137~u, thr75~p), PP2A(ca!1, pSite~u!2) -> Ca2+(a) + D(s!1, thr34~u, ser137~u, thr75~p), PP2A(ca, pSite~u!1)  -->
+<reaction id="re43" name="PP2A(ca!1), Ca2+(a!1) -> PP2A(ca), Ca2+(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD218" species="s22"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD219" species="s9"/>
+<speciesReference metaid="CMD220" species="s19"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff54 </ci><ci> s22 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,thr75~p), PP2A(ca!_,pSite~u!1) -> D(s,thr75~p), PP2A(ca!_,pSite~u) -->
+<!-- reaction: Ca2+(a!1), D(s!2, thr34~u, ser137~u, thr75~p), PP2A(ca!1, pSite~u!2) -> Ca2+(a!1), PP2A(ca!1, pSite~u) + D(s, thr34~u, ser137~u, thr75~p)  -->
+<reaction id="re44" name="D(s!1,thr75~p), PP2A(ca!_,pSite~u!1) -> D(s,thr75~p), PP2A(ca!_,pSite~u)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD221" species="s22"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD222" species="s11"/>
+<speciesReference metaid="CMD223" species="s20"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff46 </ci><ci> s22 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,thr75~p), PP2A(pSite~u!1) -> D(s,thr75~u), PP2A(pSite~u) -->
+<!-- reaction: Ca2+(a!1), D(s!2, thr34~u, ser137~u, thr75~p), PP2A(ca!1, pSite~u!2) -> Ca2+(a!1), PP2A(ca!1, pSite~u) + D(s, thr34~u, ser137~u, thr75~u)  -->
+<reaction id="re45" name="D(s!1,thr75~p), PP2A(pSite~u!1) -> D(s,thr75~u), PP2A(pSite~u)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD224" species="s22"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD225" species="s8"/>
+<speciesReference metaid="CMD226" species="s20"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> kcat9 </ci><ci> s22 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2A(ca!1), Ca2+(a!1) -> PP2A(ca), Ca2+(a) -->
+<!-- reaction: Ca2+(a!1), PP2A(ca!1, pSite~u) -> Ca2+(a) + PP2A(ca, pSite~u)  -->
+<reaction id="re46" name="PP2A(ca!1), Ca2+(a!1) -> PP2A(ca), Ca2+(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD227" species="s20"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD228" species="s4"/>
+<speciesReference metaid="CMD229" species="s9"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff54 </ci><ci> s20 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s,thr75~p), PP2A(pSite~u) -> D(s!1,thr75~p), PP2A(pSite~u!1) -->
+<!-- reaction: Ca2+(a!1), PP2A(ca!1, pSite~u) + D(s, thr34~u, ser137~u, thr75~p) -> Ca2+(a!1), D(s!2, thr34~u, ser137~u, thr75~p), PP2A(ca!1, pSite~u!2)  -->
+<reaction id="re47" name="D(s,thr75~p), PP2A(pSite~u) -> D(s!1,thr75~p), PP2A(pSite~u!1)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD230" species="s11"/>
+<speciesReference metaid="CMD231" species="s20"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD232" species="s22"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 3.8e+06 </cn><apply><times/><ci> V </ci><ci> Avo </ci></apply></apply><apply>
+<times/><ci> s11 </ci><ci> s20 </ci></apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s,thr75~p), PP2A(pSite~u) -> D(s!1,thr75~p), PP2A(pSite~u!1) -->
+<!-- reaction: Ca2+(a!1), PP2A(ca!1, pSite~u) + D(s, thr34~u, ser137~p, thr75~p) -> Ca2+(a!1), D(s!2, thr34~u, ser137~p, thr75~p), PP2A(ca!1, pSite~u!2)  -->
+<reaction id="re48" name="D(s,thr75~p), PP2A(pSite~u) -> D(s!1,thr75~p), PP2A(pSite~u!1)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD233" species="s17"/>
+<speciesReference metaid="CMD234" species="s20"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD235" species="s21"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 3.8e+06 </cn><apply><times/><ci> V </ci><ci> Avo </ci></apply></apply><apply>
+<times/><ci> s17 </ci><ci> s20 </ci></apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : PP2A(ca), Ca2+(a) -> PP2A(ca!1), Ca2+(a!1) -->
+<!-- reaction: Ca2+(a) + PP2A(ca, pSite~u) -> Ca2+(a!1), PP2A(ca!1, pSite~u)  -->
+<reaction id="re49" name="PP2A(ca), Ca2+(a) -> PP2A(ca!1), Ca2+(a!1)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD236" species="s4"/>
+<speciesReference metaid="CMD237" species="s9"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD238" species="s20"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 200000 </cn><apply><times/><ci> V </ci><ci> Avo </ci></apply></apply><apply>
+<times/><ci> s4 </ci><ci> s9 </ci></apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s,thr75~p), PP2A(pSite~u) -> D(s!1,thr75~p), PP2A(pSite~u!1) -->
+<!-- reaction: PP2A(ca, pSite~u) + D(s, thr34~u, ser137~u, thr75~p) -> D(s!1, thr34~u, ser137~u, thr75~p), PP2A(ca, pSite~u!1)  -->
+<reaction id="re50" name="D(s,thr75~p), PP2A(pSite~u) -> D(s!1,thr75~p), PP2A(pSite~u!1)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD239" species="s4"/>
+<speciesReference metaid="CMD240" species="s11"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD241" species="s19"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 3.8e+06 </cn><apply><times/><ci> V </ci><ci> Avo </ci></apply></apply><apply>
+<times/><ci> s11 </ci><ci> s4 </ci></apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s,thr75~p), PP2A(pSite~u) -> D(s!1,thr75~p), PP2A(pSite~u!1) -->
+<!-- reaction: PP2A(ca, pSite~u) + D(s, thr34~u, ser137~p, thr75~p) -> D(s!1, thr34~u, ser137~p, thr75~p), PP2A(ca, pSite~u!1)  -->
+<reaction id="re51" name="D(s,thr75~p), PP2A(pSite~u) -> D(s!1,thr75~p), PP2A(pSite~u!1)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD242" species="s4"/>
+<speciesReference metaid="CMD243" species="s17"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD244" species="s18"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 3.8e+06 </cn><apply><times/><ci> V </ci><ci> Avo </ci></apply></apply><apply>
+<times/><ci> s17 </ci><ci> s4 </ci></apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,ser137~u), CK1(pSite~u!1) -> D(s,ser137~p), CK1(pSite~u) -->
+<!-- reaction: D(s!1, thr34~u, ser137~u, thr75~p), CK1(pSite~u!1) -> CK1(pSite~u) + D(s, thr34~u, ser137~p, thr75~p)  -->
+<reaction id="re52" name="D(s!1,ser137~u), CK1(pSite~u!1) -> D(s,ser137~p), CK1(pSite~u)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD245" species="s12"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD246" species="s6"/>
+<speciesReference metaid="CMD247" species="s17"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> kcat2 </ci><ci> s12 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,ser137~u), CK1(pSite~u!1) -> D(s,ser137~u), CK1(pSite~u) -->
+<!-- reaction: D(s!1, thr34~u, ser137~u, thr75~p), CK1(pSite~u!1) -> CK1(pSite~u) + D(s, thr34~u, ser137~u, thr75~p)  -->
+<reaction id="re53" name="D(s!1,ser137~u), CK1(pSite~u!1) -> D(s,ser137~u), CK1(pSite~u)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD248" species="s12"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD249" species="s6"/>
+<speciesReference metaid="CMD250" species="s11"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff2 </ci><ci> s12 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,thr75~u), CDK5(a!1) -> D(s,thr75~p), CDK5(a) -->
+<!-- reaction: CDK5(a!1), D(s!1, thr34~u, ser137~p, thr75~u) -> CDK5(a) + D(s, thr34~u, ser137~p, thr75~p)  -->
+<reaction id="re54" name="D(s!1,thr75~u), CDK5(a!1) -> D(s,thr75~p), CDK5(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD251" species="s16"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD252" species="s7"/>
+<speciesReference metaid="CMD253" species="s17"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> kcat1 </ci><ci> s16 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,thr75~u), CDK5(a!1) -> D(s,thr75~u), CDK5(a) -->
+<!-- reaction: CDK5(a!1), D(s!1, thr34~u, ser137~p, thr75~u) -> CDK5(a) + D(s, thr34~u, ser137~p, thr75~u)  -->
+<reaction id="re55" name="D(s!1,thr75~u), CDK5(a!1) -> D(s,thr75~u), CDK5(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD254" species="s16"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD255" species="s7"/>
+<speciesReference metaid="CMD256" species="s15"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff1 </ci><ci> s16 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s,thr75~u), CDK5(a) -> D(s!1,thr75~u), CDK5(a!1) -->
+<!-- reaction: CDK5(a) + D(s, thr34~u, ser137~p, thr75~u) -> CDK5(a!1), D(s!1, thr34~u, ser137~p, thr75~u)  -->
+<reaction id="re56" name="D(s,thr75~u), CDK5(a) -> D(s!1,thr75~u), CDK5(a!1)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD257" species="s7"/>
+<speciesReference metaid="CMD258" species="s15"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD259" species="s16"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 5.6e+06 </cn><apply><times/><ci> V </ci><ci> Avo </ci></apply></apply><apply>
+<times/><ci> s15 </ci><ci> s7 </ci></apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,ser137~u), CK1(pSite~u!1) -> D(s,ser137~p), CK1(pSite~u) -->
+<!-- reaction: D(s!1, thr34~u, ser137~u, thr75~u), CK1(pSite~u!1) -> CK1(pSite~u) + D(s, thr34~u, ser137~p, thr75~u)  -->
+<reaction id="re57" name="D(s!1,ser137~u), CK1(pSite~u!1) -> D(s,ser137~p), CK1(pSite~u)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD260" species="s13"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD261" species="s6"/>
+<speciesReference metaid="CMD262" species="s15"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> kcat2 </ci><ci> s13 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,ser137~u), CK1(pSite~u!1) -> D(s,ser137~u), CK1(pSite~u) -->
+<!-- reaction: D(s!1, thr34~u, ser137~u, thr75~u), CK1(pSite~u!1) -> CK1(pSite~u) + D(s, thr34~u, ser137~u, thr75~u)  -->
+<reaction id="re58" name="D(s!1,ser137~u), CK1(pSite~u!1) -> D(s,ser137~u), CK1(pSite~u)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD263" species="s13"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD264" species="s6"/>
+<speciesReference metaid="CMD265" species="s8"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff2 </ci><ci> s13 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : CK1(pSite~u) -> CK1(pSite~p) -->
+<!-- reaction: CK1(pSite~u) -> CK1(pSite~p)  -->
+<reaction id="re59" name="CK1(pSite~u) -> CK1(pSite~p)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD266" species="s6"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD267" species="s14"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> kcat30 </ci><ci> s6 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s,ser137~u), CK1(pSite~u) -> D(s!1,ser137~u), CK1(pSite~u!1) -->
+<!-- reaction: CK1(pSite~u) + D(s, thr34~u, ser137~u, thr75~u) -> D(s!1, thr34~u, ser137~u, thr75~u), CK1(pSite~u!1)  -->
+<reaction id="re60" name="D(s,ser137~u), CK1(pSite~u) -> D(s!1,ser137~u), CK1(pSite~u!1)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD268" species="s6"/>
+<speciesReference metaid="CMD269" species="s8"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD270" species="s13"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 4.4e+06 </cn><apply><times/><ci> V </ci><ci> Avo </ci></apply></apply><apply>
+<times/><ci> s8 </ci><ci> s6 </ci></apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s,ser137~u), CK1(pSite~u) -> D(s!1,ser137~u), CK1(pSite~u!1) -->
+<!-- reaction: CK1(pSite~u) + D(s, thr34~u, ser137~u, thr75~p) -> D(s!1, thr34~u, ser137~u, thr75~p), CK1(pSite~u!1)  -->
+<reaction id="re61" name="D(s,ser137~u), CK1(pSite~u) -> D(s!1,ser137~u), CK1(pSite~u!1)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD271" species="s6"/>
+<speciesReference metaid="CMD272" species="s11"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD273" species="s12"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 4.4e+06 </cn><apply><times/><ci> V </ci><ci> Avo </ci></apply></apply><apply>
+<times/><ci> s11 </ci><ci> s6 </ci></apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,thr75~u), CDK5(a!1) -> D(s,thr75~p), CDK5(a) -->
+<!-- reaction: CDK5(a!1), D(s!1, thr34~u, ser137~u, thr75~u) -> CDK5(a) + D(s, thr34~u, ser137~u, thr75~p)  -->
+<reaction id="re62" name="D(s!1,thr75~u), CDK5(a!1) -> D(s,thr75~p), CDK5(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD274" species="s10"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD275" species="s7"/>
+<speciesReference metaid="CMD276" species="s11"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> kcat1 </ci><ci> s10 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s!1,thr75~u), CDK5(a!1) -> D(s,thr75~u), CDK5(a) -->
+<!-- reaction: CDK5(a!1), D(s!1, thr34~u, ser137~u, thr75~u) -> CDK5(a) + D(s, thr34~u, ser137~u, thr75~u)  -->
+<reaction id="re63" name="D(s!1,thr75~u), CDK5(a!1) -> D(s,thr75~u), CDK5(a)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD277" species="s10"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD278" species="s7"/>
+<speciesReference metaid="CMD279" species="s8"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> koff1 </ci><ci> s10 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : D(s,thr75~u), CDK5(a) -> D(s!1,thr75~u), CDK5(a!1) -->
+<!-- reaction: CDK5(a) + D(s, thr34~u, ser137~u, thr75~u) -> CDK5(a!1), D(s!1, thr34~u, ser137~u, thr75~u)  -->
+<reaction id="re64" name="D(s,thr75~u), CDK5(a) -> D(s!1,thr75~u), CDK5(a!1)" reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD280" species="s7"/>
+<speciesReference metaid="CMD281" species="s8"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference metaid="CMD282" species="s10"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><apply><divide/><cn type="real"> 5.6e+06 </cn><apply><times/><ci> V </ci><ci> Avo </ci></apply></apply><apply>
+<times/><ci> s8 </ci><ci> s7 </ci></apply>
+</apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    : Ca2+(a) ->  -->
+<!-- reaction: Ca2+(a) ->   -->
+<reaction id="re65" name="Ca2+(a) -> " reversible="false" fast="false">
+<listOfReactants>
+<speciesReference metaid="CMD283" species="s9"/>
+</listOfReactants>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<apply>
+<times/><ci> k58 </ci><ci> s9 </ci></apply>
+</math>
+</kineticLaw>
+</reaction>
+<!-- rule    :  -> Ca2+(a) -->
+<!-- reaction:  -> Ca2+(a)  -->
+<reaction id="re66" name=" -> Ca2+(a)" reversible="false" fast="false">
+<listOfProducts>
+<speciesReference metaid="CMD284" species="s9"/>
+</listOfProducts>
+<kineticLaw>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<ci> k57 </ci></math>
+</kineticLaw>
+</reaction>
+</listOfReactions>
+</model>
+</sbml>

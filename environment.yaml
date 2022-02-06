@@ -1,0 +1,12 @@
+name: rb_vs_ode_model_of_darpp-32
+
+channels:
+  - default
+
+dependencies:
+  - python=2.7
+  - matplotlib
+  - pandas
+  - numpy
+  - seaborn
+  - statsmodels

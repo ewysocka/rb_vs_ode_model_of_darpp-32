@@ -1,0 +1,19 @@
+digraph G{
+"Init_52" [label="" style="invis" width="0px" height="0px"];
+"Node_70" [label="D(thr75~p,thr75!PP2A@pSite)"];
+"Node_79" [label="D(thr75~p,thr75!free)"];
+"Node_143" [label="D(thr75~u,thr75!CDK5@a)"];
+"Node_52" [label="D(thr75~u,thr75!free)"];
+"Node_70" -> "Node_79" [label="28"];
+"Node_70" -> "Node_79" [label="27"];
+"Node_70" -> "Node_52" [label="26"];
+"Node_70" -> "Node_79" [label="25"];
+"Node_79" -> "Node_70" [label="24"];
+"Node_70" -> "Node_52" [label="23"];
+"Node_70" -> "Node_79" [label="22"];
+"Node_79" -> "Node_70" [label="21"];
+"Node_143" -> "Node_79" [label="2"];
+"Node_143" -> "Node_52" [label="1"];
+"Node_52" -> "Node_143" [label="0"];
+"Init_52" -> "Node_52" [label=""];
+}
