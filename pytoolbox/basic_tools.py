@@ -199,7 +199,12 @@ def pick_cols2plot(pickledcorex):
     return columns
 
 
-def plot_df(dftoplot, plottitle, figfilename="plot.png", xmax=None, ymax=None , yaxis="copy-number of species", xaxis="time-steps"):
+def plot_df(dftoplot, plottitle, 
+            figfilename="plot.png", 
+            xmax=None, 
+            ymax=None , 
+            yaxis="copy-number of species", 
+            xaxis="time-steps"):
     sns.set(font_scale=1,style="darkgrid")
     plt.figure(figsize=(20,10))
     plt.plot(dftoplot, linewidth = 2)
@@ -215,14 +220,15 @@ def plot_df(dftoplot, plottitle, figfilename="plot.png", xmax=None, ymax=None , 
 
     # If you want the legend outside
     #plt.legend(dftoplot, loc='upper-right', fontsize=8, bbox_to_anchor=(1.3, 1.0))
-    plt.legend(dftoplot, loc='upper-right', fontsize=20)
+    plt.legend(dftoplot, loc='upper right', fontsize=20)
     plt.subplots_adjust(left=0.05, bottom=0.07, right=0.98, top=0.90, wspace=0.29, hspace=0.4)
     plt.savefig(figfilename, dpi=300)
     plt.show()
     plt.close('all')
 
 
-def plot_timeseries(outfile, colsList, plottitle, delim=" ", xmax=None, ymax=None, figfilename="plot.png", yaxis="copy-number of species", xaxis="time-steps"):
+def plot_timeseries(outfile, colsList, plottitle, delim=" ", xmax=None, ymax=None, 
+                    figfilename="plot.png", yaxis="copy-number of species", xaxis="time-steps"):
     """ Plot selected columns (members of the strongest CorEx cluster) to timeseries. """
 
     labels, ematrix = timeseries_2_array(outfile=outfile, delim=delim)

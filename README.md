@@ -18,16 +18,15 @@ Alongside these analyses, this manuscript reports a refactored model of DARPP-32
 * pytoolbox
 
 
+### List of figures reproduced in main.ipynb:
 
-### List of figures
-
-* Figure 7: 
-  - (A) wt/wild-type_summedpatternsOriginal_selected_.pdf
-  - (B) wt/wild-type_stochastic_ode_model_selected_SD.pdf
-  - (C) wt/wild-typeoBS_rb_model_selected_SD.pdf
+* Figure 7
+  <!--- - (A) wt/wild-type_summedpatternsOriginal_selected_.pdf --->
+  <!--- - (B) wt/wild-type_stochastic_ode_model_selected_SD.pdf --->
+  <!--- - (C) wt/wild-typeoBS_rb_model_selected_SD.pdf --->
     
 * Figure 8:
-  - compared/w-t_ode2rb_stoch2stochpaired_resized.pdf 
+   <!--- - compared/w-t_ode2rb_stoch2stochpaired_resized.pdf --->
 
 * Figure 10:
   - (A) ca_all_case/all_Ca_all_Ca2_paired_w-t_ode2rb_stoch2stoch.pdf
@@ -50,10 +49,10 @@ Alongside these analyses, this manuscript reports a refactored model of DARPP-32
   - img/ca_all_case/all_Capaired.pdf
 
 * Figure S3:
-  - compared/w-t_rb2rb_stoch2stochpaired_resized.pdf
+  <!--- - compared/w-t_rb2rb_stoch2stochpaired_resized.pdf --->
 
-* Figure S4:
-  - compared/s_speciesNum_per_time_tBS_oBS_to_stimuli_2.pdf
+* Figure S4
+ <!--- - compared/s_speciesNum_per_time_tBS_oBS_to_stimuli_2.pdf --->
 
 
 ## References

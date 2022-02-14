@@ -15,7 +15,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-def modelsModel_2_selected_df(outfile, delim, obstocomparewith):
+def originalModel_2_selected_df(outfile, delim, obstocomparewith):
     """
     Loads the file as a matrix, selects observables that are in the provided
     list and summed under each name (multiple species under each observable).
@@ -46,7 +46,7 @@ def modelsModel_2_selected_df(outfile, delim, obstocomparewith):
 
 
 
-def plot_modelsSelected_as_paper(outfile, foldername, name, prefix=''):
+def plot_originalSelected_as_paper(outfile, foldername, name, prefix=''):
 
     delim = '\t'
 
@@ -69,7 +69,7 @@ def plot_modelsSelected_as_paper(outfile, foldername, name, prefix=''):
                         "137"]
 
     ## File to dataframe:
-    orgdf = modelsModel_2_selected_df(outfile, delim, obstocomparewith)
+    orgdf = originalModel_2_selected_df(outfile, delim, obstocomparewith)
 
     ## Set cleaned columns names:
     orgdf.columns = ["cAMP",
@@ -92,7 +92,7 @@ def plot_modelsSelected_as_paper(outfile, foldername, name, prefix=''):
     ## 3. Plot
     plot_df(orgdf[orgdf.columns[[0,1,11,12,13,14]]],
             plottitle="ODE model: "+name+prefix,
-            figfilename=foldername+'/'+name+prefix+"_summedpatternsModels_selected_"+prefix+".png",
+            figfilename=foldername+'/'+name+prefix+"_summedpatternsOriginal_selected_"+prefix+".png",
             xmax=1400,
             ymax=4400)
 
@@ -178,7 +178,6 @@ def plot_overlaid_ode2rb(outfile, outfile3, name, prefix, foldername, paired=Fal
     dfdata3SEL = dfdata3[dfdata3.columns[[0,1,2,3,4,5,6,7,8,9,10,11,19,20,21]]]
 
     ## ODE stuff:
-
     delim = '\t'
 
     obstocomparewith = ["cAMP",
@@ -198,7 +197,7 @@ def plot_overlaid_ode2rb(outfile, outfile3, name, prefix, foldername, paired=Fal
                         "137"]
 
     ## File to dataframe:
-    orgdf = modelsModel_2_selected_df(outfile, delim, obstocomparewith)
+    orgdf = originalModel_2_selected_df(outfile, delim, obstocomparewith)
 
     ## Set cleaned columns names:
     orgdf.columns = ["cAMP",
@@ -384,9 +383,6 @@ def plot_paired_separate(dfdata1, dfdata2, foldername, name, xmax=None, ymax=Non
 
 #  LocalWords:  png
 
-
-
-
 def prepare_ensemble_rb_models(ensemblefolder, pattern, defcols=True):
     """FIXME! briefly describe function
 
@@ -499,7 +495,7 @@ def plot_mineSelected_as_paper_SD(ensemblefolder, filepattern, name, prefix, fol
     plt.xlim([0, xmax])
     plt.ylim([0, ymax])
 
-    plt.legend(labels=selectedcols, loc='upper-left', fontsize=20)
+    plt.legend(labels=selectedcols, loc='upper right', fontsize=20)
     figure = plt.gcf()
     figure.set_size_inches(20, 14)
     plt.subplots_adjust(left=0.06, bottom=0.07, right=0.98, top=0.99, wspace=0.29, hspace=0.4)
@@ -527,10 +523,12 @@ def divide_ensembleFile_to_files(ensemblefile, foldertosave, delim = '\t'):
             slicedf = pd.DataFrame(enslines2[start:end], columns=list(enslines2[cols]))
             slicedf[list(slicedf.columns)] = slicedf[list(slicedf.columns)].astype(float)
             slicedf.to_csv(foldertosave+'/data_'+str(next(fileidx)), sep='\t', index=False)
-    print("List of file in the folder:")
-    print(os.listdir(foldertosave))
-    print("Count number of lines in each file:")
-    print(os.system("wc -l "+foldertosave+"/data*"))
+    
+    ## print("List of file in the folder:")
+    ## print(os.listdir(foldertosave))
+    ## print("Count number of lines in each file:")
+    ## print(os.system("wc -l "+foldertosave+"/data*"))
+    print( "Files saved in " + foldertosave )
 
 
 
@@ -593,7 +591,7 @@ def prepare_ensemble_ode_models(ensemblefile, foldertosave, defcols=True, obstoc
 
 
         for outf in glob.glob(foldertosave+'/data_*'):
-            orgdf = modelsModel_2_selected_df(outf, delim, obstocomparewith)
+            orgdf = originalModel_2_selected_df(outf, delim, obstocomparewith)
             ## Set cleaned columns names:
             orgdf.columns = cols
             orgdflist.append(orgdf)
@@ -603,7 +601,7 @@ def prepare_ensemble_ode_models(ensemblefile, foldertosave, defcols=True, obstoc
             raise Exception("Provide list of patterns to retrieve.")
 
         for outf in glob.glob(foldertosave+'/data_*'):
-            orgdf = modelsModel_2_selected_df(outf, delim, obstocomparewith)
+            orgdf = originalModel_2_selected_df(outf, delim, obstocomparewith)
             orgdf.columns = [o.lstrip('^').replace('.ParticleNumber$', '') for o in obstocomparewith]
             orgdflist.append(orgdf)
 
@@ -621,7 +619,7 @@ def prepare_ensemble_ode_models(ensemblefile, foldertosave, defcols=True, obstoc
 
 
 
-def plot_modelsSelected_as_paper_SD(ensemblefile, ensemblefolder, name, prefix, foldername):
+def plot_originalSelected_as_paper_SD(ensemblefile, ensemblefolder, name, prefix, foldername):
     """FIXME! briefly describe function
 
     :param ensemblefile: the output file of COPASI_SE; all runs were saved in one file
@@ -672,7 +670,7 @@ def plot_modelsSelected_as_paper_SD(ensemblefile, ensemblefolder, name, prefix, 
     plt.xlim([0, xmax])
     plt.ylim([0, ymax])
 
-    plt.legend(labels=selectedcols, loc='upper-left', fontsize=20)
+    plt.legend(labels=selectedcols, loc='upper right', fontsize=20)
     figure = plt.gcf()
     figure.set_size_inches(20, 14)
     plt.subplots_adjust(left=0.06, bottom=0.07, right=0.98, top=0.99, wspace=0.29, hspace=0.4)
@@ -682,7 +680,8 @@ def plot_modelsSelected_as_paper_SD(ensemblefile, ensemblefolder, name, prefix, 
 
 
 
-def plot_paired_SD(dicarr0, cols0, dicarr1, cols1, name, foldername, legendlabels, ii=None, jj=None, xmax=None, ymax=None, format='landscape'):
+def plot_paired_SD(dicarr0, cols0, dicarr1, cols1, name, foldername, legendlabels, 
+                   ii=None, jj=None, xmax=None, ymax=None, format='landscape'):
     """FIXME! briefly describe function
 
     :param dicarr0:
@@ -757,10 +756,10 @@ def plot_paired_SD(dicarr0, cols0, dicarr1, cols1, name, foldername, legendlabel
     if format == 'portrait':
         figure.set_size_inches(10, 16)
         plt.subplots_adjust(left=0.06, bottom=0.03, right=0.99, top=0.97, wspace=0.35, hspace=0.30)
-    filename = foldername+"/"+name+"paired.png"
+    filename = foldername+"/"+name+"paired.pdf"
 
     plt.savefig(filename, dpi=300, bbox_inches='tight')
- #   plt.show()
+    plt.show()
     plt.close("all")
 
 
@@ -834,13 +833,15 @@ def plot_paired_separate_SD(dicarr0, cols0, dicarr1, cols1, name, foldername, le
         filename = foldername+"/"+j[0]+"_"+j[1]+"paired_"+name+".png"
         plt.subplots_adjust(left=0.07, bottom=0.07, right=0.98, top=0.9, wspace=0.29, hspace=0.4)
         plt.savefig(filename, dpi=300, bbox_inches='tight')
-#        plt.show()
+        plt.show()
         plt.close("all")
 
 
 
 
-def plot_overlaid_ode2rb_SD(ensembleRB, pattern, ensembleODE, ensembleODEfolder, name, prefix, foldername, legendlabels, paired=False, separate=False, quant=False, format='landscape'):
+def plot_overlaid_ode2rb_SD(ensembleRB, pattern, ensembleODE, ensembleODEfolder, name, prefix, 
+                            foldername, legendlabels, 
+                            paired=False, separate=False, quant=False, format='landscape'):
 
     ## RB stuff:
     rb_dicarr, rb_cols = prepare_ensemble_rb_models(ensembleRB, pattern)

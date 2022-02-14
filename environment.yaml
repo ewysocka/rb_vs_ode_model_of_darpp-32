@@ -1,4 +1,4 @@
-name: rb_vs_ode_model_of_darpp-32
+name: darpp-32
 
 channels:
   - default
@@ -10,3 +10,4 @@ dependencies:
   - numpy
   - seaborn
   - statsmodels
+  - natsort

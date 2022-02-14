@@ -37,7 +37,7 @@ def snapshotDictParsing(snapsdir, snapfiles):
         snapslist.extend(piece)
 
     # len(snapslist)   ### 345 snapashots -- all together 24,008 observables
-    return(list(set(snapslist)))
+    return list(set(snapslist))
 
 
 def species_2_obs(speciesset):
@@ -56,4 +56,4 @@ def species_2_obs(speciesset):
 
 
 ## execution:
-# speciesset = species_2_obs(snapshotDictParsing(snapshotKa_2_dict(snapsdir, snapfiles)))
+## speciesset = species_2_obs(snapshotDictParsing(snapshotKa_2_dict(snapsdir, snapfiles)))

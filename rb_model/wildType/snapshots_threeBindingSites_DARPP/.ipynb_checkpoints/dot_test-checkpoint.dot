@@ -1,0 +1,554 @@
+# Snapshot [Event: 12839697, Time: 250.000000]
+digraph G{
+subgraph cluster0{
+	counter0 [label = "3 instance(s)", shape=none];
+	node0_415 [label = "D(ser137~u,thr34~u,thr75~u)", color = "0.724199819524,0.675818655355,0.889222302727", style=filled];
+	node0_415 -> counter0 [style=invis];
+	node0_3200 [label = "CK1(pSite~u)", color = "0.631792777547,0.616355006865,0.932364815029", style=filled];
+	node0_3200 -> counter0 [style=invis];
+	 node0_415 -> node0_3200 [taillabel="ser137~u", headlabel="pSite~u", dir=none];
+}
+subgraph cluster2{
+	counter2 [label = "47 instance(s)", shape=none];
+	node2_4824 [label = "R2C2(pka1~on,pka2~on)", color = "0.655500448491,0.764512102995,0.530128484675", style=filled];
+	node2_4824 -> counter2 [style=invis];
+	node2_10029 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node2_10029 -> counter2 [style=invis];
+	node2_11561 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node2_11561 -> counter2 [style=invis];
+	node2_12124 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node2_12124 -> counter2 [style=invis];
+	node2_12294 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node2_12294 -> counter2 [style=invis];
+	 node2_4824 -> node2_10029 [taillabel="camp4", headlabel="a", dir=none];
+	 node2_4824 -> node2_12294 [taillabel="camp3", headlabel="a", dir=none];
+	 node2_4824 -> node2_11561 [taillabel="camp2", headlabel="a", dir=none];
+	 node2_4824 -> node2_12124 [taillabel="camp1", headlabel="a", dir=none];
+}
+subgraph cluster4{
+	counter4 [label = "530 instance(s)", shape=none];
+	node4_3220 [label = "PDE(pSite~u)", color = "0.694387339894,0.978710261099,0.572126758772", style=filled];
+	node4_3220 -> counter4 [style=invis];
+}
+subgraph cluster6{
+	counter6 [label = "57 instance(s)", shape=none];
+	node6_3000 [label = "CDK5", color = "0.536831168481,0.941798407064,0.559814498761", style=filled];
+	node6_3000 -> counter6 [style=invis];
+}
+subgraph cluster8{
+	counter8 [label = "3 instance(s)", shape=none];
+	node8_398 [label = "D(ser137~u,thr34~p,thr75~p)", color = "0.631611188249,0.640485004836,0.713716050452", style=filled];
+	node8_398 -> counter8 [style=invis];
+	node8_3148 [label = "CK1(pSite~u)", color = "0.631792777547,0.616355006865,0.932364815029", style=filled];
+	node8_3148 -> counter8 [style=invis];
+	 node8_398 -> node8_3148 [taillabel="ser137~u", headlabel="pSite~u", dir=none];
+}
+subgraph cluster10{
+	counter10 [label = "1499 instance(s)", shape=none];
+	node10_0 [label = "D(ser137~u,thr34~p,thr75~u)", color = "0.528957223731,0.782769851128,0.858828530887", style=filled];
+	node10_0 -> counter10 [style=invis];
+}
+subgraph cluster12{
+	counter12 [label = "8 instance(s)", shape=none];
+	node12_4447 [label = "PP2A(pSite~p)", color = "0.672604046694,0.825742728919,0.667458543992", style=filled];
+	node12_4447 -> counter12 [style=invis];
+}
+subgraph cluster14{
+	counter14 [label = "7 instance(s)", shape=none];
+	node14_3144 [label = "CK1(pSite~u)", color = "0.631792777547,0.616355006865,0.932364815029", style=filled];
+	node14_3144 -> counter14 [style=invis];
+}
+subgraph cluster16{
+	counter16 [label = "2 instance(s)", shape=none];
+	node16_960 [label = "D(ser137~u,thr34~p,thr75~p)", color = "0.631611188249,0.640485004836,0.713716050452", style=filled];
+	node16_960 -> counter16 [style=invis];
+	node16_4513 [label = "PP2A(pSite~p)", color = "0.672604046694,0.825742728919,0.667458543992", style=filled];
+	node16_4513 -> counter16 [style=invis];
+	 node16_960 -> node16_4513 [taillabel="thr75~p", headlabel="pSite~p", dir=none];
+}
+subgraph cluster18{
+	counter18 [label = "5 instance(s)", shape=none];
+	node18_11 [label = "D(ser137~u,thr34~p,thr75~u)", color = "0.528957223731,0.782769851128,0.858828530887", style=filled];
+	node18_11 -> counter18 [style=invis];
+	node18_3161 [label = "CK1(pSite~u)", color = "0.631792777547,0.616355006865,0.932364815029", style=filled];
+	node18_3161 -> counter18 [style=invis];
+	 node18_11 -> node18_3161 [taillabel="ser137~u", headlabel="pSite~u", dir=none];
+}
+subgraph cluster20{
+	counter20 [label = "67 instance(s)", shape=none];
+	node20_4744 [label = "PP2C", color = "0.556219078744,0.61426064741,0.794327450149", style=filled];
+	node20_4744 -> counter20 [style=invis];
+}
+subgraph cluster22{
+	counter22 [label = "3224 instance(s)", shape=none];
+	node22_8825 [label = "cAMP(c~off)", color = "0.878267696647,0.743498310439,0.624131177011", style=filled];
+	node22_8825 -> counter22 [style=invis];
+}
+subgraph cluster24{
+	counter24 [label = "78 instance(s)", shape=none];
+	node24_3120 [label = "CK1(pSite~p)", color = "0.524502208368,0.776517640095,0.920440143131", style=filled];
+	node24_3120 -> counter24 [style=invis];
+}
+subgraph cluster26{
+	counter26 [label = "6 instance(s)", shape=none];
+	node26_1057 [label = "D(ser137~p,thr34~u,thr75~p)", color = "0.510484498342,0.552224952875,0.879537240404", style=filled];
+	node26_1057 -> counter26 [style=invis];
+}
+subgraph cluster28{
+	counter28 [label = "13 instance(s)", shape=none];
+	node28_101 [label = "D(ser137~p,thr34~u,thr75~u)", color = "0.827730137207,0.824324497711,0.993682117253", style=filled];
+	node28_101 -> counter28 [style=invis];
+}
+subgraph cluster30{
+	counter30 [label = "9 instance(s)", shape=none];
+	node30_45 [label = "D(ser137~u,thr34~u,thr75~p)", color = "0.679722610913,0.902203359505,0.677596751942", style=filled];
+	node30_45 -> counter30 [style=invis];
+	node30_13471 [label = "PKA", color = "0.887546045598,0.8292518834,0.749456910969", style=filled];
+	node30_13471 -> counter30 [style=invis];
+	 node30_45 -> node30_13471 [taillabel="thr34~u", headlabel="a", dir=none];
+}
+subgraph cluster32{
+	counter32 [label = "148 instance(s)", shape=none];
+	node32_29 [label = "D(ser137~u,thr34~u,thr75~p)", color = "0.679722610913,0.902203359505,0.677596751942", style=filled];
+	node32_29 -> counter32 [style=invis];
+}
+subgraph cluster34{
+	counter34 [label = "11 instance(s)", shape=none];
+	node34_4561 [label = "PP2B(state~a)", color = "0.632041074856,0.966370417997,0.926922010733", style=filled];
+	node34_4561 -> counter34 [style=invis];
+	node34_8917 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node34_8917 -> counter34 [style=invis];
+	node34_9030 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node34_9030 -> counter34 [style=invis];
+	node34_13694 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node34_13694 -> counter34 [style=invis];
+	node34_13787 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node34_13787 -> counter34 [style=invis];
+	 node34_4561 -> node34_13787 [taillabel="ca4", headlabel="a", dir=none];
+	 node34_4561 -> node34_8917 [taillabel="ca3", headlabel="a", dir=none];
+	 node34_4561 -> node34_9030 [taillabel="ca2", headlabel="a", dir=none];
+	 node34_4561 -> node34_13694 [taillabel="ca1", headlabel="a", dir=none];
+}
+subgraph cluster36{
+	counter36 [label = "3 instance(s)", shape=none];
+	node36_1652 [label = "D(ser137~p,thr34~p,thr75~p)", color = "0.958981902747,0.700934370782,0.731656088199", style=filled];
+	node36_1652 -> counter36 [style=invis];
+	node36_4800 [label = "PP2C", color = "0.556219078744,0.61426064741,0.794327450149", style=filled];
+	node36_4800 -> counter36 [style=invis];
+	 node36_1652 -> node36_4800 [taillabel="ser137~p", headlabel="a", dir=none];
+}
+subgraph cluster38{
+	counter38 [label = "13 instance(s)", shape=none];
+	node38_33 [label = "D(ser137~u,thr34~p,thr75~p)", color = "0.631611188249,0.640485004836,0.713716050452", style=filled];
+	node38_33 -> counter38 [style=invis];
+	node38_4514 [label = "PP2A(pSite~u)", color = "0.614212476318,0.846321262235,0.78557854135", style=filled];
+	node38_4514 -> counter38 [style=invis];
+	 node38_33 -> node38_4514 [taillabel="thr75~p", headlabel="pSite~u", dir=none];
+}
+subgraph cluster40{
+	counter40 [label = "666 instance(s)", shape=none];
+	node40_5 [label = "D(ser137~u,thr34~p,thr75~p)", color = "0.631611188249,0.640485004836,0.713716050452", style=filled];
+	node40_5 -> counter40 [style=invis];
+}
+subgraph cluster42{
+	counter42 [label = "3402 instance(s)", shape=none];
+	node42_4825 [label = "R2C2(pka1~off,pka2~off)", color = "0.788980421243,0.581691759331,0.761674200239", style=filled];
+	node42_4825 -> counter42 [style=invis];
+}
+subgraph cluster44{
+	counter44 [label = "11 instance(s)", shape=none];
+	node44_21 [label = "D(ser137~u,thr34~p,thr75~u)", color = "0.528957223731,0.782769851128,0.858828530887", style=filled];
+	node44_21 -> counter44 [style=invis];
+	node44_4645 [label = "PP2B(state~a)", color = "0.632041074856,0.966370417997,0.926922010733", style=filled];
+	node44_4645 -> counter44 [style=invis];
+	node44_9054 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node44_9054 -> counter44 [style=invis];
+	node44_13465 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node44_13465 -> counter44 [style=invis];
+	node44_13598 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node44_13598 -> counter44 [style=invis];
+	node44_13784 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node44_13784 -> counter44 [style=invis];
+	 node44_4645 -> node44_13465 [taillabel="ca4", headlabel="a", dir=none];
+	 node44_4645 -> node44_13784 [taillabel="ca3", headlabel="a", dir=none];
+	 node44_4645 -> node44_9054 [taillabel="ca2", headlabel="a", dir=none];
+	 node44_4645 -> node44_13598 [taillabel="ca1", headlabel="a", dir=none];
+	 node44_21 -> node44_4645 [taillabel="thr34~p", headlabel="state~a", dir=none];
+}
+subgraph cluster46{
+	counter46 [label = "2 instance(s)", shape=none];
+	node46_19 [label = "D(ser137~p,thr34~p,thr75~u)", color = "0.932737598213,0.937989657099,0.796990507666", style=filled];
+	node46_19 -> counter46 [style=invis];
+	node46_3036 [label = "CDK5", color = "0.536831168481,0.941798407064,0.559814498761", style=filled];
+	node46_3036 -> counter46 [style=invis];
+	 node46_19 -> node46_3036 [taillabel="thr75~u", headlabel="a", dir=none];
+}
+subgraph cluster48{
+	counter48 [label = "5 instance(s)", shape=none];
+	node48_4453 [label = "PP2A(pSite~u)", color = "0.614212476318,0.846321262235,0.78557854135", style=filled];
+	node48_4453 -> counter48 [style=invis];
+	node48_9051 [label = "PKA", color = "0.887546045598,0.8292518834,0.749456910969", style=filled];
+	node48_9051 -> counter48 [style=invis];
+	 node48_4453 -> node48_9051 [taillabel="pSite~u", headlabel="a", dir=none];
+}
+subgraph cluster50{
+	counter50 [label = "3 instance(s)", shape=none];
+	node50_5920 [label = "R2C2(pka1~off,pka2~off)", color = "0.788980421243,0.581691759331,0.761674200239", style=filled];
+	node50_5920 -> counter50 [style=invis];
+	node50_9147 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node50_9147 -> counter50 [style=invis];
+	node50_12185 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node50_12185 -> counter50 [style=invis];
+	 node50_5920 -> node50_12185 [taillabel="camp4", headlabel="a", dir=none];
+	 node50_5920 -> node50_9147 [taillabel="camp3", headlabel="a", dir=none];
+}
+subgraph cluster51{
+	counter51 [label = "4 instance(s)", shape=none];
+	node51_5014 [label = "R2C2(pka1~off,pka2~off)", color = "0.788980421243,0.581691759331,0.761674200239", style=filled];
+	node51_5014 -> counter51 [style=invis];
+	node51_9500 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node51_9500 -> counter51 [style=invis];
+	node51_10180 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node51_10180 -> counter51 [style=invis];
+	 node51_5014 -> node51_10180 [taillabel="camp3", headlabel="a", dir=none];
+	 node51_5014 -> node51_9500 [taillabel="camp1", headlabel="a", dir=none];
+}
+subgraph cluster52{
+	counter52 [label = "113 instance(s)", shape=none];
+	node52_4936 [label = "R2C2(pka1~off,pka2~off)", color = "0.788980421243,0.581691759331,0.761674200239", style=filled];
+	node52_4936 -> counter52 [style=invis];
+	node52_12595 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node52_12595 -> counter52 [style=invis];
+	 node52_4936 -> node52_12595 [taillabel="camp3", headlabel="a", dir=none];
+}
+subgraph cluster53{
+	counter53 [label = "3 instance(s)", shape=none];
+	node53_4922 [label = "R2C2(pka1~off,pka2~off)", color = "0.788980421243,0.581691759331,0.761674200239", style=filled];
+	node53_4922 -> counter53 [style=invis];
+	node53_10878 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node53_10878 -> counter53 [style=invis];
+	node53_12009 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node53_12009 -> counter53 [style=invis];
+	 node53_4922 -> node53_10878 [taillabel="camp4", headlabel="a", dir=none];
+	 node53_4922 -> node53_12009 [taillabel="camp2", headlabel="a", dir=none];
+}
+subgraph cluster54{
+	counter54 [label = "5 instance(s)", shape=none];
+	node54_4909 [label = "R2C2(pka1~off,pka2~off)", color = "0.788980421243,0.581691759331,0.761674200239", style=filled];
+	node54_4909 -> counter54 [style=invis];
+	node54_10539 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node54_10539 -> counter54 [style=invis];
+	node54_12609 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node54_12609 -> counter54 [style=invis];
+	 node54_4909 -> node54_10539 [taillabel="camp3", headlabel="a", dir=none];
+	 node54_4909 -> node54_12609 [taillabel="camp2", headlabel="a", dir=none];
+}
+subgraph cluster55{
+	counter55 [label = "134 instance(s)", shape=none];
+	node55_4828 [label = "R2C2(pka1~off,pka2~off)", color = "0.788980421243,0.581691759331,0.761674200239", style=filled];
+	node55_4828 -> counter55 [style=invis];
+	node55_11023 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node55_11023 -> counter55 [style=invis];
+	 node55_4828 -> node55_11023 [taillabel="camp4", headlabel="a", dir=none];
+}
+subgraph cluster56{
+	counter56 [label = "129 instance(s)", shape=none];
+	node56_4870 [label = "R2C2(pka1~off,pka2~off)", color = "0.788980421243,0.581691759331,0.761674200239", style=filled];
+	node56_4870 -> counter56 [style=invis];
+	node56_9899 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node56_9899 -> counter56 [style=invis];
+	 node56_4870 -> node56_9899 [taillabel="camp2", headlabel="a", dir=none];
+}
+subgraph cluster57{
+	counter57 [label = "148 instance(s)", shape=none];
+	node57_4897 [label = "R2C2(pka1~off,pka2~off)", color = "0.788980421243,0.581691759331,0.761674200239", style=filled];
+	node57_4897 -> counter57 [style=invis];
+	node57_11549 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node57_11549 -> counter57 [style=invis];
+	 node57_4897 -> node57_11549 [taillabel="camp1", headlabel="a", dir=none];
+}
+subgraph cluster58{
+	counter58 [label = "6 instance(s)", shape=none];
+	node58_6403 [label = "R2C2(pka1~off,pka2~off)", color = "0.788980421243,0.581691759331,0.761674200239", style=filled];
+	node58_6403 -> counter58 [style=invis];
+	node58_10756 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node58_10756 -> counter58 [style=invis];
+	node58_12128 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node58_12128 -> counter58 [style=invis];
+	 node58_6403 -> node58_12128 [taillabel="camp2", headlabel="a", dir=none];
+	 node58_6403 -> node58_10756 [taillabel="camp1", headlabel="a", dir=none];
+}
+subgraph cluster59{
+	counter59 [label = "5 instance(s)", shape=none];
+	node59_6585 [label = "R2C2(pka1~off,pka2~off)", color = "0.788980421243,0.581691759331,0.761674200239", style=filled];
+	node59_6585 -> counter59 [style=invis];
+	node59_11010 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node59_11010 -> counter59 [style=invis];
+	node59_12841 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node59_12841 -> counter59 [style=invis];
+	 node59_6585 -> node59_11010 [taillabel="camp4", headlabel="a", dir=none];
+	 node59_6585 -> node59_12841 [taillabel="camp1", headlabel="a", dir=none];
+}
+subgraph cluster61{
+	counter61 [label = "35 instance(s)", shape=none];
+	node61_133 [label = "D(ser137~p,thr34~p,thr75~p)", color = "0.958981902747,0.700934370782,0.731656088199", style=filled];
+	node61_133 -> counter61 [style=invis];
+}
+subgraph cluster63{
+	counter63 [label = "45 instance(s)", shape=none];
+	node63_24 [label = "D(ser137~u,thr34~p,thr75~u)", color = "0.528957223731,0.782769851128,0.858828530887", style=filled];
+	node63_24 -> counter63 [style=invis];
+	node63_3086 [label = "CDK5", color = "0.536831168481,0.941798407064,0.559814498761", style=filled];
+	node63_3086 -> counter63 [style=invis];
+	 node63_24 -> node63_3086 [taillabel="thr75~u", headlabel="a", dir=none];
+}
+subgraph cluster65{
+	counter65 [label = "1 instance(s)", shape=none];
+	node65_5774 [label = "R2C2(pka1~on,pka2~off)", color = "0.682420660171,0.786581096939,0.608807274273", style=filled];
+	node65_5774 -> counter65 [style=invis];
+	node65_10680 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node65_10680 -> counter65 [style=invis];
+	node65_12057 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node65_12057 -> counter65 [style=invis];
+	node65_12754 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node65_12754 -> counter65 [style=invis];
+	node65_12845 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node65_12845 -> counter65 [style=invis];
+	 node65_5774 -> node65_12057 [taillabel="camp4", headlabel="a", dir=none];
+	 node65_5774 -> node65_10680 [taillabel="camp3", headlabel="a", dir=none];
+	 node65_5774 -> node65_12845 [taillabel="camp2", headlabel="a", dir=none];
+	 node65_5774 -> node65_12754 [taillabel="camp1", headlabel="a", dir=none];
+}
+subgraph cluster67{
+	counter67 [label = "12 instance(s)", shape=none];
+	node67_36 [label = "D(ser137~u,thr34~u,thr75~u)", color = "0.724199819524,0.675818655355,0.889222302727", style=filled];
+	node67_36 -> counter67 [style=invis];
+	node67_3052 [label = "CDK5", color = "0.536831168481,0.941798407064,0.559814498761", style=filled];
+	node67_3052 -> counter67 [style=invis];
+	 node67_36 -> node67_3052 [taillabel="thr75~u", headlabel="a", dir=none];
+}
+subgraph cluster69{
+	counter69 [label = "78 instance(s)", shape=none];
+	node69_4546 [label = "PP2B(state~i)", color = "0.994644204716,0.642151500945,0.550079937678", style=filled];
+	node69_4546 -> counter69 [style=invis];
+}
+subgraph cluster71{
+	counter71 [label = "3 instance(s)", shape=none];
+	node71_2291 [label = "D(ser137~u,thr34~u,thr75~p)", color = "0.679722610913,0.902203359505,0.677596751942", style=filled];
+	node71_2291 -> counter71 [style=invis];
+	node71_4467 [label = "PP2A(pSite~u)", color = "0.614212476318,0.846321262235,0.78557854135", style=filled];
+	node71_4467 -> counter71 [style=invis];
+	 node71_2291 -> node71_4467 [taillabel="thr75~p", headlabel="pSite~u", dir=none];
+}
+subgraph cluster73{
+	counter73 [label = "124 instance(s)", shape=none];
+	node73_8 [label = "D(ser137~p,thr34~p,thr75~u)", color = "0.932737598213,0.937989657099,0.796990507666", style=filled];
+	node73_8 -> counter73 [style=invis];
+}
+subgraph cluster75{
+	counter75 [label = "4 instance(s)", shape=none];
+	node75_3126 [label = "CK1(pSite~p)", color = "0.524502208368,0.776517640095,0.920440143131", style=filled];
+	node75_3126 -> counter75 [style=invis];
+	node75_4737 [label = "PP2B(state~a)", color = "0.632041074856,0.966370417997,0.926922010733", style=filled];
+	node75_4737 -> counter75 [style=invis];
+	node75_9006 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node75_9006 -> counter75 [style=invis];
+	node75_9067 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node75_9067 -> counter75 [style=invis];
+	node75_13204 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node75_13204 -> counter75 [style=invis];
+	node75_13674 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node75_13674 -> counter75 [style=invis];
+	 node75_4737 -> node75_9006 [taillabel="ca4", headlabel="a", dir=none];
+	 node75_4737 -> node75_9067 [taillabel="ca3", headlabel="a", dir=none];
+	 node75_4737 -> node75_13674 [taillabel="ca2", headlabel="a", dir=none];
+	 node75_4737 -> node75_13204 [taillabel="ca1", headlabel="a", dir=none];
+	 node75_3126 -> node75_4737 [taillabel="pSite~p", headlabel="state~a", dir=none];
+}
+subgraph cluster77{
+	counter77 [label = "6 instance(s)", shape=none];
+	node77_3344 [label = "PDE(pSite~u)", color = "0.694387339894,0.978710261099,0.572126758772", style=filled];
+	node77_3344 -> counter77 [style=invis];
+	node77_9064 [label = "PKA", color = "0.887546045598,0.8292518834,0.749456910969", style=filled];
+	node77_9064 -> counter77 [style=invis];
+	 node77_3344 -> node77_9064 [taillabel="pSite~u", headlabel="a", dir=none];
+}
+subgraph cluster79{
+	counter79 [label = "2 instance(s)", shape=none];
+	node79_1697 [label = "D(ser137~u,thr34~u,thr75~u)", color = "0.724199819524,0.675818655355,0.889222302727", style=filled];
+	node79_1697 -> counter79 [style=invis];
+	node79_3096 [label = "CDK5", color = "0.536831168481,0.941798407064,0.559814498761", style=filled];
+	node79_3096 -> counter79 [style=invis];
+	node79_13194 [label = "PKA", color = "0.887546045598,0.8292518834,0.749456910969", style=filled];
+	node79_13194 -> counter79 [style=invis];
+	 node79_1697 -> node79_3096 [taillabel="thr75~u", headlabel="a", dir=none];
+	 node79_1697 -> node79_13194 [taillabel="thr34~u", headlabel="a", dir=none];
+}
+subgraph cluster81{
+	counter81 [label = "8 instance(s)", shape=none];
+	node81_9504 [label = "cAMP(c~on)", color = "0.526390617977,0.590680257724,0.799892431704", style=filled];
+	node81_9504 -> counter81 [style=invis];
+}
+subgraph cluster83{
+	counter83 [label = "1 instance(s)", shape=none];
+	node83_2441 [label = "D(ser137~p,thr34~u,thr75~u)", color = "0.827730137207,0.824324497711,0.993682117253", style=filled];
+	node83_2441 -> counter83 [style=invis];
+	node83_4745 [label = "PP2C", color = "0.556219078744,0.61426064741,0.794327450149", style=filled];
+	node83_4745 -> counter83 [style=invis];
+	 node83_2441 -> node83_4745 [taillabel="ser137~p", headlabel="a", dir=none];
+}
+subgraph cluster85{
+	counter85 [label = "18 instance(s)", shape=none];
+	node85_51 [label = "D(ser137~u,thr34~u,thr75~u)", color = "0.724199819524,0.675818655355,0.889222302727", style=filled];
+	node85_51 -> counter85 [style=invis];
+	node85_13529 [label = "PKA", color = "0.887546045598,0.8292518834,0.749456910969", style=filled];
+	node85_13529 -> counter85 [style=invis];
+	 node85_51 -> node85_13529 [taillabel="thr34~u", headlabel="a", dir=none];
+}
+subgraph cluster87{
+	counter87 [label = "3 instance(s)", shape=none];
+	node87_569 [label = "D(ser137~p,thr34~p,thr75~u)", color = "0.932737598213,0.937989657099,0.796990507666", style=filled];
+	node87_569 -> counter87 [style=invis];
+	node87_4604 [label = "PP2B(state~a)", color = "0.632041074856,0.966370417997,0.926922010733", style=filled];
+	node87_4604 -> counter87 [style=invis];
+	node87_8824 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node87_8824 -> counter87 [style=invis];
+	node87_8867 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node87_8867 -> counter87 [style=invis];
+	node87_8889 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node87_8889 -> counter87 [style=invis];
+	node87_9020 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node87_9020 -> counter87 [style=invis];
+	 node87_4604 -> node87_8824 [taillabel="ca4", headlabel="a", dir=none];
+	 node87_4604 -> node87_8889 [taillabel="ca3", headlabel="a", dir=none];
+	 node87_4604 -> node87_9020 [taillabel="ca2", headlabel="a", dir=none];
+	 node87_4604 -> node87_8867 [taillabel="ca1", headlabel="a", dir=none];
+	 node87_569 -> node87_4604 [taillabel="thr34~p", headlabel="state~a", dir=none];
+}
+subgraph cluster89{
+	counter89 [label = "1 instance(s)", shape=none];
+	node89_2747 [label = "D(ser137~p,thr34~p,thr75~u)", color = "0.932737598213,0.937989657099,0.796990507666", style=filled];
+	node89_2747 -> counter89 [style=invis];
+	node89_3021 [label = "CDK5", color = "0.536831168481,0.941798407064,0.559814498761", style=filled];
+	node89_3021 -> counter89 [style=invis];
+	node89_4747 [label = "PP2C", color = "0.556219078744,0.61426064741,0.794327450149", style=filled];
+	node89_4747 -> counter89 [style=invis];
+	 node89_2747 -> node89_3021 [taillabel="thr75~u", headlabel="a", dir=none];
+	 node89_2747 -> node89_4747 [taillabel="ser137~p", headlabel="a", dir=none];
+}
+subgraph cluster91{
+	counter91 [label = "1 instance(s)", shape=none];
+	node91_2296 [label = "D(ser137~p,thr34~p,thr75~p)", color = "0.958981902747,0.700934370782,0.731656088199", style=filled];
+	node91_2296 -> counter91 [style=invis];
+	node91_4533 [label = "PP2A(pSite~u)", color = "0.614212476318,0.846321262235,0.78557854135", style=filled];
+	node91_4533 -> counter91 [style=invis];
+	 node91_2296 -> node91_4533 [taillabel="thr75~p", headlabel="pSite~u", dir=none];
+}
+subgraph cluster93{
+	counter93 [label = "363 instance(s)", shape=none];
+	node93_9 [label = "D(ser137~u,thr34~u,thr75~u)", color = "0.724199819524,0.675818655355,0.889222302727", style=filled];
+	node93_9 -> counter93 [style=invis];
+}
+subgraph cluster95{
+	counter95 [label = "88 instance(s)", shape=none];
+	node95_4424 [label = "PP2A(pSite~u)", color = "0.614212476318,0.846321262235,0.78557854135", style=filled];
+	node95_4424 -> counter95 [style=invis];
+}
+subgraph cluster97{
+	counter97 [label = "8 instance(s)", shape=none];
+	node97_47 [label = "D(ser137~p,thr34~p,thr75~u)", color = "0.932737598213,0.937989657099,0.796990507666", style=filled];
+	node97_47 -> counter97 [style=invis];
+	node97_4750 [label = "PP2C", color = "0.556219078744,0.61426064741,0.794327450149", style=filled];
+	node97_4750 -> counter97 [style=invis];
+	 node97_47 -> node97_4750 [taillabel="ser137~p", headlabel="a", dir=none];
+}
+subgraph cluster99{
+	counter99 [label = "9 instance(s)", shape=none];
+	node99_8845 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node99_8845 -> counter99 [style=invis];
+}
+subgraph cluster101{
+	counter101 [label = "1 instance(s)", shape=none];
+	node101_2986 [label = "D(ser137~p,thr34~u,thr75~u)", color = "0.827730137207,0.824324497711,0.993682117253", style=filled];
+	node101_2986 -> counter101 [style=invis];
+	node101_3101 [label = "CDK5", color = "0.536831168481,0.941798407064,0.559814498761", style=filled];
+	node101_3101 -> counter101 [style=invis];
+	 node101_2986 -> node101_3101 [taillabel="thr75~u", headlabel="a", dir=none];
+}
+subgraph cluster103{
+	counter103 [label = "14 instance(s)", shape=none];
+	node103_4557 [label = "PP2B(state~i)", color = "0.994644204716,0.642151500945,0.550079937678", style=filled];
+	node103_4557 -> counter103 [style=invis];
+	node103_13130 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node103_13130 -> counter103 [style=invis];
+	node103_13424 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node103_13424 -> counter103 [style=invis];
+	 node103_4557 -> node103_13130 [taillabel="ca3", headlabel="a", dir=none];
+	 node103_4557 -> node103_13424 [taillabel="ca2", headlabel="a", dir=none];
+}
+subgraph cluster104{
+	counter104 [label = "14 instance(s)", shape=none];
+	node104_4551 [label = "PP2B(state~i)", color = "0.994644204716,0.642151500945,0.550079937678", style=filled];
+	node104_4551 -> counter104 [style=invis];
+	node104_8833 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node104_8833 -> counter104 [style=invis];
+	node104_13735 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node104_13735 -> counter104 [style=invis];
+	 node104_4551 -> node104_13735 [taillabel="ca2", headlabel="a", dir=none];
+	 node104_4551 -> node104_8833 [taillabel="ca1", headlabel="a", dir=none];
+}
+subgraph cluster105{
+	counter105 [label = "19 instance(s)", shape=none];
+	node105_4544 [label = "PP2B(state~i)", color = "0.994644204716,0.642151500945,0.550079937678", style=filled];
+	node105_4544 -> counter105 [style=invis];
+	node105_13235 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node105_13235 -> counter105 [style=invis];
+	node105_13616 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node105_13616 -> counter105 [style=invis];
+	 node105_4544 -> node105_13235 [taillabel="ca4", headlabel="a", dir=none];
+	 node105_4544 -> node105_13616 [taillabel="ca1", headlabel="a", dir=none];
+}
+subgraph cluster106{
+	counter106 [label = "17 instance(s)", shape=none];
+	node106_4545 [label = "PP2B(state~i)", color = "0.994644204716,0.642151500945,0.550079937678", style=filled];
+	node106_4545 -> counter106 [style=invis];
+	node106_8947 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node106_8947 -> counter106 [style=invis];
+	node106_9045 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node106_9045 -> counter106 [style=invis];
+	 node106_4545 -> node106_8947 [taillabel="ca3", headlabel="a", dir=none];
+	 node106_4545 -> node106_9045 [taillabel="ca1", headlabel="a", dir=none];
+}
+subgraph cluster107{
+	counter107 [label = "18 instance(s)", shape=none];
+	node107_4558 [label = "PP2B(state~i)", color = "0.994644204716,0.642151500945,0.550079937678", style=filled];
+	node107_4558 -> counter107 [style=invis];
+	node107_8886 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node107_8886 -> counter107 [style=invis];
+	node107_8984 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node107_8984 -> counter107 [style=invis];
+	 node107_4558 -> node107_8984 [taillabel="ca4", headlabel="a", dir=none];
+	 node107_4558 -> node107_8886 [taillabel="ca3", headlabel="a", dir=none];
+}
+subgraph cluster108{
+	counter108 [label = "11 instance(s)", shape=none];
+	node108_4577 [label = "PP2B(state~i)", color = "0.994644204716,0.642151500945,0.550079937678", style=filled];
+	node108_4577 -> counter108 [style=invis];
+	node108_9083 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node108_9083 -> counter108 [style=invis];
+	node108_13210 [label = "Ca2+", color = "0.800655077098,0.56293018446,0.757819803947", style=filled];
+	node108_13210 -> counter108 [style=invis];
+	 node108_4577 -> node108_13210 [taillabel="ca4", headlabel="a", dir=none];
+	 node108_4577 -> node108_9083 [taillabel="ca2", headlabel="a", dir=none];
+}
+subgraph cluster110{
+	counter110 [label = "55 instance(s)", shape=none];
+	node110_8852 [label = "PKA", color = "0.887546045598,0.8292518834,0.749456910969", style=filled];
+	node110_8852 -> counter110 [style=invis];
+}
+subgraph cluster112{
+	counter112 [label = "668 instance(s)", shape=none];
+	node112_3222 [label = "PDE(pSite~p)", color = "0.529684984289,0.639575162004,0.976999463643", style=filled];
+	node112_3222 -> counter112 [style=invis];
+}
+}
