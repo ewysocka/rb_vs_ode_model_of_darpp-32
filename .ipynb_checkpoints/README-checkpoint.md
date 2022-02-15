@@ -37,10 +37,10 @@ Alongside these analyses, this manuscript reports a refactored model of DARPP-32
   - ca_all_case/all_Ca_summed_PP2Bpaired.pdf
   
 * Figure 12:
-  - (A) alone/constSer/constitutive_Ser137_summedpatternsOriginal_selected_.pdf
+  <!--- - (A) alone/constSer/constitutive_Ser137_summedpatternsOriginal_selected_.pdf
   - (B) alone/constSer/constitutive_serinetBS_rb_model_selected_SD.pdf
   - (C) alone/ser2ala/serine_to_alanine_summedpatternsOriginal_selected_.pdf
-  - (D) alone/ser2ala/serine_to_alaninetBS_rb_model_selected_SD.pdf
+  - (D) alone/ser2ala/serine_to_alaninetBS_rb_model_selected_SD.pdf --->
 
 * Figure S1:
   - ca_all_case/CaRates_15_1_7_CaStim_6_representations_of_PP2Bi.pdf
