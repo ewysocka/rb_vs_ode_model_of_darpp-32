@@ -9,13 +9,6 @@ The most detailed and popular approach to model dynamics of molecular systems ar
 molecular system encoded in the two frameworks have been presented before. To perform such comparison, a set of reactions that underlie an ODE model by Fernandez et al. 2006 [[1]](#1) was manually encoded into one of RB frameworks, the Kappa language. Closer comparison of models was performed on the level of model specification and results acquired through model simulations. We established that rule patterns reduce reaction number in a certain type of model components. Furthermore, the Kappa model recapitulated general dynamics represented by its ODE counterpart with minor discrepancies. They occurred whenever a molecules have multiple sites binding the same interactor. Notation of such rules requires a complete listing of all possible binding configurations. Furthermore, activation of such molecules is slower than in the ODE model. Therefore, rate constants that define this type of rules ought to be revised.
 We conclude that the RB representation offers a more expressive and flexible syntax that eases access to fine-grain details of the model, facilitating model reuse.
 Alongside these analyses, this manuscript reports a refactored model of DARPP-32 interaction network that can serve as a canvas for development of more complex interaction network to study this particular molecular system.
-  
-### Repository content:
-* rb\_model
-
-* ode\_model
-
-* pytoolbox
 
 
 ### List of figures reproduced in main.ipynb:
@@ -24,33 +17,25 @@ Alongside these analyses, this manuscript reports a refactored model of DARPP-32
   <!--- - (A) wt/wild-type_summedpatternsOriginal_selected_.pdf --->
   <!--- - (B) wt/wild-type_stochastic_ode_model_selected_SD.pdf --->
   <!--- - (C) wt/wild-typeoBS_rb_model_selected_SD.pdf --->
-    
-* Figure 8:
+* Figure 8
    <!--- - compared/w-t_ode2rb_stoch2stochpaired_resized.pdf --->
-
-* Figure 10:
-  - (A) ca_all_case/all_Ca_all_Ca2_paired_w-t_ode2rb_stoch2stoch.pdf
-  - (B) ca_all_case/all_Ca2_all_Ca_paired_all_ca_rb_18_ode_13.pdf
-  - (C) ca_all_case/all_Ca2_all_Ca_paired_all_ca_summed_first_instance_of_PP2B.pdf
-  
-* Figure 11:
-  - ca_all_case/all_Ca_summed_PP2Bpaired.pdf
-  
-* Figure 12:
+* Figure 10
+  <!--- - (A) ca_all_case/all_Ca_all_Ca2_paired_w-t_ode2rb_stoch2stoch.pdf --->
+  <!--- - (B) ca_all_case/all_Ca2_all_Ca_paired_all_ca_rb_18_ode_13.pdf --->
+  <!--- - (C) ca_all_case/all_Ca2_all_Ca_paired_all_ca_summed_first_instance_of_PP2B.pdf --->
+* Figure 11
+  <!--- - ca_all_case/all_Ca_summed_PP2Bpaired.pdf --> 
+* Figure 12
   <!--- - (A) alone/constSer/constitutive_Ser137_summedpatternsOriginal_selected_.pdf
   - (B) alone/constSer/constitutive_serinetBS_rb_model_selected_SD.pdf
   - (C) alone/ser2ala/serine_to_alanine_summedpatternsOriginal_selected_.pdf
   - (D) alone/ser2ala/serine_to_alaninetBS_rb_model_selected_SD.pdf --->
-
-* Figure S1:
-  - ca_all_case/CaRates_15_1_7_CaStim_6_representations_of_PP2Bi.pdf
-
-* Figure S2:
-  - img/ca_all_case/all_Capaired.pdf
-
-* Figure S3:
+* Figure S1
+  <!--- - ca_all_case/CaRates_15_1_7_CaStim_6_representations_of_PP2Bi.pdf --->
+* Figure S2
+  <!--- - img/ca_all_case/all_Capaired.pdf --->
+* Figure S3
   <!--- - compared/w-t_rb2rb_stoch2stochpaired_resized.pdf --->
-
 * Figure S4
  <!--- - compared/s_speciesNum_per_time_tBS_oBS_to_stimuli_2.pdf --->
 
