@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.19 (Build 140) (http://www.copasi.org) at 2017-06-11 11:02:16 UTC -->
+<!-- generated with COPASI 4.19 (Build 140) (http://www.copasi.org) at 2017-06-10 09:50:52 UTC -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="19" versionDevel="140" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -238,12 +238,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_5" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4438" name="k1" value="5.6e+06"/>
+          <Constant key="Parameter_4435" name="k1" value="5.6e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4438"/>
+              <SourceParameter reference="Parameter_4435"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_1"/>
@@ -261,12 +261,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4439" name="k1" value="12"/>
+          <Constant key="Parameter_4436" name="k1" value="12"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4439"/>
+              <SourceParameter reference="Parameter_4436"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_5"/>
@@ -283,12 +283,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4440" name="k1" value="3"/>
+          <Constant key="Parameter_4437" name="k1" value="3"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4440"/>
+              <SourceParameter reference="Parameter_4437"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_5"/>
@@ -305,12 +305,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_11" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4441" name="k1" value="4.4e+06"/>
+          <Constant key="Parameter_4438" name="k1" value="4.4e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4441"/>
+              <SourceParameter reference="Parameter_4438"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_1"/>
@@ -328,12 +328,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_9" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4442" name="k1" value="12"/>
+          <Constant key="Parameter_4439" name="k1" value="12"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4442"/>
+              <SourceParameter reference="Parameter_4439"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_11"/>
@@ -350,12 +350,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_9" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4443" name="k1" value="3"/>
+          <Constant key="Parameter_4440" name="k1" value="3"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4443"/>
+              <SourceParameter reference="Parameter_4440"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_11"/>
@@ -372,12 +372,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_17" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4444" name="k1" value="5.6e+06"/>
+          <Constant key="Parameter_4441" name="k1" value="5.6e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4444"/>
+              <SourceParameter reference="Parameter_4441"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_1"/>
@@ -395,12 +395,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4445" name="k1" value="10.8"/>
+          <Constant key="Parameter_4442" name="k1" value="10.8"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4445"/>
+              <SourceParameter reference="Parameter_4442"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_17"/>
@@ -417,12 +417,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4433" name="k1" value="2.7"/>
+          <Constant key="Parameter_4430" name="k1" value="2.7"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4433"/>
+              <SourceParameter reference="Parameter_4430"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_17"/>
@@ -439,12 +439,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_21" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4434" name="k1" value="5.6e+06"/>
+          <Constant key="Parameter_4431" name="k1" value="5.6e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4434"/>
+              <SourceParameter reference="Parameter_4431"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_19"/>
@@ -462,12 +462,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_23" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4435" name="k1" value="4.4e+06"/>
+          <Constant key="Parameter_4432" name="k1" value="4.4e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4435"/>
+              <SourceParameter reference="Parameter_4432"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_19"/>
@@ -485,12 +485,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_27" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4436" name="k1" value="1e+07"/>
+          <Constant key="Parameter_4433" name="k1" value="1e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4436"/>
+              <SourceParameter reference="Parameter_4433"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_19"/>
@@ -508,12 +508,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4437" name="k1" value="12"/>
+          <Constant key="Parameter_4434" name="k1" value="12"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4437"/>
+              <SourceParameter reference="Parameter_4434"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_21"/>
@@ -530,12 +530,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4407" name="k1" value="3"/>
+          <Constant key="Parameter_4404" name="k1" value="3"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4407"/>
+              <SourceParameter reference="Parameter_4404"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_21"/>
@@ -552,12 +552,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_9" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4408" name="k1" value="12"/>
+          <Constant key="Parameter_4405" name="k1" value="12"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4408"/>
+              <SourceParameter reference="Parameter_4405"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_23"/>
@@ -574,12 +574,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_9" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4409" name="k1" value="3"/>
+          <Constant key="Parameter_4406" name="k1" value="3"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4409"/>
+              <SourceParameter reference="Parameter_4406"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_23"/>
@@ -596,12 +596,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_25" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4410" name="k1" value="4"/>
+          <Constant key="Parameter_4407" name="k1" value="4"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4410"/>
+              <SourceParameter reference="Parameter_4407"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_27"/>
@@ -618,12 +618,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_25" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4411" name="k1" value="16"/>
+          <Constant key="Parameter_4408" name="k1" value="16"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4411"/>
+              <SourceParameter reference="Parameter_4408"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_27"/>
@@ -640,12 +640,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_33" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4412" name="k1" value="4.4e+06"/>
+          <Constant key="Parameter_4409" name="k1" value="4.4e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4412"/>
+              <SourceParameter reference="Parameter_4409"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_7"/>
@@ -663,12 +663,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_35" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4413" name="k1" value="5.6e+06"/>
+          <Constant key="Parameter_4410" name="k1" value="5.6e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4413"/>
+              <SourceParameter reference="Parameter_4410"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_7"/>
@@ -686,12 +686,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_39" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4414" name="k1" value="3.8e+06"/>
+          <Constant key="Parameter_4411" name="k1" value="3.8e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4414"/>
+              <SourceParameter reference="Parameter_4411"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_7"/>
@@ -709,12 +709,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_43" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4415" name="k1" value="1.7e+07"/>
+          <Constant key="Parameter_4412" name="k1" value="1.7e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4415"/>
+              <SourceParameter reference="Parameter_4412"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_7"/>
@@ -732,12 +732,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_9" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4416" name="k1" value="12"/>
+          <Constant key="Parameter_4413" name="k1" value="12"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4416"/>
+              <SourceParameter reference="Parameter_4413"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_33"/>
@@ -754,12 +754,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_45" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4417" name="k1" value="3"/>
+          <Constant key="Parameter_4414" name="k1" value="3"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4417"/>
+              <SourceParameter reference="Parameter_4414"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_33"/>
@@ -776,12 +776,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4418" name="k1" value="0"/>
+          <Constant key="Parameter_4415" name="k1" value="0"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4418"/>
+              <SourceParameter reference="Parameter_4415"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_35"/>
@@ -798,12 +798,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4419" name="k1" value="10.8"/>
+          <Constant key="Parameter_4416" name="k1" value="10.8"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4419"/>
+              <SourceParameter reference="Parameter_4416"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_35"/>
@@ -820,12 +820,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_37" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4420" name="k1" value="10"/>
+          <Constant key="Parameter_4417" name="k1" value="10"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4420"/>
+              <SourceParameter reference="Parameter_4417"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_39"/>
@@ -842,12 +842,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_37" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4421" name="k1" value="24"/>
+          <Constant key="Parameter_4418" name="k1" value="24"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4421"/>
+              <SourceParameter reference="Parameter_4418"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_39"/>
@@ -864,12 +864,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_41" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4422" name="k1" value="24"/>
+          <Constant key="Parameter_4419" name="k1" value="24"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4422"/>
+              <SourceParameter reference="Parameter_4419"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_43"/>
@@ -886,12 +886,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_41" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4423" name="k1" value="40"/>
+          <Constant key="Parameter_4420" name="k1" value="40"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4423"/>
+              <SourceParameter reference="Parameter_4420"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_43"/>
@@ -908,12 +908,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_47" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4424" name="k1" value="5.6e+06"/>
+          <Constant key="Parameter_4421" name="k1" value="5.6e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4424"/>
+              <SourceParameter reference="Parameter_4421"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_13"/>
@@ -931,12 +931,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_49" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4425" name="k1" value="5.6e+06"/>
+          <Constant key="Parameter_4422" name="k1" value="5.6e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4425"/>
+              <SourceParameter reference="Parameter_4422"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_13"/>
@@ -954,12 +954,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_51" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4426" name="k1" value="7.5e+06"/>
+          <Constant key="Parameter_4423" name="k1" value="7.5e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4426"/>
+              <SourceParameter reference="Parameter_4423"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_13"/>
@@ -977,12 +977,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4427" name="k1" value="12"/>
+          <Constant key="Parameter_4424" name="k1" value="12"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4427"/>
+              <SourceParameter reference="Parameter_4424"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_47"/>
@@ -999,12 +999,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4428" name="k1" value="3"/>
+          <Constant key="Parameter_4425" name="k1" value="3"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4428"/>
+              <SourceParameter reference="Parameter_4425"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_47"/>
@@ -1021,12 +1021,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4429" name="k1" value="10.8"/>
+          <Constant key="Parameter_4426" name="k1" value="10.8"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4429"/>
+              <SourceParameter reference="Parameter_4426"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_49"/>
@@ -1043,12 +1043,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4430" name="k1" value="2.7"/>
+          <Constant key="Parameter_4427" name="k1" value="2.7"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4430"/>
+              <SourceParameter reference="Parameter_4427"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_49"/>
@@ -1065,12 +1065,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_53" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4431" name="k1" value="3"/>
+          <Constant key="Parameter_4428" name="k1" value="3"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4431"/>
+              <SourceParameter reference="Parameter_4428"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_51"/>
@@ -1087,12 +1087,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_53" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4432" name="k1" value="12"/>
+          <Constant key="Parameter_4429" name="k1" value="12"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4432"/>
+              <SourceParameter reference="Parameter_4429"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_51"/>
@@ -1109,12 +1109,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_55" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4446" name="k1" value="4.4e+06"/>
+          <Constant key="Parameter_4443" name="k1" value="4.4e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4446"/>
+              <SourceParameter reference="Parameter_4443"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_29"/>
@@ -1132,12 +1132,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_57" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4447" name="k1" value="5.6e+06"/>
+          <Constant key="Parameter_4444" name="k1" value="5.6e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4447"/>
+              <SourceParameter reference="Parameter_4444"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_31"/>
@@ -1155,12 +1155,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4448" name="k1" value="12"/>
+          <Constant key="Parameter_4445" name="k1" value="12"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4448"/>
+              <SourceParameter reference="Parameter_4445"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_57"/>
@@ -1177,12 +1177,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_9" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4449" name="k1" value="12"/>
+          <Constant key="Parameter_4446" name="k1" value="12"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4449"/>
+              <SourceParameter reference="Parameter_4446"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_55"/>
@@ -1199,12 +1199,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_9" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4450" name="k1" value="3"/>
+          <Constant key="Parameter_4447" name="k1" value="3"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4450"/>
+              <SourceParameter reference="Parameter_4447"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_55"/>
@@ -1221,12 +1221,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_3" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4451" name="k1" value="3"/>
+          <Constant key="Parameter_4448" name="k1" value="3"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4451"/>
+              <SourceParameter reference="Parameter_4448"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_57"/>
@@ -1243,12 +1243,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_61" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4452" name="k1" value="5.6e+06"/>
+          <Constant key="Parameter_4449" name="k1" value="5.6e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4452"/>
+              <SourceParameter reference="Parameter_4449"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_45"/>
@@ -1266,12 +1266,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4453" name="k1" value="0"/>
+          <Constant key="Parameter_4450" name="k1" value="0"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4453"/>
+              <SourceParameter reference="Parameter_4450"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_61"/>
@@ -1288,12 +1288,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4454" name="k1" value="10.8"/>
+          <Constant key="Parameter_4451" name="k1" value="10.8"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4454"/>
+              <SourceParameter reference="Parameter_4451"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_61"/>
@@ -1310,12 +1310,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_63" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4455" name="k1" value="1e+07"/>
+          <Constant key="Parameter_4452" name="k1" value="1e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4455"/>
+              <SourceParameter reference="Parameter_4452"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_29"/>
@@ -1333,12 +1333,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_25" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4456" name="k1" value="1600"/>
+          <Constant key="Parameter_4453" name="k1" value="1600"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4456"/>
+              <SourceParameter reference="Parameter_4453"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_63"/>
@@ -1355,12 +1355,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_25" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4457" name="k1" value="4"/>
+          <Constant key="Parameter_4454" name="k1" value="4"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4457"/>
+              <SourceParameter reference="Parameter_4454"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_63"/>
@@ -1377,12 +1377,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_65" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4458" name="k1" value="75000"/>
+          <Constant key="Parameter_4455" name="k1" value="75000"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4458"/>
+              <SourceParameter reference="Parameter_4455"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_31"/>
@@ -1400,12 +1400,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_25" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4459" name="k1" value="0.03"/>
+          <Constant key="Parameter_4456" name="k1" value="0.03"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4459"/>
+              <SourceParameter reference="Parameter_4456"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_65"/>
@@ -1422,12 +1422,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_25" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4460" name="k1" value="0.12"/>
+          <Constant key="Parameter_4457" name="k1" value="0.12"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4460"/>
+              <SourceParameter reference="Parameter_4457"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_65"/>
@@ -1444,12 +1444,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_67" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4461" name="k1" value="75000"/>
+          <Constant key="Parameter_4458" name="k1" value="75000"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4461"/>
+              <SourceParameter reference="Parameter_4458"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_59"/>
@@ -1467,12 +1467,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_25" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4462" name="k1" value="120"/>
+          <Constant key="Parameter_4459" name="k1" value="120"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4462"/>
+              <SourceParameter reference="Parameter_4459"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_67"/>
@@ -1489,12 +1489,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_25" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4463" name="k1" value="0.03"/>
+          <Constant key="Parameter_4460" name="k1" value="0.03"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4463"/>
+              <SourceParameter reference="Parameter_4460"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_67"/>
@@ -1511,12 +1511,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_69" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4464" name="k1" value="3.8e+06"/>
+          <Constant key="Parameter_4461" name="k1" value="3.8e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4464"/>
+              <SourceParameter reference="Parameter_4461"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_29"/>
@@ -1534,12 +1534,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_37" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4465" name="k1" value="10"/>
+          <Constant key="Parameter_4462" name="k1" value="10"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4465"/>
+              <SourceParameter reference="Parameter_4462"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_69"/>
@@ -1556,12 +1556,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_37" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4466" name="k1" value="24"/>
+          <Constant key="Parameter_4463" name="k1" value="24"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4466"/>
+              <SourceParameter reference="Parameter_4463"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_69"/>
@@ -1578,12 +1578,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_71" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4467" name="k1" value="3.8e+06"/>
+          <Constant key="Parameter_4464" name="k1" value="3.8e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4467"/>
+              <SourceParameter reference="Parameter_4464"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_45"/>
@@ -1601,12 +1601,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_37" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4468" name="k1" value="10"/>
+          <Constant key="Parameter_4465" name="k1" value="10"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4468"/>
+              <SourceParameter reference="Parameter_4465"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_71"/>
@@ -1623,12 +1623,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_37" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4469" name="k1" value="24"/>
+          <Constant key="Parameter_4466" name="k1" value="24"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4469"/>
+              <SourceParameter reference="Parameter_4466"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_71"/>
@@ -1645,12 +1645,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_73" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4470" name="k1" value="3.8e+06"/>
+          <Constant key="Parameter_4467" name="k1" value="3.8e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4470"/>
+              <SourceParameter reference="Parameter_4467"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_59"/>
@@ -1668,12 +1668,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_37" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4471" name="k1" value="10"/>
+          <Constant key="Parameter_4468" name="k1" value="10"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4471"/>
+              <SourceParameter reference="Parameter_4468"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_73"/>
@@ -1690,12 +1690,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_37" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4472" name="k1" value="24"/>
+          <Constant key="Parameter_4469" name="k1" value="24"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4472"/>
+              <SourceParameter reference="Parameter_4469"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_73"/>
@@ -1712,12 +1712,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_75" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4473" name="k1" value="1.7e+07"/>
+          <Constant key="Parameter_4470" name="k1" value="1.7e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4473"/>
+              <SourceParameter reference="Parameter_4470"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_29"/>
@@ -1735,12 +1735,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_41" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4474" name="k1" value="24"/>
+          <Constant key="Parameter_4471" name="k1" value="24"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4474"/>
+              <SourceParameter reference="Parameter_4471"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_75"/>
@@ -1757,12 +1757,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_41" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4475" name="k1" value="40"/>
+          <Constant key="Parameter_4472" name="k1" value="40"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4475"/>
+              <SourceParameter reference="Parameter_4472"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_75"/>
@@ -1779,12 +1779,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_77" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4476" name="k1" value="1.7e+07"/>
+          <Constant key="Parameter_4473" name="k1" value="1.7e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4476"/>
+              <SourceParameter reference="Parameter_4473"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_45"/>
@@ -1802,12 +1802,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_41" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4477" name="k1" value="24"/>
+          <Constant key="Parameter_4474" name="k1" value="24"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4477"/>
+              <SourceParameter reference="Parameter_4474"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_77"/>
@@ -1824,12 +1824,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_41" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4478" name="k1" value="40"/>
+          <Constant key="Parameter_4475" name="k1" value="40"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4478"/>
+              <SourceParameter reference="Parameter_4475"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_77"/>
@@ -1846,12 +1846,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_41" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4484" name="k1" value="24"/>
+          <Constant key="Parameter_4481" name="k1" value="24"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4484"/>
+              <SourceParameter reference="Parameter_4481"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_79"/>
@@ -1868,12 +1868,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_79" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4483" name="k1" value="1.7e+07"/>
+          <Constant key="Parameter_4480" name="k1" value="1.7e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4483"/>
+              <SourceParameter reference="Parameter_4480"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_59"/>
@@ -1891,12 +1891,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_41" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4482" name="k1" value="40"/>
+          <Constant key="Parameter_4479" name="k1" value="40"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4482"/>
+              <SourceParameter reference="Parameter_4479"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_79"/>
@@ -1913,12 +1913,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_81" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4479" name="k1" value="7.5e+06"/>
+          <Constant key="Parameter_4476" name="k1" value="7.5e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4479"/>
+              <SourceParameter reference="Parameter_4476"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_31"/>
@@ -1936,12 +1936,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_53" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4480" name="k1" value="3"/>
+          <Constant key="Parameter_4477" name="k1" value="3"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4480"/>
+              <SourceParameter reference="Parameter_4477"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_81"/>
@@ -1958,12 +1958,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_53" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4481" name="k1" value="12"/>
+          <Constant key="Parameter_4478" name="k1" value="12"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4481"/>
+              <SourceParameter reference="Parameter_4478"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_81"/>
@@ -1980,12 +1980,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_83" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4485" name="k1" value="7.5e+06"/>
+          <Constant key="Parameter_4482" name="k1" value="7.5e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4485"/>
+              <SourceParameter reference="Parameter_4482"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_45"/>
@@ -2003,12 +2003,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_53" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4486" name="k1" value="3"/>
+          <Constant key="Parameter_4483" name="k1" value="3"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4486"/>
+              <SourceParameter reference="Parameter_4483"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_83"/>
@@ -2025,12 +2025,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_53" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4489" name="k1" value="12"/>
+          <Constant key="Parameter_4486" name="k1" value="12"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4489"/>
+              <SourceParameter reference="Parameter_4486"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_83"/>
@@ -2047,12 +2047,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_89" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4488" name="k1" value="7.5e+06"/>
+          <Constant key="Parameter_4485" name="k1" value="7.5e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4488"/>
+              <SourceParameter reference="Parameter_4485"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_59"/>
@@ -2070,12 +2070,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_53" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4487" name="k1" value="3"/>
+          <Constant key="Parameter_4484" name="k1" value="3"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4487"/>
+              <SourceParameter reference="Parameter_4484"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_89"/>
@@ -2092,12 +2092,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_53" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4490" name="k1" value="12"/>
+          <Constant key="Parameter_4487" name="k1" value="12"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4490"/>
+              <SourceParameter reference="Parameter_4487"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_89"/>
@@ -2114,12 +2114,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_93" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4491" name="k1" value="3e+07"/>
+          <Constant key="Parameter_4488" name="k1" value="3e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4491"/>
+              <SourceParameter reference="Parameter_4488"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_91"/>
@@ -2137,12 +2137,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_25" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4492" name="k1" value="24"/>
+          <Constant key="Parameter_4489" name="k1" value="24"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4492"/>
+              <SourceParameter reference="Parameter_4489"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_93"/>
@@ -2159,12 +2159,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_25" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4493" name="k1" value="6"/>
+          <Constant key="Parameter_4490" name="k1" value="6"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4493"/>
+              <SourceParameter reference="Parameter_4490"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_93"/>
@@ -2180,12 +2180,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_91" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4494" name="k1" value="1"/>
+          <Constant key="Parameter_4491" name="k1" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4494"/>
+              <SourceParameter reference="Parameter_4491"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_9"/>
@@ -2202,12 +2202,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_95" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4495" name="k1" value="6e+06"/>
+          <Constant key="Parameter_4492" name="k1" value="6e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4495"/>
+              <SourceParameter reference="Parameter_4492"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_85"/>
@@ -2225,12 +2225,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_55" name="k1" value="9"/>
+          <Constant key="Parameter_4493" name="k1" value="9"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_55"/>
+              <SourceParameter reference="Parameter_4493"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_95"/>
@@ -2247,12 +2247,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_56" name="k1" value="36"/>
+          <Constant key="Parameter_54" name="k1" value="36"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_56"/>
+              <SourceParameter reference="Parameter_54"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_95"/>
@@ -2268,12 +2268,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_85" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_57" name="k1" value="0.1"/>
+          <Constant key="Parameter_55" name="k1" value="0.1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_57"/>
+              <SourceParameter reference="Parameter_55"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_97"/>
@@ -2290,12 +2290,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_99" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_58" name="k1" value="1e+07"/>
+          <Constant key="Parameter_56" name="k1" value="1e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_58"/>
+              <SourceParameter reference="Parameter_56"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_37"/>
@@ -2313,12 +2313,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_59" name="k1" value="16"/>
+          <Constant key="Parameter_57" name="k1" value="16"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_59"/>
+              <SourceParameter reference="Parameter_57"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_99"/>
@@ -2335,12 +2335,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_60" name="k1" value="4"/>
+          <Constant key="Parameter_58" name="k1" value="4"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_60"/>
+              <SourceParameter reference="Parameter_58"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_99"/>
@@ -2356,12 +2356,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_37" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_61" name="k1" value="5"/>
+          <Constant key="Parameter_59" name="k1" value="5"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_61"/>
+              <SourceParameter reference="Parameter_59"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_41"/>
@@ -2378,12 +2378,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_103" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_62" name="k1" value="1e+15"/>
+          <Constant key="Parameter_60" name="k1" value="1e+15"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_62"/>
+              <SourceParameter reference="Parameter_60"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_87"/>
@@ -2402,12 +2402,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_25" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_63" name="k1" value="3e+15"/>
+          <Constant key="Parameter_61" name="k1" value="3e+15"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_63"/>
+              <SourceParameter reference="Parameter_61"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_103"/>
@@ -2426,12 +2426,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_101" stoichiometry="2"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_64" name="k1" value="1"/>
+          <Constant key="Parameter_62" name="k1" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_64"/>
+              <SourceParameter reference="Parameter_62"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_103"/>
@@ -2448,12 +2448,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_101" stoichiometry="2"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_65" name="k1" value="1"/>
+          <Constant key="Parameter_63" name="k1" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_65"/>
+              <SourceParameter reference="Parameter_63"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_25"/>
@@ -2470,12 +2470,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_109" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_53" name="k1" value="5.4e+07"/>
+          <Constant key="Parameter_52" name="k1" value="5.4e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_53"/>
+              <SourceParameter reference="Parameter_52"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_105"/>
@@ -2493,12 +2493,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_111" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_54" name="k1" value="5.4e+07"/>
+          <Constant key="Parameter_53" name="k1" value="5.4e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_54"/>
+              <SourceParameter reference="Parameter_53"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_109"/>
@@ -2516,12 +2516,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_113" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_66" name="k1" value="7.5e+07"/>
+          <Constant key="Parameter_64" name="k1" value="7.5e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_66"/>
+              <SourceParameter reference="Parameter_64"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_111"/>
@@ -2539,12 +2539,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_115" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_67" name="k1" value="7.5e+07"/>
+          <Constant key="Parameter_65" name="k1" value="7.5e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_67"/>
+              <SourceParameter reference="Parameter_65"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_113"/>
@@ -2562,12 +2562,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_107" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_68" name="k1" value="33"/>
+          <Constant key="Parameter_66" name="k1" value="33"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_68"/>
+              <SourceParameter reference="Parameter_66"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_109"/>
@@ -2584,12 +2584,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_107" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_69" name="k1" value="33"/>
+          <Constant key="Parameter_67" name="k1" value="33"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_69"/>
+              <SourceParameter reference="Parameter_67"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_111"/>
@@ -2606,12 +2606,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_107" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_70" name="k1" value="110"/>
+          <Constant key="Parameter_68" name="k1" value="110"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_70"/>
+              <SourceParameter reference="Parameter_68"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_113"/>
@@ -2628,12 +2628,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_107" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_71" name="k1" value="32.5"/>
+          <Constant key="Parameter_69" name="k1" value="32.5"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_71"/>
+              <SourceParameter reference="Parameter_69"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_115"/>
@@ -2650,12 +2650,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_115" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_72" name="k1" value="1.8e+07"/>
+          <Constant key="Parameter_70" name="k1" value="1.8e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_72"/>
+              <SourceParameter reference="Parameter_70"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_117"/>
@@ -2673,12 +2673,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_73" name="k1" value="60"/>
+          <Constant key="Parameter_71" name="k1" value="60"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_73"/>
+              <SourceParameter reference="Parameter_71"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_115"/>
@@ -2695,12 +2695,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_117" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_74" name="k1" value="1.8e+07"/>
+          <Constant key="Parameter_72" name="k1" value="1.8e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_74"/>
+              <SourceParameter reference="Parameter_72"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_119"/>
@@ -2718,12 +2718,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_75" name="k1" value="60"/>
+          <Constant key="Parameter_73" name="k1" value="60"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_75"/>
+              <SourceParameter reference="Parameter_73"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_117"/>
@@ -2740,12 +2740,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_121" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_76" name="k1" value="2.52e+06"/>
+          <Constant key="Parameter_74" name="k1" value="2.52e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_76"/>
+              <SourceParameter reference="Parameter_74"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_107"/>
@@ -2763,12 +2763,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_85" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_77" name="k1" value="40"/>
+          <Constant key="Parameter_75" name="k1" value="40"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_77"/>
+              <SourceParameter reference="Parameter_75"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_121"/>
@@ -2785,12 +2785,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_85" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_78" name="k1" value="10"/>
+          <Constant key="Parameter_76" name="k1" value="10"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_78"/>
+              <SourceParameter reference="Parameter_76"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_121"/>
@@ -2807,12 +2807,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_125" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_79" name="k1" value="5.04e+06"/>
+          <Constant key="Parameter_77" name="k1" value="5.04e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_79"/>
+              <SourceParameter reference="Parameter_77"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_107"/>
@@ -2830,12 +2830,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_97" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4393" name="k1" value="80"/>
+          <Constant key="Parameter_4390" name="k1" value="80"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4393"/>
+              <SourceParameter reference="Parameter_4390"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_125"/>
@@ -2852,12 +2852,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_97" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4394" name="k1" value="20"/>
+          <Constant key="Parameter_4391" name="k1" value="20"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4394"/>
+              <SourceParameter reference="Parameter_4391"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_125"/>
@@ -2873,7 +2873,7 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_101" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4395" name="v" value="2.5e-08"/>
+          <Constant key="Parameter_4392" name="v" value="2.5e-08"/>
         </ListOfConstants>
         <KineticLaw function="Function_6" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
@@ -2891,12 +2891,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_149" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4396" name="k1" value="1.7"/>
+          <Constant key="Parameter_4393" name="k1" value="1.7"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4396"/>
+              <SourceParameter reference="Parameter_4393"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_101"/>
@@ -2913,12 +2913,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_129" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4397" name="k1" value="3.8e+06"/>
+          <Constant key="Parameter_4394" name="k1" value="3.8e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4397"/>
+              <SourceParameter reference="Parameter_4394"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_29"/>
@@ -2936,12 +2936,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_131" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4398" name="k1" value="3.8e+06"/>
+          <Constant key="Parameter_4395" name="k1" value="3.8e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4398"/>
+              <SourceParameter reference="Parameter_4395"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_59"/>
@@ -2959,12 +2959,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_127" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4399" name="k1" value="10"/>
+          <Constant key="Parameter_4396" name="k1" value="10"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4399"/>
+              <SourceParameter reference="Parameter_4396"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_131"/>
@@ -2981,12 +2981,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_127" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4400" name="k1" value="6"/>
+          <Constant key="Parameter_4397" name="k1" value="6"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4400"/>
+              <SourceParameter reference="Parameter_4397"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_131"/>
@@ -3003,12 +3003,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_127" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4401" name="k1" value="10"/>
+          <Constant key="Parameter_4398" name="k1" value="10"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4401"/>
+              <SourceParameter reference="Parameter_4398"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_129"/>
@@ -3025,12 +3025,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_127" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4402" name="k1" value="6"/>
+          <Constant key="Parameter_4399" name="k1" value="6"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4402"/>
+              <SourceParameter reference="Parameter_4399"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_129"/>
@@ -3047,12 +3047,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_133" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4403" name="k1" value="3.8e+06"/>
+          <Constant key="Parameter_4400" name="k1" value="3.8e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4403"/>
+              <SourceParameter reference="Parameter_4400"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_7"/>
@@ -3070,12 +3070,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_135" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4404" name="k1" value="3.8e+06"/>
+          <Constant key="Parameter_4401" name="k1" value="3.8e+06"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4404"/>
+              <SourceParameter reference="Parameter_4401"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_45"/>
@@ -3093,12 +3093,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_127" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4405" name="k1" value="10"/>
+          <Constant key="Parameter_4402" name="k1" value="10"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4405"/>
+              <SourceParameter reference="Parameter_4402"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_135"/>
@@ -3115,12 +3115,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_127" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_80" name="k1" value="6"/>
+          <Constant key="Parameter_78" name="k1" value="6"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_80"/>
+              <SourceParameter reference="Parameter_78"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_135"/>
@@ -3137,12 +3137,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_127" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_81" name="k1" value="10"/>
+          <Constant key="Parameter_79" name="k1" value="10"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_81"/>
+              <SourceParameter reference="Parameter_79"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_133"/>
@@ -3159,12 +3159,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_127" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4260" name="k1" value="6"/>
+          <Constant key="Parameter_4257" name="k1" value="6"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4260"/>
+              <SourceParameter reference="Parameter_4257"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_133"/>
@@ -3181,12 +3181,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_137" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4259" name="k1" value="1.7e+07"/>
+          <Constant key="Parameter_4256" name="k1" value="1.7e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4259"/>
+              <SourceParameter reference="Parameter_4256"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_29"/>
@@ -3204,12 +3204,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_141" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4258" name="k1" value="1.7e+07"/>
+          <Constant key="Parameter_4255" name="k1" value="1.7e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4258"/>
+              <SourceParameter reference="Parameter_4255"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_59"/>
@@ -3227,12 +3227,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_31" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4257" name="k1" value="24"/>
+          <Constant key="Parameter_4254" name="k1" value="24"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4257"/>
+              <SourceParameter reference="Parameter_4254"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_141"/>
@@ -3249,12 +3249,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_139" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4256" name="k1" value="10"/>
+          <Constant key="Parameter_4253" name="k1" value="10"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4256"/>
+              <SourceParameter reference="Parameter_4253"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_141"/>
@@ -3271,12 +3271,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_139" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4255" name="k1" value="24"/>
+          <Constant key="Parameter_4252" name="k1" value="24"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4255"/>
+              <SourceParameter reference="Parameter_4252"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_137"/>
@@ -3293,12 +3293,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_139" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4254" name="k1" value="10"/>
+          <Constant key="Parameter_4251" name="k1" value="10"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4254"/>
+              <SourceParameter reference="Parameter_4251"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_137"/>
@@ -3315,12 +3315,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_143" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4253" name="k1" value="1.7e+07"/>
+          <Constant key="Parameter_4250" name="k1" value="1.7e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4253"/>
+              <SourceParameter reference="Parameter_4250"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_7"/>
@@ -3338,12 +3338,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_145" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4252" name="k1" value="1.7e+07"/>
+          <Constant key="Parameter_4249" name="k1" value="1.7e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4252"/>
+              <SourceParameter reference="Parameter_4249"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_45"/>
@@ -3361,12 +3361,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_139" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4251" name="k1" value="24"/>
+          <Constant key="Parameter_4248" name="k1" value="24"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4251"/>
+              <SourceParameter reference="Parameter_4248"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_145"/>
@@ -3383,12 +3383,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_139" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4250" name="k1" value="10"/>
+          <Constant key="Parameter_4247" name="k1" value="10"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4250"/>
+              <SourceParameter reference="Parameter_4247"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_145"/>
@@ -3405,12 +3405,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_139" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4249" name="k1" value="24"/>
+          <Constant key="Parameter_4246" name="k1" value="24"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4249"/>
+              <SourceParameter reference="Parameter_4246"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_143"/>
@@ -3427,12 +3427,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_139" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4248" name="k1" value="10"/>
+          <Constant key="Parameter_4245" name="k1" value="10"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4248"/>
+              <SourceParameter reference="Parameter_4245"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_143"/>
@@ -3449,12 +3449,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_127" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4247" name="k1" value="200000"/>
+          <Constant key="Parameter_4244" name="k1" value="200000"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4247"/>
+              <SourceParameter reference="Parameter_4244"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_101"/>
@@ -3472,12 +3472,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_101" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4246" name="k1" value="1"/>
+          <Constant key="Parameter_4243" name="k1" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4246"/>
+              <SourceParameter reference="Parameter_4243"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_127"/>
@@ -3494,12 +3494,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_147" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4245" name="k1" value="1e+07"/>
+          <Constant key="Parameter_4242" name="k1" value="1e+07"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4245"/>
+              <SourceParameter reference="Parameter_4242"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_127"/>
@@ -3517,12 +3517,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4244" name="k1" value="4"/>
+          <Constant key="Parameter_4241" name="k1" value="4"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4244"/>
+              <SourceParameter reference="Parameter_4241"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_147"/>
@@ -3539,12 +3539,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_139" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4243" name="k1" value="200000"/>
+          <Constant key="Parameter_4240" name="k1" value="200000"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4243"/>
+              <SourceParameter reference="Parameter_4240"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_41"/>
@@ -3562,12 +3562,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_101" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4242" name="k1" value="1"/>
+          <Constant key="Parameter_4239" name="k1" value="1"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4242"/>
+              <SourceParameter reference="Parameter_4239"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_139"/>
@@ -3583,12 +3583,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_127" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4241" name="k1" value="5"/>
+          <Constant key="Parameter_4238" name="k1" value="5"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4241"/>
+              <SourceParameter reference="Parameter_4238"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_139"/>
@@ -3605,12 +3605,12 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_15" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4240" name="k1" value="16"/>
+          <Constant key="Parameter_4237" name="k1" value="16"/>
         </ListOfConstants>
         <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_81">
-              <SourceParameter reference="Parameter_4240"/>
+              <SourceParameter reference="Parameter_4237"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_147"/>
@@ -4581,7 +4581,7 @@ Reaction scheme where the products are created from the reactants and the change
       <StateTemplateVariable objectReference="ModelValue_6"/>
     </StateTemplate>
     <InitialState type="initialState">
-      0 0 0 120.44281714 0 0 0 0 99.96753822619998 0 0 0 0 0 120.44281714 80.09447339810002 2999.026146786 0 0 0 1204.4281714 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 199.9350764524 0 0 0 0 0 0 0 0 0 3998.701529048 0 1e-15 2.5e-08 200 50 6.6e-06 2 2 2.5e-08 
+      0 0 0 120.44281714 0 0 0 0 99.96753822619998 0 0 0 0 0 120.44281714 80.09447339810002 2999.026146786 0 0 0 1204.4281714 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 199.9350764524 0 0 0 0 0 0 0 0 0 3998.701529048 0 1e-15 2.5e-08 200 50 6.6e-06 2 2 2.5e-08
     </InitialState>
   </Model>
   <ListOfTasks>
@@ -4604,12 +4604,12 @@ Reaction scheme where the products are created from the reactants and the change
       </Method>
     </Task>
     <Task key="Task_11" name="Time-Course" type="timeCourse" scheduled="true" updateModel="false">
-      <Report reference="Report_17" target="stoch_100_200" append="1" confirmOverwrite="1"/>
+      <Report reference="Report_17" target="tc_directmethod700_1400" append="1" confirmOverwrite="1"/>
       <Problem>
         <Parameter name="AutomaticStepSize" type="bool" value="0"/>
-        <Parameter name="StepNumber" type="unsignedInteger" value="800"/>
+        <Parameter name="StepNumber" type="unsignedInteger" value="1400"/>
         <Parameter name="StepSize" type="float" value="0.5"/>
-        <Parameter name="Duration" type="float" value="400"/>
+        <Parameter name="Duration" type="float" value="700"/>
         <Parameter name="TimeSeriesRequested" type="bool" value="1"/>
         <Parameter name="OutputStartTime" type="float" value="0"/>
         <Parameter name="Output Event" type="bool" value="0"/>
@@ -4644,7 +4644,7 @@ Reaction scheme where the products are created from the reactants and the change
       <Problem>
         <Parameter name="Subtask" type="cn" value="CN=Root,Vector=TaskList[Steady-State]"/>
         <ParameterText name="ObjectiveExpression" type="expression">
-          
+
         </ParameterText>
         <Parameter name="Maximize" type="bool" value="0"/>
         <Parameter name="Randomize Start Values" type="bool" value="0"/>
@@ -4778,7 +4778,7 @@ Reaction scheme where the products are created from the reactants and the change
         <Parameter name="DelayOutputUntilConvergence" type="bool" value="0"/>
         <Parameter name="OutputConvergenceTolerance" type="float" value="1e-06"/>
         <ParameterText name="TriggerExpression" type="expression">
-          
+
         </ParameterText>
         <Parameter name="SingleVariable" type="cn" value=""/>
       </Problem>
@@ -4929,8 +4929,81 @@ Reaction scheme where the products are created from the reactants and the change
       </Comment>
       <Table printTitle="1">
         <Object cn="CN=Root,Model=Fernandez2006_ModelB,Reference=Time"/>
-        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[Ca],Reference=ParticleNumberRate"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[AMP],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[CDK5],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[CK1],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[CK1P],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[CK1P_PP2B],Reference=ParticleNumber"/>
         <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[Ca],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D137],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D137_CDK5],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D137_PKA],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D137_PP2C],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:137],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:137_CDK5],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:137_PP2B],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:137_PP2C],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:75],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:75:137],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:75:137_PP2A],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:75:137_PP2ACa],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:75:137_PP2AP],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:75:137_PP2APCa],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:75:137_PP2B],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:75:137_PP2C],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:75_CK1],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:75_PP2A],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:75_PP2ACa],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:75_PP2AP],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:75_PP2APCa],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34:75_PP2B],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34_CDK5],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34_CK1],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D34_PP2B],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D75],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D75:137],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D75:137_PKA],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D75:137_PP2A],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D75:137_PP2ACa],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D75:137_PP2AP],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D75:137_PP2APCa],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D75:137_PP2C],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D75_CK1],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D75_PKA],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D75_PP2A],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D75_PP2ACa],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D75_PP2AP],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D75_PP2APCa],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D_CDK5],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D_CK1],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[D_PKA],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[Empty],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[PDE],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[PDEP],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[PDE_PKA],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[PKA],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[PP2A],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[PP2ACa],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[PP2ACa_PKA],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[PP2AP],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[PP2APCa],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[PP2A_PKA],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[PP2B],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[PP2Binactive],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[PP2BinactiveCa2],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[PP2C],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[R2C2],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[cAMP],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[cAMP2_R2C2],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[cAMP3_R2C2],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[cAMP4_R2],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[cAMP4_R2C],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[cAMP4_R2C2],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[cAMP_PDE],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[cAMP_PDEP],Reference=ParticleNumber"/>
+        <Object cn="CN=Root,Model=Fernandez2006_ModelB,Vector=Compartments[Spine],Vector=Metabolites[cAMP_R2C2],Reference=ParticleNumber"/>
       </Table>
     </Report>
   </ListOfReports>

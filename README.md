@@ -38,10 +38,67 @@ https://kappalanguage.org
 
 https://www.ebi.ac.uk/biomodels/BIOMD0000000153
 
+https://copasi.org
+
+
+### The path to the Fernandez (2006) models in SBML format:
+
+
+#### Wild-type
+
+* Variable "cAMP_delay" value = 200
+
+```
+./ode_model/originalModel/sbmlFormat/pcbi.0020176.sd002_cAMPdelay200.xml
+```
+
+* Variable "cAMP_delay" value = 400
+
+```
+./ode_model/originalModel/sbmlFormat/pcbi.0020176.sd002.xml
+```
+
+#### Constitutive Ser137 mutatation:
+
+```
+./ode_model/originalModel_mutants/constSer_pcbi.0020176.sd002_cAMPdelay200.xml
+```
+
+
+#### Serine to Alanine mutatation:
+
+```
+./ode_model/originalModel_mutants/ser2ala_pcbi.0020176.sd002_cAMPdelay200.xml
+```
+
 
 ### Instructions to use COPASI >= 4.20
 
-Go to https://copasi.org/Download/ and  COPASI version >= 4.20m, compatible with your OS.
+Go to https://copasi.org/Download/ and download COPASI version >= 4.20, compatible with your OS.
+COPASI does not have to be installed.
+
+To run COPASI from a command line with CopasiSE, a .cps file need to be exported from COPASI GUI.
+
+First set a temporary variable to COPASI executables in the termial, 
+replacing <copasi-path> with the directory where COPASI was placed:
+
+```
+export COPASIDIR=<copasi-path>
+```
+
+To run GUI from command line:
+
+```
+$COPASIDIR/CopasiUI
+```
+
+
+To run COPASI from command line:
+
+```
+$COPASIDIR/CopasiSE
+```
+
 
 
 ### Instructions to use KaSim == 3.5
@@ -52,11 +109,17 @@ For macOS and Linux, open Terminal and type:
 
 ```console
 cd <path_to_KaSim_folder>
+```
 
+```
 wget https://github.com/Kappa-Dev/KappaTools/archive/refs/tags/v3.5-250915.zip
+```
 
+```
 unzip v3.5-250915.zip
+```
 
+```
 cd KappaTools-3.5-250915/bin
 ```
 
@@ -64,28 +127,62 @@ Run KaSim with a suffix corresponding to your OS ( linux / mac_OSX) to get the u
 
 ```console
 ./KaSim_3.5_linux_x86 
+```
 
+```
 KaSim 3.5-121114: 
 Usage is KaSim -i input_file [-e events | -t time] [-p points] [-o output_file]
 
 ```
 
-The following scripts can be run to get time series analysed in the paper.
+## Bash script to obtain time series
 
-The ODE model:
+
+### The ODE model:
+
+#### Analysed time series:
+
+* "ode_model/withCopasiGUI_SE/ODEresults_mutants/"
+* "ode_model/withCopasiGUI_SE/ODEresults/tc_LSODA_700_1400.txt"
+* "ode_model/withCopasiGUI_SE/DirMethresults/ensemble_40runs_tc_directmethod700_1400"
+* "ode_model/withCopasiGUI_SE/DirMethresults/ensemble_out"
+
+```
+./ode_model/withCopasiGUI_SE/filesProducedWithGUI/run_time_it.sh
 
 ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_run.sh
+
 ./ode_model/withCopasiGUI_SE/filesProducedWithGUI/ensemble_run_n_times.sh
-./ode_model/withCopasiGUI_SE/filesProducedWithGUI/run_it.sh
+
 ./ode_model/withCopasiGUI_SE/DirMethresults_mutants/ensemble_run.sh
+```
 
-The rule-based model:
+### The rule-based model:
 
+#### Analysed time series:
+
+* "rb_model/wildType"
+* "rb_model/constitutiveSer137p"
+* "rb_model/Ser137Ala"
+
+```
 ./rb_model/wildType/models/oneBindingSite_DARPP/run_basic.sh
+
 ./rb_model/wildType/models/oneBindingSite_DARPP/run4tracking.sh
-./rb_model/wildType/models/oneBindingSite_DARPP/run_KaDE.sh
-./rb_model/wildType/models/oneBindingSite_DARPP/run_KaSa.sh
-./rb_model/wildType/models/threeBindingSites_DARPP/run_basic.sh
-./rb_model/wildType/models/threeBindingSites_DARPP/tracking/run4tracking_for_KaSim4.0.sh
+
 ./rb_model/wildType/models/threeBindingSites_DARPP/tracking/run4tracking.sh
+
 ./rb_model/constitutiveSer137p/oneBindingSite_DARPP/run_basic.sh
+```
+
+##### Additional scripts for RB:
+
+```
+./rb_model/wildType/models/oneBindingSite_DARPP/run_KaDE.sh
+
+./rb_model/wildType/models/oneBindingSite_DARPP/run_KaSa.sh
+
+./rb_model/wildType/models/threeBindingSites_DARPP/run_basic.sh
+
+./rb_model/wildType/models/threeBindingSites_DARPP/tracking/run4tracking_for_KaSim4.0.sh
+```
