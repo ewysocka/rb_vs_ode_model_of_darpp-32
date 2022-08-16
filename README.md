@@ -138,19 +138,18 @@ $KASIMDIR/KaSim
   
   <!--- - (B) wt/wild-type_stochastic_ode_model_selected_SD.pdf --->
   (B): ODE W-T stochastic trajectories - Ensemble of 40-model runs
-  
-  * ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_40runs_tc_directmethod700_1400
-
 
    ```
    ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_run.sh
    ```
-         
+   
+   * OUTPUT: ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_40runs_tc_directmethod700_1400
+
+
+
   <!--- - (C) wt/wild-typeoBS_rb_model_selected_SD.pdf --->
   (C): RB W-T stochastic trajectories - Ensemble of 40-model runs
   
-  * ./rb_model/wildType/models/oneBindingSite_DARPP/out_ensemble/data_*.out
-
 
   ```
   ./rb_model/wildType/models/oneBindingSite_DARPP/run_basic.sh
@@ -161,23 +160,27 @@ $KASIMDIR/KaSim
   ./rb_model/wildType/models/oneBindingSite_DARPP/run4tracking.sh
   ```
 
+  *  OUTPUT: ./rb_model/wildType/models/oneBindingSite_DARPP/out_ensemble/data_*.out
+
 
 * Figure 4
    <!--- - compared/w-t_ode2rb_stoch2stochpaired_resized.pdf --->
 
-    * ./rb_model/wildType/models/oneBindingSite_DARPP/out_ensemble/data_*.out
-    
       
-      ```
-      ./rb_model/wildType/models/oneBindingSite_DARPP/run_basic.sh
-      ```
+    ```
+    ./rb_model/wildType/models/oneBindingSite_DARPP/run_basic.sh
+    ```
+    
+    * OUTPUT:  ./rb_model/wildType/models/oneBindingSite_DARPP/out_ensemble/data_*.out
+    
 
-    * ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_40runs_tc_directmethod700_1400
-    * ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_out
+     ```
+     ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_run.sh
+     ```
 
-       ```
-      ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_run.sh
-      ```
+    
+    * OUTPUT:  ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_40runs_tc_directmethod700_1400
+    * OUTPUT: ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_out
 
 
 * Figure 6
@@ -187,19 +190,23 @@ $KASIMDIR/KaSim
   
    <!--- - (C) ca_all_case/all_Ca2_all_Ca_paired_all_ca_summed_first_instance_of_PP2B.pdf --->
 
-    ./rb_model/wildType/models/threeBindingSites_DARPP/out_ensemble_ca_all/data_*
     
     ```
     ./rb_model/wildType/models/threeBindingSites_DARPP/run_basic.sh
     ```
 
-    ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_40runs_tc_directmethod700_1400
-    ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_out
-    
+    * OUTPUT: ./rb_model/wildType/models/threeBindingSites_DARPP/out_ensemble_ca_all/data_*
+ 
+
+ 
     ```
     ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_run.sh
     ```
-
+    
+    
+    * OUTPUT: ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_40runs_tc_directmethod700_1400
+    * OUTPUT: ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_out
+ 
 
 * Figure 7
   <!--- - ca_all_case/all_Ca_summed_PP2Bpaired.pdf --> 
@@ -213,21 +220,24 @@ $KASIMDIR/KaSim
 
     (A) ODE Constitutive Serine 
     
-    ./ode_model/withCopasiGUI_SE/DirMethresults_mutants/constSer_directMethod_700_1400.txt
-   
-   
+    
     ```
     ./ode_model/withCopasiGUI_SE/DirMethresults_mutants/ensemble_run.sh
     ```
 
+    * ./ode_model/withCopasiGUI_SE/DirMethresults_mutants/constSer_directMethod_700_1400.txt
+   
+   
+
     (B) RB Constitutie Serine
-    
-    ./rb_model/constitutiveSer137p/threeBindingSites_DARPP/out_ensemble
    
    
     ```
     ./rb_model/constitutiveSer137p/threeBindingSites_DARPP/run_basic.sh
     ```
+    
+    * OUTPUT: ./rb_model/constitutiveSer137p/threeBindingSites_DARPP/out_ensemble
+
 
 * Figure S1
   <!--- - ca_all_case/CaRates_15_1_7_CaStim_6_representations_of_PP2Bi.pdf --->
