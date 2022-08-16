@@ -132,8 +132,9 @@ $KASIMDIR/KaSim
   
   (A): ODE W-T deterministic trajectories
   
-  * ./ode_model/withCopasiGUI_SE/ODEresults/tc_LSODA_700_1400.txt
   * generated with GUI
+  * OUTPUT: ./ode_model/withCopasiGUI_SE/ODEresults/tc_LSODA_700_1400.txt
+  
       
   
   <!--- - (B) wt/wild-type_stochastic_ode_model_selected_SD.pdf --->
@@ -225,7 +226,7 @@ $KASIMDIR/KaSim
     ./ode_model/withCopasiGUI_SE/DirMethresults_mutants/ensemble_run.sh
     ```
 
-    * ./ode_model/withCopasiGUI_SE/DirMethresults_mutants/constSer_directMethod_700_1400.txt
+    * OUTPUT: ./ode_model/withCopasiGUI_SE/DirMethresults_mutants/constSer_directMethod_700_1400.txt
    
    
 
