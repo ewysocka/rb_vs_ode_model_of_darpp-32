@@ -138,19 +138,25 @@ $KASIMDIR/KaSim
   
   <!--- - (B) wt/wild-type_stochastic_ode_model_selected_SD.pdf --->
   (B): ODE W-T stochastic trajectories - Ensemble of 40-model runs
+  
   * ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_40runs_tc_directmethod700_1400
+
+
    ```
-      ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_run.sh
-      ```
+   ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_run.sh
+   ```
          
   <!--- - (C) wt/wild-typeoBS_rb_model_selected_SD.pdf --->
   (C): RB W-T stochastic trajectories - Ensemble of 40-model runs
-  * ./rb_model/wildType/models/oneBindingSite_DARPP/out_ensemble/data_*.out
   
+  * ./rb_model/wildType/models/oneBindingSite_DARPP/out_ensemble/data_*.out
+
+
   ```
   ./rb_model/wildType/models/oneBindingSite_DARPP/run_basic.sh
-  ```    
-      
+  ```
+
+
   ```
   ./rb_model/wildType/models/oneBindingSite_DARPP/run4tracking.sh
   ```
