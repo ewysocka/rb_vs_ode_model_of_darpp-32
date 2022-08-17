@@ -53,7 +53,7 @@ Parameters to set in the COPASI GUI:
  * StepNumber = 1400
  * StepSize = 0.5
  * Duration = 700
- * Method name = "Stochastic (Direct method)"
+ * Method name = "Stochastic (Direct method)" OR "LSODA"
 
 
 First, set a temporary variable to the COPASI executable files in termial, replacing the directory where COPASI was placed:
