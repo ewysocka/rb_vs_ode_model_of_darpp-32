@@ -1,22 +1,21 @@
-## Comparison of rule- and ordinary differential equation-based dynamic model of DARPP-32 signalling network
+# Comparison of rule- and ordinary differential equation-based dynamic model of DARPP-32 signalling network
 Authors: Emilia M. Wysocka, Matthew Page, James Snowden, T. Ian Simpson 
 
-Repository storing molecular rule-based models in Kappa language and Python-based figures published as the [BioRxiv preprint](https://www.biorxiv.org/content/10.1101/2022.03.26.485918v1).
+Repository storing molecular rule-based models in Kappa language and Python-based figures published as the [BioRxiv preprint](https://www.biorxiv.org/content/10.1101/2022.03.26.485918v3)
+
+## Key websites
+
+* https://kappalanguage.org
+
+* https://www.ebi.ac.uk/biomodels/BIOMD0000000153
+
+* https://copasi.org
 
 
-### Key websites
-
-https://kappalanguage.org
-
-https://www.ebi.ac.uk/biomodels/BIOMD0000000153
-
-https://copasi.org
+## The path to the Fernandez (2006) models in the SBML format in this repository:
 
 
-### The path to the Fernandez (2006) models in the SBML format:
-
-
-#### Wild-type
+### Wild-type
 
 * Variable "cAMP_delay" value = 200
 
@@ -30,31 +29,31 @@ https://copasi.org
 ./ode_model/originalModel/sbmlFormat/pcbi.0020176.sd002.xml
 ```
 
-#### Constitutive Ser137 mutatation:
+### Constitutive Ser137 mutatation:
 
 ```
 ./ode_model/originalModel_mutants/constSer_pcbi.0020176.sd002_cAMPdelay200.xml
 ```
 
 
-#### Serine to Alanine mutatation:
+### Serine to Alanine mutatation:
 
 ```
 ./ode_model/originalModel_mutants/ser2ala_pcbi.0020176.sd002_cAMPdelay200.xml
 ```
 
 
-### Instructions to use COPASI >= 4.20
+## Instructions to use COPASI >= 4.20
 
 Go to https://copasi.org/Download/ and download COPASI version >= 4.20, compatible with your OS.
 COPASI does not have to be installed.
 
 To run COPASI from the command line using CopasiSE, export the .cps file from the COPASI GUI.
 Parameters to set in the COPASI GUI:
-    * StepNumber = 1400
-    * StepSize = 0.5
-    * Duration = 700
-    * Method name = "Stochastic (Direct method)"
+ * StepNumber = 1400
+ * StepSize = 0.5
+ * Duration = 700
+ * Method name = "Stochastic (Direct method)"
 
 
 First, set a temporary variable to the COPASI executable files in termial, replacing the directory where COPASI was placed:
@@ -76,7 +75,7 @@ $COPASIDIR/CopasiSE
 ```
 
 
-### Instructions to use KaSim == 3.5
+## Instructions to use KaSim == 3.5
 
 To use the KaSim release compatible with the syntax used in the model, download and unpack archives from the releases on the Kappa repository.
 
@@ -124,7 +123,7 @@ $KASIMDIR/KaSim
 
 
 
-### List of figures reproduced in main.ipynb along with scripts for generating time series:
+## List of figures reproduced in main.ipynb along with scripts for generating time series:
 
 
 * Figure 3
@@ -184,34 +183,35 @@ $KASIMDIR/KaSim
     * OUTPUT: ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_out
 
 
-* Figure 6
+* Figures 6, 7, S1, S2
+
+  <!--- - ca_all_case/all_Ca_summed_PP2Bpaired.pdf --> 
+
   <!--- - (A) ca_all_case/all_Ca_all_Ca2_paired_w-t_ode2rb_stoch2stoch.pdf --->
 
   <!--- - (B) ca_all_case/all_Ca2_all_Ca_paired_all_ca_rb_18_ode_13.pdf --->
   
    <!--- - (C) ca_all_case/all_Ca2_all_Ca_paired_all_ca_summed_first_instance_of_PP2B.pdf --->
 
+
+    <!--- - ca_all_case/CaRates_15_1_7_CaStim_6_representations_of_PP2Bi.pdf --->
+    <!--- - img/ca_all_case/all_Capaired.pdf --->
+
     
     ```
-    ./rb_model/wildType/models/threeBindingSites_DARPP/run_basic.sh
+    ./rb_model/wildType/models/threeBindingSites_DARPP/run_basic_ca_18.sh
     ```
 
     * OUTPUT: ./rb_model/wildType/models/threeBindingSites_DARPP/out_ensemble_ca_all/data_*
  
-
  
     ```
     ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_run.sh
-    ```
-    
+    ```   
     
     * OUTPUT: ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_40runs_tc_directmethod700_1400
     * OUTPUT: ./ode_model/withCopasiGUI_SE/DirMethresults/ensemble_out
  
-
-* Figure 7
-  <!--- - ca_all_case/all_Ca_summed_PP2Bpaired.pdf --> 
-
 
 * Figure 8
   <!--- - (A) alone/constSer/constitutive_Ser137_summedpatternsOriginal_selected_.pdf
@@ -240,17 +240,8 @@ $KASIMDIR/KaSim
     * OUTPUT: ./rb_model/constitutiveSer137p/threeBindingSites_DARPP/out_ensemble
 
 
-* Figure S1
-  <!--- - ca_all_case/CaRates_15_1_7_CaStim_6_representations_of_PP2Bi.pdf --->
-
-
-* Figure S2
-  <!--- - img/ca_all_case/all_Capaired.pdf --->
-
-
 * Figure S3
   <!--- - compared/w-t_rb2rb_stoch2stochpaired_resized.pdf --->
-
 
 * Figure S4
  <!--- - compared/s_speciesNum_per_time_tBS_oBS_to_stimuli_2.pdf --->
