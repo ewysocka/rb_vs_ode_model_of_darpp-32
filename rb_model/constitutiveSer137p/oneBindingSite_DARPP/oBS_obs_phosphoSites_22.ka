@@ -1,0 +1,42 @@
+## Reasoning behind setting observables: 
+#1. Whenever an observable has states, the activated state
+#   is set as its observable form e.g. CK1(pSite~u) with initial
+#   state CK1(pSite~u)
+ 
+#2. Wherever an observable has no creation/degradation
+#   in the system (so its level is constant through the
+#   simulation) and has no states (case above), its readout is set to
+#   its bound form, e.g. CDK5!_
+
+# ND: for future model: expressing the binding sites and phosphorylation states
+# separately allows to not to make mistakes when setting observables
+# otherwise you have to decorate all states with '?' to mark them
+# as bound-indifferent states.
+
+# cAMP in active state
+%obs: 'cAMP_on' cAMP(c~on?)
+%obs: 'free_Ca2+' Ca2+(a)
+%obs: 'all_Ca2+' Ca2+()
+#%obs: 'PKAa!_' PKA(a!_)
+%obs: 'PKAa?' PKA()
+%obs: 'CDK5!_' CDK5(a!_)
+%obs: 'CK1u~?' CK1(pSite~u?)
+%obs: 'PP2Ap~?' PP2A(pSite~p?)
+%obs: 'PP2Aca_!' PP2A(ca!_)
+%obs: 'PP2C!_' PP2C(a!_)
+%obs: 'PP2Ba~?' PP2B(state~a?)
+%obs: 'PDEp~?' PDE(pSite~p?)
+%obs: 'DARPP_unphosph~?' D(thr34~u, ser137~u, thr75~u)
+%obs: 'Thr75~?' D(thr75~p, thr34~u, ser137~u)
+%obs: 'Thr34~?' D(thr34~p, ser137~u, thr75~u)
+%obs: 'Ser137~?' D(ser137~p, thr75~u, thr34~u)
+%obs: 'Thr75:Ser137~?' D(thr34~u, ser137~p, thr75~p)
+%obs: 'Thr34:Thr75~?' D(thr34~p, ser137~u, thr75~p)
+%obs: 'Thr34:Ser137~?' D(thr34~p, ser137~p, thr75~u)
+%obs: 'Thr34:Thr75:Ser137~?' D(thr34~p, ser137~p, thr75~p)
+%obs: 'D34*~?' D(thr34~p)
+%obs: 'D75*~?' D(thr75~p)
+%obs: 'D137*~?' D(ser137~p)
+
+## %obs: 'r' [E-]/[E+]
+
