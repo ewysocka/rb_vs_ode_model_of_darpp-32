@@ -1,7 +1,7 @@
 # Comparison of rule- and ordinary differential equation-based dynamic model of DARPP-32 signalling network
 Authors: Emilia M. Wysocka, Matthew Page, James Snowden, T. Ian Simpson 
 
-Repository storing molecular rule-based models in Kappa language and Python-based figures published in [PeerJ] (https://doi.org/10.7717/peerj.14516)
+Repository storing molecular rule-based models in Kappa language and Python-based figures published in [PeerJ](https://doi.org/10.7717/peerj.14516)
 
 ## Key websites
 
